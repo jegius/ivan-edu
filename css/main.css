@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
 
 body {
     font-family: Montserrat, sans-serif;
     background-color: #302C42;
+    color: #FFF;
 }
 
 p {
+
+    word-wrap: break-word;
+    width: 450px;
+
+
     color: #FFF;
+    /*font-family: Montserrat;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -69,9 +80,64 @@ button {
     margin-left: 8.75rem;
 }
 
-#btn-join {
+.btn-light {
+    border: none;
     margin-left: 2.38rem;
     padding: 17px 38px 16px 34px;
     color: #343045;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+}
+
+span {
+    background: linear-gradient(156deg, #C0B7E8 0%, #8176AF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#btn-build {
+margin-left: 0;
+}
+
+#img1 {
+    width: 490px;
+    height: 426px;
+    flex-shrink: 0;
+
+
+    /*margin-right: 102px;*/
+
+    position: absolute;
+    /*right: 0;*/
+    /*top: 265px;*/
+
+    /*position: relative;*/
+
+
+    border-radius: 100px 100px 100px 240px;
+    background: #A3A3A3;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+#img1-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 100px 100px 100px 240px;
+    background: rgba(0, 0, 0, 0.13);
+
+    width: 524px;
+    height: 455px;
+    flex-shrink: 0;
+
+    margin-right: 102px;
+    position: absolute;
+    right: 0;
+    top: 265px;
+
+
+
+
 }
