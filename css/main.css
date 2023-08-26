@@ -5,6 +5,7 @@
 
 
 body {
+    display: block;
     margin: 0;
     font-family: Montserrat, sans-serif;
     background-color: #302C42;
@@ -29,16 +30,18 @@ p {
 
     width: 1272px;
     height: 911px;
-    flex-shrink: 0;
+
 
     margin-top: 50px;
     margin-left: 84px;
     margin-right: 84px;
+    margin-bottom: 40px;
 }
 
 .header-line {
     display: flex;
     align-items: center;
+    white-space: nowrap
 }
 
 .header-logo {
@@ -120,10 +123,9 @@ margin-left: 0;
 }
 
 #img1-first {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-
 
     border-radius: 100px 100px 100px 240px;
     background: rgba(0, 0, 0, 0.13);
@@ -132,10 +134,19 @@ margin-left: 0;
     height: 455px;
     flex-shrink: 0;
 
-    margin-right: 102px;
-    position: absolute;
-    right: 0;
-    top: 265px;
+    /*margin-top: 124px;*/
+    /*margin-left: 292px;*/
+    /*margin-right: 0;*/
+    /*margin-bottom: 88px;*/
+
+
+
+
+
+    /*margin-right: 102px;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 265px;*/
 }
 
 nav {
