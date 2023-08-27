@@ -16,7 +16,6 @@ body {
 p {
     word-wrap: break-word;
     width: 450px;
-
     color: #FFF;
     font-size: 16px;
     font-style: normal;
@@ -26,15 +25,11 @@ p {
 
 .container {
     justify-content: space-between;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     width: 1272px;
     height: 911px;
-
-
     margin-top: 50px;
     margin-left: 84px;
     margin-right: 84px;
@@ -56,19 +51,12 @@ p {
 }
 
 .nav {
-
-    /*position: fixed;*/
     color: #FFF;
-    /*font-family: Montserrat, sans-serif;*/
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-left: 12.81rem;
-    /*width: 46px;*/
-    /*height: 15px;*/
-    /*top: 94px;*/
-    /*left: 482px;*/
 }
 
 .nav-item {
@@ -92,6 +80,13 @@ button {
     color: #FFFFFF;
     padding: 17px 38px 16px 34px;
     margin-left: 8.75rem;
+    width: 154px;
+    height: 48px;
+}
+
+#btn-join {
+    width: 155px;
+    height: 48px;
 }
 
 .btn-light {
@@ -111,16 +106,14 @@ span {
 
 #btn-build {
 margin-left: 0;
+    width: 214px;
+    height: 48px;
 }
 
 #img1 {
     width: 490px;
     height: 426px;
     flex-shrink: 0;
-
-
-
-
     border-radius: 100px 100px 100px 240px;
     background: #A3A3A3;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -131,27 +124,13 @@ margin-left: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 100px 100px 100px 240px;
     background: rgba(0, 0, 0, 0.13);
-
     width: 524px;
     height: 455px;
     flex-shrink: 0;
-
-    /*margin-top: 124px;*/
     margin-left: 292px;
-    /*margin-right: 0;*/
     margin-bottom: 88px;
-
-
-
-
-
-    /*margin-right: 102px;*/
-    /*position: absolute;*/
-    /*right: 0;*/
-    /*top: 265px;*/
 }
 
 nav {
@@ -162,25 +141,21 @@ nav {
 }
 
 .card {
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-
     margin-top: 6.12rem;
 }
 
 #p1 {
     margin-top: 36px;
-    /*margin-bottom: 4.12rem;*/
     margin-bottom: 40px;
+    width: 450px
 }
 
 h1 {
     margin-top: 4px;
     margin-bottom: 0;
-    /*color: #FFF;*/
-    /*font-family: Montserrat;*/
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -189,30 +164,23 @@ h1 {
 
 h2 {
     color: #FFF;
-    /*font-family: Montserrat;*/
     font-size: 36px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin: 10px 0 0 0;
 }
 
 #nav2 {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
-    flex-wrap: wrap;
-
-
-
-
+    /*flex-wrap: wrap;*/
     border-radius: 90px;
     background: radial-gradient(2900.76% 50.13% at 50.00% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
     box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
-
     width: 1272px;
     height: 167px;
-
-    /*margin-top: 88px;*/
 }
 
 h3 {
@@ -236,7 +204,7 @@ h4 {
 .nav2-item {
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    /*align-items: self-start;*/
     margin: 0 1rem;
 }
 
@@ -247,4 +215,34 @@ h4 {
 
 .arrow-small-right {
     margin-left: 11px;
+}
+
+.container-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+#p2 {
+    width: 652px;
+}
+
+#p3 {
+    width: 630px;
+    /*height: 228px;*/
+    margin-top: 42px;
+    margin-bottom: 28px;
+}
+
+#p4 {
+    width: 652px;
+}
+
+#card2 {
+    flex-direction: row;
+}
+
+#img2 {
+    margin-right: 100px;
 }
