@@ -5,12 +5,13 @@
 
 
 body {
-    display: block;
     margin: 0;
     font-family: Montserrat, sans-serif;
     background-color: #302C42;
     color: #FFF;
 }
+
+
 
 p {
 
@@ -27,6 +28,9 @@ p {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     width: 1272px;
     height: 911px;
@@ -53,6 +57,7 @@ p {
 }
 
 .nav {
+
     /*position: fixed;*/
     color: #FFF;
     /*font-family: Montserrat, sans-serif;*/
@@ -123,6 +128,7 @@ margin-left: 0;
 }
 
 #img1-first {
+    align-self: flex-end;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +141,7 @@ margin-left: 0;
     flex-shrink: 0;
 
     /*margin-top: 124px;*/
-    /*margin-left: 292px;*/
+    margin-left: 292px;
     /*margin-right: 0;*/
     /*margin-bottom: 88px;*/
 
@@ -154,4 +160,18 @@ nav {
     left: 0;
     display: flex;
     align-items: center;
+}
+
+.card {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+    margin-top: 6.12rem;
+}
+
+#p1 {
+    margin-top: 0.4rem;
+    margin-bottom: 4.12rem;
 }
