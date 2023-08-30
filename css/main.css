@@ -8,7 +8,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
-    background-color: #302C42;
+    background-color: rgb(48, 44, 66);
+    background-image: url(" /Programming/assets/vector-all.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    /*background-image: url(" /Programming/assets/1-base-image.png");*/
     color: #FFF;
 
 }
@@ -185,10 +190,28 @@ input[type='button'] {
 
 .block {
     margin-top: 18rem;
-    background: url("../assets/Vector all.png");
+    /*background: url("../assets/vector-all.png");*/
+    background: url(" /Programming/assets/1-base-image.png");
+    background-size: 32.75rem 28.44rem;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .button-wrapper {
     display: flex;
     align-items: center;
+}
+
+.cart {
+    padding-top: 2rem ;
+    /*background: url(" /Programming/assets/vector-all.png");*/
+}
+
+.background1 {
+    background-image: url(" /Programming/assets/vector-all.png");
+    /*opacity: 0.5;*/
+}
+.background2 {
+    /*background-image: url('путь/ко/второй/картинке.jpg');*/
+    /*opacity: 0.5;*/
 }
