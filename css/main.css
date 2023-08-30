@@ -13,7 +13,6 @@ body {
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
-    /*background-image: url(" /Programming/assets/1-base-image.png");*/
     color: #FFF;
 
 }
@@ -23,10 +22,10 @@ input {
     padding: 0;
     border: none;
     outline: none;
-    background: none; /* убирает серую подсветку при активации в некоторых браузерах */
-    -webkit-appearance: none; /* убирает стили браузера в Chrome и Safari */
-    -moz-appearance: none; /* убирает стили браузера в Firefox */
-    appearance: none; /* убирает стили браузера для остальных */
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 a {
@@ -39,7 +38,6 @@ span {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /*font-size: 2.875rem;*/
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -50,9 +48,7 @@ p {
     font-size: 1.05rem;
     font-style: normal;
     font-weight: 400;
-    /*line-height: normal;*/
     line-height: 1.75rem;
-    /*letter-spacing: 0.0rem;*/
 }
 
 h1 {
@@ -64,16 +60,6 @@ h1 {
     line-height: normal;
 
 }
-
-/*.container {*/
-/*    justify-content: space-between;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    !*align-items: flex-start;*!*/
-/*    width: 79.5rem;*/
-/*    height: 56.9375rem;*/
-/*    margin: 5.25rem 3.12rem;*/
-/*}*/
 
 ._with-padding {
     padding: 0 5.25rem;
@@ -123,9 +109,7 @@ h1 {
 }
 
 .header-logo-img {
-    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
-    /*margin: 0;*/
-    /*padding: 0;*/
+    filter: drop-shadow(0 0.625rem 0.375rem rgba(0, 0, 0, 0.25));
 }
 
 .header-logo-text {
@@ -144,7 +128,7 @@ input[type='button'] {
     box-shadow: 0 0 0 0;
     transform: scale(1);
     transition: transform .2s ease-in-out, box-shadow  .2s ease-in-out;
-    border: 2px solid #FFF;
+    border: 0.125rem solid #FFF;
     background-color: rgba(255, 250, 240, 0);
     color: #FFFFFF;
     padding: 1rem 2.1rem;
@@ -179,22 +163,26 @@ input[type='button'] {
 }
 
 .cart-build-button {
+    box-shadow: 0 0 0 0;
+    transform: scale(1);
+    transition: transform .2s ease-in-out, box-shadow  .2s ease-in-out;
     width: 13.375rem;
     height: 3rem;
     border: none;
-    padding: 17px 38px 16px 34px;
+    /*padding: 17px 38px 16px 34px;*/
+    padding: 1.06rem 2.375rem 1rem 2.125rem;
     color: #343045;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     cursor: pointer;
 }
 
+.cart-build-button:hover {
+    transform: scale(.97);
+    box-shadow: 0 0 0.85rem rgba(245, 245, 245, 0.44);
+}
+
 .block {
     margin-top: 18rem;
-    /*background: url("../assets/vector-all.png");*/
-    background: url(" /Programming/assets/1-base-image.png");
-    background-size: 32.75rem 28.44rem;
-    background-position: right;
-    background-repeat: no-repeat;
 }
 
 .button-wrapper {
@@ -204,14 +192,50 @@ input[type='button'] {
 
 .cart {
     padding-top: 2rem ;
-    /*background: url(" /Programming/assets/vector-all.png");*/
 }
 
 .background1 {
-    background-image: url(" /Programming/assets/vector-all.png");
-    /*opacity: 0.5;*/
+    background: url(" /Programming/assets/1-base-image.png");
+    background-size: 32.75rem 28.44rem;
+    background-position: right 5.25rem top;
+    background-repeat: no-repeat;
 }
-.background2 {
-    /*background-image: url('путь/ко/второй/картинке.jpg');*/
-    /*opacity: 0.5;*/
+
+
+.nav2 {
+    margin-left: 5%;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    border-radius: 5.625rem;
+    background: radial-gradient(2900.76% 50.13% at 50.00% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(192, 183, 232, 0.01);
+    width: 90%;
+    height: 10.438rem;
+}
+
+.nav2-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+h3 {
+    margin: 0;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h4 {
+    margin: 0.563rem 0 0 0;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
