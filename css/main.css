@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
-
+:root {
+    --darkest-violet: #211E2E;
+    --dark-violet: #302C42FF;
+    --light-violet: #8176AF;
+    --lighter-violet:#C0B7E8;
+    --white: #fff;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans-serif;
-    background-color: rgb(48, 44, 66);
-    background-image: url(" /Programming/assets/vector-all.png");
-    background-size: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    color: #FFF;
-
 }
 
 input {
@@ -33,7 +30,30 @@ a {
     color: inherit;
 }
 
-span {
+.main-font {
+    font-family: Montserrat, sans-serif;
+    color: var(--white);
+}
+
+.main-background {
+    background-color: var(--dark-violet);
+}
+
+.section1-base-image {
+    background: url(" /Programming/assets/1-base-image.png");
+    background-size: 32.75rem 28.44rem;
+    background-position: right 5.25rem top;
+    background-repeat: no-repeat;
+}
+
+.section1-vector-image {
+    background-image: url(" /Programming/assets/vector-all.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.header-title-span {
     background: linear-gradient(156deg, #C0B7E8 0%, #8176AF 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -43,15 +63,15 @@ span {
     line-height: normal;
 }
 
-p {
-    color: #FFF;
+.section-main-text {
+    color: var(--white);
     font-size: 1.05rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.75rem;
 }
 
-h1 {
+.biggest-title {
     margin-top: 0.25rem;
     margin-bottom: 0;
     font-size: 2.75rem;
@@ -83,8 +103,8 @@ h1 {
 .nav {
     list-style: none;
     display: flex;
-    color: #FFF;
-    font-size: 0.75rem;;
+    color: var(--white);
+    font-size: 0.75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -94,7 +114,7 @@ h1 {
 
 .nav__item {
     padding: 2.75rem 1.25rem;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     border-bottom: .1rem solid rgba(255, 255, 255, 0);
 }
@@ -116,26 +136,20 @@ h1 {
     padding-left: 0.94rem;
 }
 
-input[type='button'] {
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border-radius: 2.5rem;
-}
-
 .header-contact-button {
     box-shadow: 0 0 0 0;
     transform: scale(1);
     transition: transform .2s ease-in-out, box-shadow  .2s ease-in-out;
-    border: 0.125rem solid #FFF;
+    border: 0.125rem solid var(--white);
     background-color: rgba(255, 250, 240, 0);
-    color: #FFFFFF;
+    color: var(--white);
     padding: 1rem 2.1rem;
     margin-left: 8.75rem;
     width: 9.625rem;
     height: 3rem;
     cursor: pointer;
+    font-weight: 700;
+    border-radius: 2.5rem;
 }
 
 .header-contact-button:hover {
@@ -152,9 +166,11 @@ input[type='button'] {
     border: none;
     margin-left: 2.38rem;
     padding: 1rem 2.1rem;
-    color: #343045;
-    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    color: var(--dark-violet);
+    background: linear-gradient(90deg, var(--light-violet) 0%, var(--lighter-violet) 100%);
     cursor: pointer;
+    font-weight: 700;
+    border-radius: 2.5rem;
 }
 
 .header-join-button:hover {
@@ -169,11 +185,12 @@ input[type='button'] {
     width: 13.375rem;
     height: 3rem;
     border: none;
-    /*padding: 17px 38px 16px 34px;*/
     padding: 1.06rem 2.375rem 1rem 2.125rem;
-    color: #343045;
-    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    color: var(--dark-violet);
+    background: linear-gradient(90deg, var(--light-violet) 0%, var(--lighter-violet) 100%);
     cursor: pointer;
+    font-weight: 700;
+    border-radius: 2.5rem;
 }
 
 .cart-build-button:hover {
@@ -194,46 +211,38 @@ input[type='button'] {
     padding-top: 2rem ;
 }
 
-.background1 {
-    background: url(" /Programming/assets/1-base-image.png");
-    background-size: 32.75rem 28.44rem;
-    background-position: right 5.25rem top;
-    background-repeat: no-repeat;
-}
 
 
-.nav2 {
-    margin-left: 5%;
-    margin-top: 6rem;
+
+.address {
+    margin: 8rem 5.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*flex-wrap: wrap;*/
     border-radius: 5.625rem;
-    background: radial-gradient(2900.76% 50.13% at 50.00% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    background: radial-gradient(2900.76% 50.13% at 50.00% 53.89%, rgba(58, 52, 86, 0.95) 0%, var(--darkest-violet) 100%);
     box-shadow: 0 0.25rem 0.25rem 0 rgba(192, 183, 232, 0.01);
-    width: 90%;
     height: 10.438rem;
 }
 
-.nav2-item {
+.address-item {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
 }
 
-h3 {
+.small-section-title {
     margin: 0;
-    color: #FFF;
+    color: var(--white);
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-h4 {
+.address-main-text {
     margin: 0.563rem 0 0 0;
-    color: #FFF;
+    color: var(--white);
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
