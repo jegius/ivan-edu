@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
@@ -46,6 +47,13 @@ a {
     background-repeat: no-repeat;
 }
 
+.section2-back-image {
+    background-image: url(" /Programming/assets/2-base-image.png"), url(" /Programming/assets/2-vector.png");
+    background-size: 32.75rem 28.44rem, 90rem;
+    background-position: left 5.25rem top 15.69rem, left top 15.69rem;
+    background-repeat: no-repeat;
+}
+
 .header-title-span {
     background: linear-gradient(156deg, #C0B7E8 0%, #8176AF 100%);
     background-clip: text;
@@ -71,7 +79,6 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 
 ._with-padding {
@@ -86,7 +93,6 @@ a {
     position: fixed;
     left: 0;
     top: 0;
-    min-width: 90%;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -151,19 +157,7 @@ a {
 }
 
 .header-join-button {
-    box-shadow: 0 0 0 0;
-    transform: scale(1);
-    transition: transform .2s ease-in-out, box-shadow  .2s ease-in-out;
-    width: 9.6875rem;
-    height: 3rem;
-    border: none;
     margin-left: 2.38rem;
-    padding: 1rem 2.1rem;
-    color: var(--dark-violet);
-    background: linear-gradient(90deg, var(--light-violet) 0%, var(--lighter-violet) 100%);
-    cursor: pointer;
-    font-weight: 700;
-    border-radius: 2.5rem;
 }
 
 .header-join-button:hover {
@@ -172,18 +166,7 @@ a {
 }
 
 .cart-build-button {
-    box-shadow: 0 0 0 0;
-    transform: scale(1);
-    transition: transform .2s ease-in-out, box-shadow  .2s ease-in-out;
-    width: 13.375rem;
-    height: 3rem;
-    border: none;
-    padding: 1.06rem 2.375rem 1rem 2.125rem;
-    color: var(--dark-violet);
-    background: linear-gradient(90deg, var(--light-violet) 0%, var(--lighter-violet) 100%);
-    cursor: pointer;
-    font-weight: 700;
-    border-radius: 2.5rem;
+
 }
 
 .cart-build-button:hover {
@@ -191,7 +174,7 @@ a {
     box-shadow: 0 0 0.85rem rgba(245, 245, 245, 0.44);
 }
 
-.block {
+.block1 {
     padding-top: 18rem;
 }
 
@@ -203,9 +186,6 @@ a {
 .cart {
     padding-top: 2rem ;
 }
-
-
-
 
 .address {
     margin: 8rem 5.25rem;
@@ -240,4 +220,54 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.slim-title {
+    color: var(--white);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0.4rem;
+}
+
+.section2-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regular-section-title {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+._padding-left-10 {
+    padding-left: 10rem;
+}
+
+.light-button {
+    box-shadow: 0 0 0 0;
+    transform: scale(1);
+    transition: transform .2s ease-in-out, box-shadow  .2s ease-in-out;
+    border: none;
+    padding: 1rem 2.1rem;
+    color: var(--dark-violet);
+    background: linear-gradient(90deg, var(--light-violet) 0%, var(--lighter-violet) 100%);
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 2.5rem;
+}
+
+.light-button:hover {
+    transform: scale(.97);
+    box-shadow: 0 0 0.95rem rgba(245, 245, 245, 0.49);
+}
+
+.cart2-let-button {
+    margin-left: 2.38rem;
 }
