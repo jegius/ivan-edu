@@ -39,17 +39,10 @@ a {
     background-color: var(--dark-violet);
 }
 
-.section1-base-image {
-    background: url(" /Programming/assets/1-base-image.png");
-    background-size: 32.75rem 28.44rem;
-    background-position: right 5.25rem top;
-    background-repeat: no-repeat;
-}
-
-.section1-vector-image {
-    background-image: url(" /Programming/assets/vector-all.png");
-    background-size: 100%;
-    background-position: top;
+.section1-back-image {
+    background-image: url(" /Programming/assets/1-base-image.png"), url(" /Programming/assets/1-vector-right.png"), url(" /Programming/assets/1-vector-left.png");
+    background-size: 32.75rem 28.44rem, 50rem, 19rem;
+    background-position: right 5.25rem top 15.69rem, right top, left bottom;
     background-repeat: no-repeat;
 }
 
@@ -199,7 +192,7 @@ a {
 }
 
 .block {
-    margin-top: 18rem;
+    padding-top: 18rem;
 }
 
 .button-wrapper {
