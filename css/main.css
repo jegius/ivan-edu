@@ -5,6 +5,7 @@
 :root {
     --darkest-violet: #211E2E;
     --dark-violet: #302C42FF;
+    --violet: #433D60;
     --light-violet: #8176AF;
     --lighter-violet:#C0B7E8;
     --white: #fff;
@@ -49,7 +50,7 @@ a {
 
 .section2-back-image {
     background-image: url(" /Programming/assets/2-base-image.png"), url(" /Programming/assets/2-vector.png");
-    background-size: 32.75rem 28.44rem, 90rem;
+    background-size: 32rem 34.8rem, 90rem;
     background-position: left 5.25rem top 15.69rem, left top 15.69rem;
     background-repeat: no-repeat;
 }
@@ -90,6 +91,7 @@ a {
 }
 
 .header {
+    z-index: 1;
     position: fixed;
     left: 0;
     top: 0;
@@ -108,7 +110,6 @@ a {
     font-weight: 700;
     line-height: normal;
     margin-left: 12.81rem;
-
 }
 
 .nav__item {
@@ -184,7 +185,7 @@ a {
 }
 
 .cart {
-    padding-top: 2rem ;
+    padding-top: 2rem;
 }
 
 .address {
@@ -223,6 +224,7 @@ a {
 }
 
 .slim-title {
+    white-space: nowrap;
     color: var(--white);
     font-size: 2rem;
     font-style: normal;
@@ -235,19 +237,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 7.25rem;
 }
 
 .regular-section-title {
     margin-top: 0.25rem;
     margin-bottom: 0;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    white-space: nowrap;
 }
 
-._padding-left-10 {
-    padding-left: 10rem;
+._padding-left-9rem {
+    padding-left: 9rem;
 }
 
 .light-button {
@@ -269,5 +273,76 @@ a {
 }
 
 .cart2-let-button {
-    margin-left: 2.38rem;
+    margin-top: 1rem;
+}
+
+._on-right-side{
+    padding-left: 45.31rem;
+    padding-right: 5.25rem;
+}
+
+.section3-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7.25rem;
+}
+
+.section3-back-image {
+    background-image: url(" /Programming/assets/3-vector.png");
+    background-size: 91rem 50rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.cart2 {
+    padding-top: 2rem;
+    padding-bottom: 16rem;
+}
+
+.section3-line-big-arrow {
+    margin-left: 1rem;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item {
+    padding: 1.56rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 16.375rem;
+    height: 27.93rem;
+    border-radius: 2.5rem;
+    background: radial-gradient(50% 50% at 50% 50%, var(--violet) 0%, var(--darkest-violet) 100%);
+}
+
+.service-image {
+    width: 13.6875rem;
+    height: 13.6875rem;
+}
+
+.service-hr {
+    height: 0.1rem;
+    background-color: rgba(192, 183, 232, 0.33);
+    width: 9.62rem;
+    border: none;
+}
+
+.smallest-service-main-text {
+    color: var(--white);
+    font-family: Montserrat,sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.service-button {
+    margin-bottom: 1rem;
 }
