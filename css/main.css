@@ -522,12 +522,12 @@ li {
 .optin-section-pulls-border {
     color: var(--white);
     border-radius: 2.5rem;
-    border: 2px solid #FFF;
+    border: 0.125rem solid var(--white);
+    padding-left: 2.62rem;
 }
 
 .optin-section-pulls-border::placeholder {
-    padding-left: 2.62rem;
-    color: #FFF;
+    color: var(--white);
     font-family: Montserrat, sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -536,13 +536,13 @@ li {
 }
 
 ._small-pull {
-    width: 32.75rem;
+    width: 30.13rem;
     height: 4.5rem;
     margin: 1.22rem 0.2rem;
 }
 
 ._big-pull {
-    width: 66.125rem;
+    width: 63.125rem;
     height: 4.5rem;
     margin: 0.84rem 0;
 }
@@ -552,11 +552,13 @@ li {
     margin-bottom: 3.19rem;
     width: 66.125rem;
     height: 13.125rem;
+    padding-left: 2.62rem;
+    padding-top: 1.69rem;
 }
 
 ._textarea::placeholder {
-    padding-left: 2.62rem;
-    padding-top: 1.69rem;
+    /*padding-left: 2.62rem;*/
+    /*padding-top: 1.69rem;*/
 }
 
 .optin-section-back-image {
@@ -567,7 +569,7 @@ li {
 }
 
 .footer-line {
-    color: #FFF;
+    color: var(--white);
     font-family: Montserrat,sans-serif;
     font-size: 1rem;
     font-style: normal;
