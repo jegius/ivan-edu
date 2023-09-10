@@ -556,11 +556,6 @@ li {
     padding-top: 1.69rem;
 }
 
-._textarea::placeholder {
-    /*padding-left: 2.62rem;*/
-    /*padding-top: 1.69rem;*/
-}
-
 .optin-section-back-image {
     background-image: url(" /Programming/assets/1-optin-section.png");
     background-size: 90.8125rem 31.1875rem;
