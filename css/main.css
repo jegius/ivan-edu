@@ -91,6 +91,10 @@ li {
     line-height: 1.75rem;
 }
 
+.block1_p {
+    width: 30rem;
+}
+
 .biggest-title {
     margin-top: 0.25rem;
     margin-bottom: 0;
