@@ -5,42 +5,36 @@
 	<title>Hydra Landing Page</title>
 	<link href='/css/main.css' rel='stylesheet'>
 </head>
-<body class='main-background main-font'>
+<body class='main__background main-font'>
 <main>
-	<header class='header _with-padding _height-padding'>
-		<div class='header-logo'>
-			<div class='header-logo-img'>
-				<img alt='logo' src='/image/logo.png'>
-			</div>
-			<div class='header-logo-text'>
-				<img alt='logo' src='/image/logo-text.png'>
-			</div>
-		</div>
+	<header
+		class='header _with-padding _height-padding header__logo-img'>
 		<nav>
-			<ul class='nav'>
-				<li class='nav__item_active'><a href='#'>ABOUT</a></li>
-				<li class='nav__item'><a href='#'>SERVICES</a></li>
-				<li class='nav__item'><a href='#'>TECHNOLOGIES</a></li>
-				<li class='nav__item'><a href='#'>HOW TO</a></li>
+			<ul class='header__nav'>
+				<li class='header-nav__item_active'><a href='#'>ABOUT</a></li>
+				<li class='header-nav__item'><a href='#'>SERVICES</a></li>
+				<li class='header-nav__item'><a href='#'>TECHNOLOGIES</a></li>
+				<li class='header-nav__item'><a href='#'>HOW TO</a></li>
 			</ul>
 		</nav>
-		<div class='header-button-wraper'>
-			<input class='header-contact-button' type='button' value='CONTACT US'>
-			<input class='header-join-button light-button' type='button'
+		<div>
+			<input class='header__contact-button' type='button' value='CONTACT US'>
+			<input class='header__join-button light-button' type='button'
 					 value='JOIN HYDRA'>
 		</div>
 	</header>
-	<section class='block1 section1-back-image'>
-		<div class='cart _with-padding'>
-			<h1 class='biggest-title'><span class='header-title-span'>Dive</span>
+	<section class='block1 block1__back-image'>
+		<div class='blick1__cart _with-padding'>
+			<h1 class='biggest-title'><span class='block1__title-span'>Dive</span>
 				Into The Depths</h1>
-			<h1 class='biggest-title'>Of <span class='header-title-span'>Virtual Reality</span>
+			<h1 class='biggest-title'>Of <span class='block1__title-span'>Virtual Reality</span>
 			</h1>
-			<p class='section-main-text _height-padding block1_p'>Lorem ipsum dolor
+			<p class='block__main-text _height-padding block1_p'>Lorem ipsum
+				dolor
 				sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 				incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris
 				eros in vitae .</p>
-			<div class='button-wrapper'>
+			<div class='block1__button-wrapper'>
 				<input class='light-button' type='button'
 						 value='BUILD YOUR WORLD'></input>
 				<img alt='arrow-small-right' class='arrow-small-right'
@@ -52,7 +46,7 @@
 				<img alt='Location-Icon' src='/image/Location-Icon.png'>
 			</div>
 			<div class='address-item'>
-				<h3 class='small-section-title'>Pay Us a Visit</h3>
+				<h3 class='small-block-title'>Pay Us a Visit</h3>
 				<h4 class='address-main-text'>Union St, Seattle, WA 98101, United
 					States</h4>
 			</div>
@@ -63,7 +57,7 @@
 				<img alt='phone-call' src='/image/phone-call.png'>
 			</div>
 			<div class='address-item'>
-				<h3 class='small-section-title'>Give Us a Call</h3>
+				<h3 class='small-block-title'>Give Us a Call</h3>
 				<h4 class='address-main-text'>(110) 1111-1010</h4>
 			</div>
 			<div class='address-item'>
@@ -73,28 +67,28 @@
 				<img alt='mail' src='/image/mail.png'>
 			</div>
 			<div class='address-item'>
-				<h3 class='small-section-title'>Send Us a Message</h3>
+				<h3 class='small-block-title'>Send Us a Message</h3>
 				<h4 class='address-main-text'>Contact@HydraVTech.com</h4>
 			</div>
 		</address>
 	</section>
-	<section class='section2-back-image'>
-		<div class='section-line _with-padding _margin-bottom-7'>
+	<section class='block2__back-image'>
+		<div class='block__line _with-padding _margin-bottom-7'>
 			<div>
-				<h1 class='regular-section-title'>INTRODUCTION</h1>
+				<h1 class='regular-block-title'>INTRODUCTION</h1>
 				<h2 class='slim-title'>TO HYDRA VR</h2>
 			</div>
 			<img alt='arrow-big-right' src='/image/arrow-big-right.png'>
-			<p class='section-main-text _padding-left-9rem'>Vitae sapien
+			<p class='block__main-text _padding-left-9rem'>Vitae sapien
 				pellentesque habitant morbi tristique senectus et netus et. Feugiat
 				nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris
 				commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget
 				sit amet tellus. Ornare lectus sit amet est placerat in. Lectus
 				magna fringilla urna porttitor rhoncus vitae.</p>
 		</div>
-		<div class='cart2 _on-right-side'>
+		<div class='blick2__cart _on-right-side'>
 			<div>
-				<h1 class='regular-section-title'>ABOUT</h1>
+				<h1 class='regular-block-title'>ABOUT</h1>
 				<h2 class='slim-title'>HYDRA VR</h2>
 				<p>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
 					mattis rhoncus urna neque viverra justo. Vivamus at augue eget
@@ -107,20 +101,21 @@
 					ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet
 					nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n
 					tempor.</p>
-				<button class='light-button cart2-let-button'>LET’S GET IN TOUCH
+				<button class='block2__cart-let-button light-button'>LET’S GET IN
+					TOUCH
 				</button>
 			</div>
 		</div>
 	</section>
-	<section class='section3-back-image'>
-		<div class='section-line _with-padding _margin-bottom-7'>
+	<section class='block3-back-image'>
+		<div class='block__line _with-padding _margin-bottom-7'>
 			<div>
-				<h1 class='regular-section-title'>WHY BUILD</h1>
+				<h1 class='regular-block-title'>WHY BUILD</h1>
 				<h2 class='slim-title'>WITH HYDRA?</h2>
 			</div>
-			<img alt='arrow-big-right' class='section-line-big-arrow'
+			<img alt='arrow-big-right' class='block__line-big-arrow'
 				  src='/image/arrow-big-right.png'>
-			<p class='section-main-text _padding-left-9rem'>Vitae sapien
+			<p class='block__main-text _padding-left-9rem'>Vitae sapien
 				pellentesque habitant morbi tristique senectus et netus et. Feugiat
 				nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris
 				commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget
@@ -131,7 +126,7 @@
 			<div class='service-item'>
 				<img alt='1-service-image' class='service-image'
 					  src='./image/1-service-image.png'>
-				<h3 class='small-section-title'>SIMULATION</h3>
+				<h3 class='small-block-title'>SIMULATION</h3>
 				<hr class='service-hr'>
 				<p class='smallest-service-main-text'>Vitae sapien pellentesque
 					habitant morbi nunc. Viverra aliquet porttitor rhoncus libero
@@ -142,7 +137,7 @@
 			<div class='service-item'>
 				<img alt='2-service-image' class='service-image'
 					  src='/image/2-service-image.png'>
-				<h3 class='small-section-title'>EDUCATION</h3>
+				<h3 class='small-block-title'>EDUCATION</h3>
 				<hr class='service-hr'>
 				<p class='smallest-service-main-text'>Vitae sapien pellentesque
 					habitant morbi nunc. Viverra aliquet porttitor rhoncus libero
@@ -153,7 +148,7 @@
 			<div class='service-item'>
 				<img alt='3-service-image' class='service-image'
 					  src='/image/3-service-image.png'>
-				<h3 class='small-section-title'>SELF-CARE</h3>
+				<h3 class='small-block-title'>SELF-CARE</h3>
 				<hr class='service-hr'>
 				<p class='smallest-service-main-text'>Vitae sapien pellentesque
 					habitant morbi nunc. Viverra aliquet porttitor rhoncus libero
@@ -164,7 +159,7 @@
 			<div class='service-item'>
 				<img alt='4-service-image' class='service-image'
 					  src='/image/4-service-image.png'>
-				<h3 class='small-section-title'>OUTDOOR</h3>
+				<h3 class='small-block-title'>OUTDOOR</h3>
 				<hr class='service-hr'>
 				<p class='smallest-service-main-text'>Vitae sapien pellentesque
 					habitant morbi nunc. Viverra aliquet porttitor rhoncus libero
@@ -173,42 +168,42 @@
 						 value='TRY IT NOW'>
 			</div>
 		</div>
-		<div class='tech-section _with-padding tech-section-back-image'>
-			<div class='tech-section-title'>
-				<h1 class='regular-section-title'>TECHNOLOGIES & HARDWARE</h1>
+		<div class='tech-block _with-padding tech-block-back-image'>
+			<div class='tech-block-title'>
+				<h1 class='regular-block-title'>TECHNOLOGIES & HARDWARE</h1>
 				<h2 class='slim-title'>USED BY HYDRA VR.</h2>
 			</div>
-			<input class='tech-section-button' src='image/tech-section-button.png'
+			<input class='tech-block-button' src='image/tech-block-button.png'
 					 type='image'>
 		</div>
-		<div class='tech-section-line _with-padding'>
-			<img alt='1-tech-section-line-image.png' class='tech-image1'
-				  src='image/1-tech-section-line-image.png'>
-			<img alt='2-tech-section-line-image.png' class='tech-image2'
-				  src='image/2-tech-section-line-image.png'>
-			<img alt='3-tech-section-line-image.png' class='tech-image3'
-				  src='image/3-tech-section-line-image.png'>
-			<img alt='4-tech-section-line-image.png' class='tech-image4'
-				  src='image/4-tech-section-line-image.png'>
+		<div class='tech-block-line _with-padding'>
+			<img alt='1-tech-block-line-image.png' class='tech-image1'
+				  src='image/1-tech-block-line-image.png'>
+			<img alt='2-tech-block-line-image.png' class='tech-image2'
+				  src='image/2-tech-block-line-image.png'>
+			<img alt='3-tech-block-line-image.png' class='tech-image3'
+				  src='image/3-tech-block-line-image.png'>
+			<img alt='4-tech-block-line-image.png' class='tech-image4'
+				  src='image/4-tech-block-line-image.png'>
 		</div>
 	</section>
-	<section class='section4-back-image'>
-		<div class='section-line _with-padding'>
+	<section class='block4-back-image'>
+		<div class='block__line _with-padding'>
 			<div>
-				<h1 class='regular-section-title'>WHY BUILD</h1>
+				<h1 class='regular-block-title'>WHY BUILD</h1>
 				<h2 class='slim-title'>WITH HYDRA?</h2>
 			</div>
-			<img alt='arrow-big-right' class='section-line-big-arrow'
+			<img alt='arrow-big-right' class='block__line-arrow_big'
 				  src='/image/arrow-big-right.png'>
-			<p class='section-main-text _padding-left-9rem'>Vitae sapien
+			<p class='block__main-text _padding-left-9rem'>Vitae sapien
 				pellentesque habitant morbi tristique senectus et netus et. Feugiat
 				nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris
 				commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget
 				sit amet tellus. Ornare lectus sit amet est placerat in. Lectus
 				magna fringilla urna porttitor rhoncus vitae.</p>
 		</div>
-		<div class='process-section'>
-			<div class='process-section-line'>
+		<div class='process-block'>
+			<div class='process-block-line'>
 				<div class='circle circle1'>
 				</div>
 				<div class='circle circle2'>
@@ -219,47 +214,47 @@
 				</div>
 			</div>
 
-			<div class='process-section-line2'>
+			<div class='process-block-line2'>
 				<img class='process-arrow'
-					  src='/image/arrow-small-process-section.png'>
+					  src='/image/arrow-small-process-block.png'>
 				<h1>3D Conception & Design</h1>
 				<img class='process-arrow'
-					  src='/image/arrow-small-process-section.png'>
+					  src='/image/arrow-small-process-block.png'>
 				<h1>Interaction Design</h1>
 				<img class='process-arrow'
-					  src='/image/arrow-small-process-section.png'>
+					  src='/image/arrow-small-process-block.png'>
 				<h1>VR World User Testing</h1>
 				<img class='process-arrow'
-					  src='/image/arrow-small-process-section.png'>
+					  src='/image/arrow-small-process-block.png'>
 				<h1>Hydra VR Deploy</h1>
 			</div>
 		</div>
 	</section>
-	<section class='optin-section-back-image'>
-		<div class='optin-section'>
-			<h1 class='regular-section-title'>JOIN HYDRA</h1>
+	<section class='optin-block-back-image'>
+		<div class='optin-block'>
+			<h1 class='regular-block-title'>JOIN HYDRA</h1>
 			<img alt='vector-16.png' class='vector-16' src='image/vector-16.png'>
 			<h2 class='slim-title'>Let’s Build Your VR Experience</h2>
 			<div>
-				<input class='optin-section-pulls-border _small-pull'
+				<input class='optin-block-pulls-border _small-pull'
 						 placeholder='First Name'
 						 type='text'>
-				<input class='optin-section-pulls-border _small-pull'
+				<input class='optin-block-pulls-border _small-pull'
 						 placeholder='Last Name'
 						 type='text'>
 			</div>
 			<div>
-				<input class='optin-section-pulls-border _small-pull'
+				<input class='optin-block-pulls-border _small-pull'
 						 placeholder='Email'
 						 type='email'>
-				<input class='optin-section-pulls-border _small-pull'
+				<input class='optin-block-pulls-border _small-pull'
 						 placeholder='Phone Number'
 						 type='tel'>
 			</div>
-			<input class='optin-section-pulls-border _big-pull'
+			<input class='optin-block-pulls-border _big-pull'
 					 placeholder='Subject'
 					 type='text'>
-			<textarea class='optin-section-pulls-border _textarea'
+			<textarea class='optin-block-pulls-border _textarea'
 						 placeholder='Tell Us Something...'></textarea>
 			<input class='light-button' type='button' value='SEND TO HYDRA'>
 		</div>
