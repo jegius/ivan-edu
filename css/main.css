@@ -75,15 +75,15 @@ li {
 }
 
 .hero-section__back-image {
-    background: url("/Programming/image/1-base-image.png") right 5.25rem top 15.69rem no-repeat,
-    url("/Programming/image/1-vector-right.png") right top no-repeat,
-    url("/Programming/image/1-vector-left.png") left bottom no-repeat;
+    background: url("/Programming/image/hero-section/1-base-image.png") right 5.25rem top 15.69rem no-repeat,
+    url("/Programming/image/hero-section/1-vector-right.png") right top no-repeat,
+    url("/Programming/image/hero-section/1-vector-left.png") left bottom no-repeat;
     background-size: 32.75rem 28.44rem, 50rem, 19rem;
 }
 
 .about-section__back-image {
-    background: url(" /Programming/image/2-base-image.png") left 5.25rem top 15.69rem no-repeat,
-    url(" /Programming/image/2-vector.png") left top 15.69rem no-repeat;
+    background: url(" /Programming/image/about-section/2-base-image.png") left 5.25rem top 15.69rem no-repeat,
+    url(" /Programming/image/about-section/2-vector.png") left top 15.69rem no-repeat;
     background-size: 32rem 34.8rem, 90rem;
 }
 
@@ -147,20 +147,20 @@ li {
     margin-left: 30.125rem;
 }
 
-.header-nav__item {
+.header__nav-item {
     padding: 2.75rem 1.25rem;
     color: var(--white);
     text-decoration: none;
     border-top: .1rem solid rgba(255, 255, 255, 0);
 }
 
-.header-nav__item_active {
+.header__nav-item_active {
     padding-top: 1rem;
     border-top: .1rem solid rgba(255, 255, 255, 1);
 }
 
 .header__logo-img {
-    background-image: url(" /Programming/image/header/logo.png"), url(" /Programming/image/header/logo-text.png");
+    background-image: url(" /Programming/image/logo.png"), url(" /Programming/image/logo-text.png");
     background-size: 6.375rem 6.4375rem, 4.75rem 2.875rem;
     background-position: left 5.25rem top 3.125rem, left 12.5625rem top 4.9375rem;
     background-repeat: no-repeat;
@@ -182,33 +182,17 @@ li {
 }
 
 .header__contact-button {
-    /*box-shadow: 0 0 0 0;*/
-    /*transform: scale(1);*/
-    /*transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;*/
     border: .125rem solid var(--white);
     background-color: rgba(255, 250, 240, 0);
     color: var(--white);
-    /*padding: 1rem 2.1rem;*/
     margin-left: 8.75rem;
     width: 9.625rem;
     height: 3rem;
-    /*cursor: pointer;*/
     font-weight: 700;
-    /*border-radius: 2.5rem;*/
-}
-
-.header__contact-button:hover {
-    /*transform: scale(.97);*/
-    /*box-shadow: 0 0 .95rem rgba(245, 245, 245, .49);*/
 }
 
 .header__join-button {
     margin-left: 2.38rem;
-}
-
-.header__join-button:hover {
-    /*transform: scale(.97);*/
-    /*box-shadow: 0 0 .95rem rgba(245, 245, 245, .49);*/
 }
 
 .hero-section {
@@ -235,7 +219,7 @@ li {
     height: 10.438rem;
 }
 
-.hero-section__address__item {
+.hero-section__address-item {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
@@ -250,7 +234,7 @@ li {
     line-height: normal;
 }
 
-.hero-section__address__text_main {
+.hero-section__address-text {
     margin: .563rem 0 0 0;
     color: var(--white);
     font-size: .875rem;
@@ -284,20 +268,9 @@ li {
 }
 
 .button_light {
-    /*box-shadow: 0 0 0 0;*/
-    /*transform: scale(1);*/
-    /*transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;*/
-    /*padding: 1rem 2.1rem;*/
     color: var(--darker-violet);
     background: linear-gradient(90deg, var(--lighter-violet) 0%, var(--lightest-violet) 100%);
-    /*cursor: pointer;*/
     font-weight: 700;
-    /*border-radius: 2.5rem;*/
-}
-
-.button_light:hover {
-    /*transform: scale(.97);*/
-    /*box-shadow: 0 0 .95rem rgba(245, 245, 245, .49);*/
 }
 
 .about-section__cart-let-button {
@@ -311,7 +284,7 @@ li {
 
 
 .service-section__back-image {
-    background: url(" /Programming/image/3-vector.png") center bottom 21rem no-repeat;
+    background: url(" /Programming/image/service-section/3-vector.png") center bottom 21rem no-repeat;
     background-size: 94rem 50rem;
 }
 
@@ -373,7 +346,7 @@ li {
 }
 
 .tech-section__back-image {
-    background: url(" /Programming/image/pexels-rodnae-productions-8097332.png") center no-repeat;
+    background: url(" /Programming/image/tech-section/pexels-rodnae-productions-8097332.png") center no-repeat;
     background-size: 79.9rem 18.9rem;
 }
 
@@ -435,7 +408,7 @@ li {
 }
 
 .process-section__back-image {
-    background: url(" /Programming/image/4-vector.png") center 12.18rem no-repeat;
+    background: url(" /Programming/image/process-section/4-vector.png") center 12.18rem no-repeat;
     background-size: 119.5625rem 10.1875rem;
 }
 
@@ -561,7 +534,7 @@ li {
 }
 
 .optin-section__back-image {
-    background-image: url(" /Programming/image/1-optin-block.png");
+    background-image: url(" /Programming/image/optin-section/1-optin-block.png");
     background-size: 90.8125rem 31.1875rem;
     background-position: left bottom 2.69rem;
     background-repeat: no-repeat;
@@ -622,7 +595,7 @@ li {
     justify-content: center;
 }
 
-.credits__text {
+.credits-text {
     font-size: .875rem;
     font-style: normal;
     font-weight: 700;
@@ -630,7 +603,7 @@ li {
     letter-spacing: .11375rem;
 }
 
-.footer__line__ul__li {
+.footer__nav-item {
     margin-bottom: 1.25rem;
 }
 
