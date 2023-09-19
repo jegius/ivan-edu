@@ -302,18 +302,32 @@ li {
     padding: 1.56rem;
     display: flex;
     justify-content: end;
-    gap: 2rem 0;
+    gap: 1rem 0;
     align-items: center;
     flex-direction: column;
     width: 16.375rem;
     height: 27.93rem;
     border-radius: 2.5rem;
-    background: radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
 }
 
-.service-section__image {
-    width: 13.6875rem;
-    height: 13.6875rem;
+.SIMULATION_image {
+    background: url(" /Programming/image/service-section/1-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background-size: 13.6875rem;
+}
+
+.EDUCATION_image {
+    background: url(" /Programming/image/service-section/2-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background-size: 13.6875rem;
+}
+
+.SELF-CARE_image {
+    background: url(" /Programming/image/service-section/3-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background-size: 13.6875rem;
+}
+
+.OUTDOOR_image {
+    background: url(" /Programming/image/service-section/4-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background-size: 13.6875rem;
 }
 
 .service-section__hr {
