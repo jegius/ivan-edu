@@ -15,7 +15,33 @@
     --white: #fff;
 
     /*images*/
+    --logo-icon: url(" /Programming/image/logo.png");
+    --logo-text: url(" /Programming/image/logo-text.png");
+    --arrow_small: url("/Programming/image/arrows/arrow-small-right.png");
+    --arrow_big: url("/Programming/image/arrows/arrow-big-right.png");
 
+    --hero-face: url("/Programming/image/hero-section/1-base-image.png");
+    --hero-vector_right: url("/Programming/image/hero-section/1-vector-right.png");
+    --hero-vector_left: url("/Programming/image/hero-section/1-vector-left.png");
+
+    --about-face: url(" /Programming/image/about-section/2-base-image.png");
+    --about-vector: url(" /Programming/image/about-section/2-vector.png");
+
+    --service-item1: url(" /Programming/image/service-section/1-service-image.png");
+    --service-item2: url(" /Programming/image/service-section/2-service-image.png");
+    --service-item3: url(" /Programming/image/service-section/3-service-image.png");
+    --service-item4: url(" /Programming/image/service-section/4-service-image.png");
+    --service-vector: url(" /Programming/image/service-section/3-vector.png");
+
+    --tech-base: url(" /Programming/image/tech-section/pexels-rodnae-productions-8097332.png");
+    --tech-item1: url("/Programming/image/tech-section/line/1-tech-block-line-image.png");
+    --tech-item2: url("/Programming/image/tech-section/line/2-tech-block-line-image.png");
+    --tech-item3: url("/Programming/image/tech-section/line/3-tech-block-line-image.png");
+    --tech-item4: url("/Programming/image/tech-section/line/4-tech-block-line-image.png");
+
+    --process-vector: url(" /Programming/image/process-section/4-vector.png");
+
+    --optin-vector1: url(" /Programming/image/optin-section/1-optin-block.png");
 }
 
 body {
@@ -75,16 +101,16 @@ li {
 }
 
 .hero-section__back-image {
-    background: url("/Programming/image/hero-section/1-base-image.png") right 5.25rem top 15.69rem no-repeat,
-    url("/Programming/image/hero-section/1-vector-right.png") right top no-repeat,
-    url("/Programming/image/hero-section/1-vector-left.png") left bottom 5rem no-repeat,
-    url("/Programming/image/arrows/arrow-small-right.png") left 18.1875rem top 36.1875rem no-repeat;
+    background: var(--hero-face) right 5.25rem top 15.69rem no-repeat,
+    var(--hero-vector_right) right top no-repeat,
+    var(--hero-vector_left) left bottom 5rem no-repeat,
+    var(--arrow_small) left 18.1875rem top 36.1875rem no-repeat;
     background-size: 32.75rem 28.44rem, 50rem, 19rem, 6.25rem 6.25rem;
 }
 
 .about-section__back-image {
-    background: url(" /Programming/image/about-section/2-base-image.png") left 5.25rem top 15.69rem no-repeat,
-    url(" /Programming/image/about-section/2-vector.png") left top 15.69rem no-repeat;
+    background: var(--about-face) left 5.25rem top 15.69rem no-repeat,
+    var(--about-vector) left top 15.69rem no-repeat;
     background-size: 32rem 34.8rem, 90rem;
 }
 
@@ -161,7 +187,7 @@ li {
 }
 
 .header__logo-img {
-    background-image: url(" /Programming/image/logo.png"), url(" /Programming/image/logo-text.png");
+    background-image: var(--logo-icon), var(--logo-text);
     background-size: 6.375rem 6.4375rem, 4.75rem 2.875rem;
     background-position: left 5.25rem top 3.125rem, left 12.5625rem top 4.9375rem;
     background-repeat: no-repeat;
@@ -211,9 +237,7 @@ li {
     justify-content: center;
     border-radius: 5.625rem;
     background: radial-gradient(2900.76% 50.13% at 50.00% 53.89%, rgba(58, 52, 86, .95) 0%, var(--darkest-violet) 100%);
-
-    /*url("/Programming/image/hero-section/address/Location-Icon.png") left 16.8rem center no-repeat,*/
-
+    /*url("/Programming/image/hero-section/address/Location-Icon.png") left 16.8rem center no-repeat;*/
     box-shadow: 0 .25rem .25rem 0 rgba(192, 183, 232, .01);
     height: 10.438rem;
     gap: 0 2.66rem;
@@ -279,7 +303,7 @@ li {
 
 
 .service-section__back-image {
-    background: url(" /Programming/image/service-section/3-vector.png") center bottom 21rem no-repeat;
+    background: var(--service-vector) center bottom 21rem no-repeat;
     background-size: 94rem 50rem;
 }
 
@@ -311,22 +335,22 @@ li {
 }
 
 .SIMULATION_image {
-    background: url(" /Programming/image/service-section/1-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background: var(--service-item1) center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
     background-size: 13.6875rem;
 }
 
 .EDUCATION_image {
-    background: url(" /Programming/image/service-section/2-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background: var(--service-item2) center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
     background-size: 13.6875rem;
 }
 
 .SELF-CARE_image {
-    background: url(" /Programming/image/service-section/3-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background: var(--service-item3) center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
     background-size: 13.6875rem;
 }
 
 .OUTDOOR_image {
-    background: url(" /Programming/image/service-section/4-service-image.png") center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    background: var(--service-item4) center top 1.5rem no-repeat, radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
     background-size: 13.6875rem;
 }
 
@@ -356,7 +380,7 @@ li {
 }
 
 .tech-section__back-image {
-    background: url(" /Programming/image/tech-section/pexels-rodnae-productions-8097332.png") center no-repeat;
+    background: var(--tech-base) center no-repeat;
     background-size: 79.9rem 18.9rem;
 }
 
@@ -383,8 +407,12 @@ li {
 
 .tech-section__line {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 17rem;
+    background: var(--tech-item1) center left 5.25rem no-repeat, var(--tech-item2) 23.25rem no-repeat, var(--tech-item3) 46.25rem no-repeat, var(--tech-item4) center right 5.25rem no-repeat;
+    background-size: 10.875rem, 15.75rem, 16.4375rem, 17.625rem;
 }
 
 .tech-image1 {
@@ -408,7 +436,7 @@ li {
 }
 
 .section__line {
-    background: url("/Programming/image/arrows/arrow-big-right.png") left 26rem bottom no-repeat;
+    background: var(--arrow_big) left 26rem bottom no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,7 +448,7 @@ li {
 }
 
 .process-section__back-image {
-    background: url(" /Programming/image/process-section/4-vector.png") center 12.18rem no-repeat;
+    background: var(--process-vector) center 12.18rem no-repeat;
     background-size: 119.5625rem 10.1875rem;
 }
 
@@ -544,7 +572,7 @@ li {
 }
 
 .optin-section__back-image {
-    background-image: url(" /Programming/image/optin-section/1-optin-block.png");
+    background-image: var(--optin-vector1);
     background-size: 90.8125rem 31.1875rem;
     background-position: left bottom 2.69rem;
     background-repeat: no-repeat;
