@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-
     /*color*/
     --darkest-violet: #211E2E;
     --darker-violet: #302C42FF;
@@ -20,7 +19,6 @@
     --arrow_small: url("/Programming/image/arrows/arrow-small-right.png");
     --arrow_big: url("/Programming/image/arrows/arrow-big-right.png");
     --process-arrow: url("/Programming/image/arrows/arrow-small-process-block.png");
-
 
     --hero-face: url("/Programming/image/hero-section/1-base-image.png");
     --hero-vector_right: url("/Programming/image/hero-section/1-vector-right.png");
@@ -47,6 +45,7 @@
     --tech-item4: url("/Programming/image/tech-section/line/4-tech-block-line-image.png");
 
     --process-vector: url(" /Programming/image/process-section/4-vector.png");
+    --process-circle: url(" /Programming/image/process-section/circle.png");
 
     --optin-vector1: url(" /Programming/image/optin-section/1-optin-block.png");
     --optin-vector_hr: url(" /Programming/image/optin-section/vector-16.png");
@@ -59,8 +58,6 @@
     --youtube: url(" /Programming/image/footer/social/youtube.png");
     --instagram: url(" /Programming/image/footer/social/instagram.png");
     --pinterest: url(" /Programming/image/footer/social/pinterest.png");
-
-
 }
 
 body {
@@ -107,7 +104,6 @@ li {
 .main {
     display: flex;
     flex-direction: column;
-    /*gap: 5.875rem;*/
     gap: .8rem;
 }
 
@@ -202,14 +198,14 @@ li {
 }
 
 .header__nav-item_active {
-    
     padding-top: 1rem;
     border-top: .1rem solid rgba(255, 255, 255, 1);
 }
 
-.header__nav-item::after {
+.header__nav-item:not(.header__nav-item_active)::after {
     position: absolute;
-    bottom: 4.5rem;
+    margin-left: .25rem;
+    bottom: 4.6rem;
     border-radius: 10rem;
     background-color: var(--lightest-violet);
     content: "";
@@ -222,6 +218,7 @@ li {
 .header__nav-item:hover:after {
     transform: scale(1);
 }
+
 
 .header__logo-img {
     background-image: var(--logo-icon), var(--logo-text);
@@ -247,7 +244,6 @@ li {
 
 .header__contact-button {
     border: .125rem solid var(--white);
-    background-color: rgba(255, 250, 240, 0);
     color: var(--white);
     margin-left: 8.75rem;
     width: 9.625rem;
@@ -299,7 +295,7 @@ li {
 
 .address-vector {
     background: var(--address-vector);
-    width: 0.0625rem;
+    width: .0625rem;
     height: 7.28125rem;
 }
 
@@ -499,16 +495,12 @@ li {
 }
 
 .section__line {
-    /*background: var(--arrow_big) left 26rem bottom no-repeat;*/
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
-    /*gap: 0 17.95rem;*/
 }
 
 .arrow_big {
     background: var(--arrow_big) no-repeat;
-    /*left 26rem bottom no-repeat*/
     width: 79.25rem;
     height: 6.25rem;
     margin-top: 3.25rem;
@@ -540,42 +532,18 @@ li {
 }
 
 .circle {
-    position: relative;
-    border: solid 1.19rem rgba(13, 13, 13, .32);
-    width: 9.9375rem;
-    height: 9.9375rem;
-    border-radius: 10rem;
-    overflow: hidden;
-}
+    background: var(--process-circle) no-repeat;
+    background-size: 12.375rem;
+    width: 12.375rem;
+    height: 12.375rem;
 
-.circle::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(156deg, var(--lightest-violet) 0%, var(--lighter-violet) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--dark-violet);
+
     font-size: 4rem;
     font-weight: 700;
-}
-
-.circle1::before {
-    content: '01';
-}
-
-.circle2::before {
-    content: '02';
-}
-
-.circle3::before {
-    content: '03';
-}
-
-.circle4::before {
-    content: '04';
+    color: var(--dark-violet);
 }
 
 .process-section__line {
@@ -589,10 +557,11 @@ li {
     padding: 0 1.81rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .process-arrow {
+    padding-right: .75rem;
     width: 4.1875rem;
     height: 4.1875rem;
 }
@@ -684,9 +653,9 @@ li {
 
 .footer-line__vector-line {
     background: var(--footer-vector);
-    background-size: 0.5rem 12.25rem;
+    background-size: .5rem 12.25rem;
     height: 12.25rem;
-    width: 0.5rem;
+    width: .5rem;
 }
 
 .soc-item {
