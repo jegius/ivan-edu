@@ -8,7 +8,7 @@
 <body class='main__background main-font'>
 <main class='main'>
 	<header
-		class='header _height-padding header__logo-img'>
+		class='header header__logo-img'>
 		<nav>
 			<ul class='header__nav'>
 				<li class='header__nav-item header__nav-item_active'><a href='#'>ABOUT</a>
@@ -28,39 +28,40 @@
 	<section
 		class='section hero-section hero-section__back-image'>
 		<div class='section-main-content'>
-		<div class='hero-section__cart'>
+		<div class='section__cart hero-section__cart'>
 			<h1 class='section__title_biggest'><span
-				class='hero-section__title-span_1'>Dive</span>
+				class='hero-section__title-span-grad_92deg'>Dive</span>
 				Into The Depths</h1>
 			<h1 class='section__title_biggest'>Of <span
-				class='hero-section__title-span_2'>Virtual Reality</span>
+				class='hero-section__title-span-grad_269deg'>Virtual Reality</span>
 			</h1>
-			<p class='section__main-text _height-padding hero-section__p'>Lorem
+			<p class='section__main-text hero-section__p'>Lorem
 				ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 				incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris
 				eros in vitae .</p>
-			<div>
-			<input class='button button_light' type='button'
+			<div class='line-wrapper'>
+			<input class='button button_light button-margin_top' type='button'
 					 value='BUILD YOUR WORLD'>
+			<div class='hero-arrow'></div>
 			</div>
 		</div>
 			<div class='hero-section__image_face'></div>
 		</div>
 		<address class='hero-section__address'>
-			<div class='address-item_1'></div>
+			<div class='address-item_location'></div>
 			<ul>
 				<li class='item__title_small'>Pay Us a Visit</li>
 				<li class='hero-section__address-text'>Union St, Seattle, WA
 					98101, United States</li>
 			</ul>
 			<div class='address-vector'></div>
-			<div class='address-item_2'></div>
+			<div class='address-item_phone-call'></div>
 			<ul>
 				<li class='item__title_small'>Give Us a Call</li>
 				<li class='hero-section__address-text'>(110) 1111-1010</li>
 			</ul>
 			<div class='address-vector'></div>
-			<div class='address-item_3'></div>
+			<div class='address-item_mail'></div>
 			<ul>
 				<li class='item__title_small'>Send Us a Message</li>
 				<li class='hero-section__address-text'>
@@ -71,11 +72,13 @@
 	</section>
 	<section class='section about-section__back-image'>
 		<div class='section__line'>
-			<div>
-				<h1 class='section__title_regular'>INTRODUCTION</h1>
-				<h2 class='section__title_slim'>TO HYDRA VR</h2>
-			</div>
-			<div class='arrow_big'></div>
+				<div>
+					<h1 class='section__title_regular'>INTRODUCTION</h1>
+					<div class='section-main-content line-wrapper'>
+					<h2 class='section__title_slim'>TO HYDRA VR</h2>
+					<div class='arrow_big'></div>
+					</div>
+				</div>
 			<p class='section__main-text'>Vitae sapien
 				pellentesque habitant morbi tristique senectus et netus et. Feugiat
 				nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris
@@ -85,10 +88,12 @@
 		</div>
  	<div class='section-main-content'>
 		<div class='about-section__image_face'></div>
-		<div class='about-section__cart'>
+		<div class='section__cart about-section__cart'>
 				<h1 class='section__title_regular'>ABOUT</h1>
 				<h2 class='section__title_slim'>HYDRA VR</h2>
-				<p>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
+				<p class='section__main-text'>Eget mi proin sed libero enim sed faucibus turpis.
+					Nisl
+					rhoncus
 					mattis rhoncus urna neque viverra justo. Vivamus at augue eget
 					arcu dictum. Ultrices gravida dictum fusce ut placerat orci.
 					Aenean et tortor at risus viverra adipiscing at in. Mattis
@@ -100,19 +105,21 @@
 					nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n
 					tempor.</p>
 				<button
-					class='about-section__cart-let-button button button_light'>
+					class='button button_light button-margin_top'>
 					LET’S GET IN TOUCH
 				</button>
 		</div>
 	</div>
 	</section>
-	<section class='service-section__back-image'>
+	<section class='section service-section__back-image'>
 		<div class='section__line'>
 			<div>
 				<h1 class='section__title_regular'>WHY BUILD</h1>
-				<h2 class='section__title_slim'>WITH HYDRA?</h2>
+				<div class='section-main-content line-wrapper'>
+					<h2 class='section__title_slim'>WITH HYDRA?</h2>
+					<div class='arrow_big'></div>
+				</div>
 			</div>
-			<div class='arrow_big'></div>
 			<p class='section__main-text'>Vitae sapien
 				pellentesque habitant morbi tristique senectus et netus et. Feugiat
 				nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris
@@ -163,27 +170,30 @@
 						 value='TRY IT NOW'>
 			</div>
 		</div>
-		<div class='tech-section tech-section__back-image'>
+		<div class='section tech-section tech-section__back-image'>
 			<div class='tech-section__title'>
 				<h1 class='section__title_regular'>TECHNOLOGIES & HARDWARE</h1>
 				<h2 class='section__title_slim'>USED BY HYDRA VR.</h2>
+				<input class='tech-section__button'>
 			</div>
-			<input class='tech-section__button'>
-		</div>
+
 		<div class='section__line tech-line'>
 			<div class='tech-image_unreal-engine'></div>
 			<div class='tech-image_unity'></div>
 			<div class='tech-image_oculus'></div>
 			<div class='tech-image_vive'></div>
 		</div>
+		</div>
 	</section>
-	<section class='process-section__back-image'>
+	<section class='section process-section__back-image'>
 		<div class='section__line'>
 			<div>
-				<h1 class='section__title_regular'>WHY BUILD</h1>
-				<h2 class='section__title_slim'>WITH HYDRA VR?</h2>
+				<h1 class='section__title_regular'>HOW WE BUILD</h1>
+				<div class='section-main-content line-wrapper'>
+					<h2 class='section__title_slim'>WITH HYDRA VR?</h2>
+					<div class='arrow_big'></div>
+				</div>
 			</div>
-			<div class='arrow_big'></div>
 			<p class='section__main-text'>Vitae sapien
 				pellentesque habitant morbi tristique senectus et netus et. Feugiat
 				nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris
@@ -191,7 +201,7 @@
 				sit amet tellus. Ornare lectus sit amet est placerat in. Lectus
 				magna fringilla urna porttitor rhoncus vitae.</p>
 		</div>
-		<div class='process-section'>
+		<div>
 			<div class='process-section__circle-line'>
 				<div class='circle'>01</div>
 				<div class='circle'>02</div>
@@ -200,13 +210,13 @@
 			</div>
 			<div class='process-section__text-line'>
 				<div class='process-arrow'></div>
-				<h1>3D Conception & Design</h1>
+				<h1 class='process-text'>3D Conception & Design</h1>
 				<div class='process-arrow'></div>
-				<h1>Interaction Design</h1>
+				<h1 class='process-text'>Interaction Design</h1>
 				<div class='process-arrow'></div>
-				<h1>VR World User Testing</h1>
+				<h1 class='process-text'>VR World User Testing</h1>
 				<div class='process-arrow'></div>
-				<h1>Hydra VR Deploy</h1>
+				<h1 class='process-text'>Hydra VR Deploy</h1>
 			</div>
 		</div>
 	</section>
@@ -236,27 +246,29 @@
 					 type='text'>
 			<textarea class='optin-section__pulls-border _textarea'
 						 placeholder='Tell Us Something...'></textarea>
-			<input class='button button_light' type='button' value='SEND TO HYDRA'>
+			<input class='button button_light button-margin_top' type='button'
+					 value='SEND TO HYDRA'>
 		</div>
-		<footer>
+		<footer class='section footer__back-image'>
 			<div class='footer__line'>
 				<div class='footer-line__logo-img'></div>
+				<div class='footer-line__vector-line'></div>
 				<ul class='footer__nav-ul'>
-					<li><a href=''>ABOUT</a></li>
-					<li><a href=''>SERVICES</a></li>
-					<li><a href=''>TECHNOLOGIES</a></li>
-					<li><a href=''>HOW TO</a></li>
-					<li><a href=''>JOIN HYDRA</a></li>
+					<li><a class='footer__a' href=''>ABOUT</a></li>
+					<li><a class='footer__a' href=''>SERVICES</a></li>
+					<li><a class='footer__a' href=''>TECHNOLOGIES</a></li>
+					<li><a class='footer__a' href=''>HOW TO</a></li>
+					<li><a class='footer__a' href=''>JOIN HYDRA</a></li>
 				</ul>
 				<div class='footer-line__vector-line'></div>
 				<ul class='footer__nav-ul'>
-					<li><a href=''>F.A.Q</a></li>
-					<li><a href=''>SITEMAP</a></li>
-					<li><a href=''>CONDITIONS</a></li>
-					<li><a href=''>LICENSES</a></li>
+					<li><a class='footer__a' href=''>F.A.Q</a></li>
+					<li><a class='footer__a' href=''>SITEMAP</a></li>
+					<li><a class='footer__a' href=''>CONDITIONS</a></li>
+					<li><a class='footer__a' href=''>LICENSES</a></li>
 				</ul>
 				<div class='footer-line__vector-line'></div>
-				<div>
+				<div class='footer-SOCIALIZE'>
 					<h3>SOCIALIZE WITH HYDRA</h3>
 					<div class='soc-wrapper'>
 						<a href=''>
