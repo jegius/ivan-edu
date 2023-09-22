@@ -115,6 +115,7 @@ li {
 }
 
 .main {
+    padding: 0 5.25rem;
     display: flex;
     flex-direction: column;
     gap: .8rem;
@@ -130,17 +131,29 @@ li {
 }
 
 .hero-section__back-image {
-    background: var(--hero-face) right 5.25rem top 15.69rem no-repeat,
-    var(--hero-vector_right) right top no-repeat,
-    var(--hero-vector_left) left bottom 5rem no-repeat,
+    background: var(--hero-vector_right) right top no-repeat,
+    var(--hero-vector_left) left top 18.7rem no-repeat,
     var(--arrow_small) left 18.1875rem top 36.1875rem no-repeat;
-    background-size: 32.75rem 28.44rem, 50rem, 19rem, 6.25rem 6.25rem;
+    background-size: 50rem, 19rem, 6.25rem 6.25rem;
+}
+
+.hero-section__image_face {
+    background: var(--hero-face) no-repeat;
+    background-size: 32.75rem 28.44rem;
+    height: 28.44rem;
+    width: 32.75rem;
 }
 
 .about-section__back-image {
-    background: var(--about-face) left 5.25rem top 15.69rem no-repeat,
-    var(--about-vector) left top 15.69rem no-repeat;
-    background-size: 32rem 34.8rem, 90rem;
+    background: var(--about-vector) left top 15.69rem no-repeat;
+    background-size: 90rem;
+}
+
+.about-section__image_face {
+    background: var(--about-face) no-repeat;
+    background-size: 32rem 34.8rem;
+    width: 42rem;
+    height: 50.8rem;
 }
 
 .hero-section__title-span_1 {
@@ -176,10 +189,6 @@ li {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-._with-padding {
-    padding: 0 5.25rem;
 }
 
 ._height-padding {
@@ -268,16 +277,30 @@ li {
     margin-left: 2.38rem;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+}
+
 .hero-section {
     padding-top: 18rem;
 }
 
+.section-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .hero-section__cart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding-top: 2rem;
 }
 
 .hero-section__address {
-    margin: 8rem 5.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -357,11 +380,6 @@ li {
 
 .about-section__cart-let-button {
     margin-top: 1rem;
-}
-
-._on-right-side {
-    padding-left: 45.31rem;
-    padding-right: 5.25rem;
 }
 
 .service-section__back-image {
@@ -466,10 +484,8 @@ li {
     box-shadow: 0 0 .95rem var(--button-hover);
 }
 
-.tech-section__line {
-    display: flex;
+.tech-line {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     height: 17rem;
 }
