@@ -210,7 +210,7 @@ li {
 .arrow_big {
     background: var(--arrow_big) bottom 2.7rem left no-repeat;
     background-size: 14rem 6.25rem;
-    width: 23.25rem;
+    width: 20.25rem;
     height: 7.25rem;
 }
 
@@ -408,7 +408,7 @@ li {
 .about-section__image_face {
     background: var(--about-face) no-repeat;
     background-size: 32rem 34.8rem;
-    width: 206rem;
+    width: 311.75rem;
     height: 37.8rem;
 }
 
