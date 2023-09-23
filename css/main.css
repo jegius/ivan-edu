@@ -123,24 +123,15 @@ li {
 /*Mixы*/
 .section__main-text {
     color: var(--white);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.75rem;
 }
 
-.section__title_biggest {
-    margin-top: .25rem;
-    margin-bottom: 0;
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
 .item__title_small {
     color: var(--white);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -148,13 +139,13 @@ li {
 
 .section__title_slim {
     white-space: nowrap;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 300;
     line-height: normal;
 }
 
 .section__title_regular {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -183,7 +174,7 @@ li {
     font-weight: 700;
 }
 
-.button-margin_top {
+._margin-top_1rem {
     margin-top: 1rem;
 }
 
@@ -205,7 +196,7 @@ li {
     gap: 1rem;
 }
 
-.line-wrapper {
+.arrow-line-wrapper {
     display: flex;
     gap: 1rem;
 }
@@ -242,23 +233,29 @@ li {
     background-color: var(--darker-violet);
 }
 
+.vector-image-for-hero-section_right {
+    background: var(--hero-vector_right) right top no-repeat;
+    background-size: 50rem;
+}
+
 /*header*/
 .header {
     padding-top: 3.12rem;
     width: 100%;
     backdrop-filter: blur(.063rem);
     z-index: 1;
-    position: fixed;
+    position: sticky;
+    top: .5rem;
     white-space: nowrap;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .header__nav {
     display: flex;
     color: var(--white);
-    font-size: 12px;
+    font-size: .75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -313,10 +310,16 @@ li {
 }
 
 /*Hero-section*/
+.section__title_biggest {
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .hero-section__back-image {
-    background: var(--hero-vector_right) right top no-repeat,
-    var(--hero-vector_left) left top 18.7rem no-repeat;
-    background-size: 50rem, 19rem;
+    background: var(--hero-vector_left) left top .9rem no-repeat;
+    background-size: 19rem;
 }
 
 .hero-arrow {
@@ -349,10 +352,6 @@ li {
 
 .hero-section__p {
     max-width: 30rem;
-}
-
-.hero-section {
-    padding-top: 18rem;
 }
 
 .hero-section__cart {
@@ -397,7 +396,7 @@ li {
 .hero-section__address-text {
     margin: .563rem 0 0 0;
     color: var(--white);
-    font-size: 14px;
+    font-size: .875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -474,7 +473,7 @@ li {
 .service-section__main-text_smallest {
     color: var(--white);
     font-family: Montserrat, sans-serif;
-    font-size: 12px;
+    font-size: .75rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -576,7 +575,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
     color: var(--dark-violet);
 }
@@ -590,7 +589,6 @@ li {
     padding: 0 1.81rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 /*Optin-section*/
@@ -626,7 +624,7 @@ li {
 .optin-section__pulls-border::placeholder {
     color: var(--white);
     font-family: Montserrat, sans-serif;
-    font-size: 14px;
+    font-size: .875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -658,7 +656,7 @@ li {
 .footer__line {
     color: var(--white);
     font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -767,12 +765,12 @@ li {
 
 .credits {
     display: flex;
-    justify-content: center;
-    align-self: flex-start;
+    align-self: center;
+    padding-bottom: 3rem;
 }
 
 .credits-text {
-    font-size: 14px;
+    font-size: .875rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
