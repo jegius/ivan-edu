@@ -120,39 +120,94 @@ li {
     list-style-type: none;
 }
 
+
 /*Mixы*/
-.section__main-text {
+._section-main-text {
     color: var(--white);
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.75rem;
 }
 
-.item__title_small {
+._item-title-small {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.section__title_slim {
+._section-title-slim {
     white-space: nowrap;
-    font-size: 2.25rem;
+    font-size: 36px;
     font-weight: 300;
     line-height: normal;
 }
 
-.section__title_regular {
-    font-size: 2.25rem;
+._section-title-regular {
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     white-space: nowrap;
 }
 
+._button-light {
+    color: var(--darker-violet);
+    background: var(--button-gradient) no-repeat;
+}
+
+._margin-top-1rem {
+    margin-top: 1rem;
+}
+
+._padding-top-2rem {
+    padding-top: 2rem;
+}
+
+/*end of mixы*/
+
+/*Элементы*/
+
+.section {
+    padding: 0 5.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+}
+
+.section-main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__line {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.line-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.section__cart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.arrow_big {
+    background: var(--arrow_big) bottom 2.7rem left no-repeat;
+    background-size: 14rem 6.25rem;
+    width: 20.25rem;
+    height: 7.25rem;
+}
+
 .button {
+    font-weight: 700;
     border-radius: 2.5rem;
     cursor: pointer;
     padding: 1rem 2.1rem;
@@ -167,54 +222,6 @@ li {
     transform: scale(.97);
     box-shadow: 0 0 .95rem var(--button-hover);
 }
-
-.button_light {
-    color: var(--darker-violet);
-    background: var(--button-gradient) no-repeat;
-    font-weight: 700;
-}
-
-._margin-top_1rem {
-    margin-top: 1rem;
-}
-
-.section {
-    padding: 0 5.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5.5rem;
-}
-
-.section-main-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section__cart {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.line-wrapper {
-    display: flex;
-    gap: 1rem;
-}
-
-.section__line {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-}
-
-.arrow_big {
-    background: var(--arrow_big) bottom 2.7rem left no-repeat;
-    background-size: 14rem 6.25rem;
-    width: 20.25rem;
-    height: 7.25rem;
-}
-
-/*end of mixы*/
 
 
 /*main*/
@@ -233,7 +240,7 @@ li {
     background-color: var(--darker-violet);
 }
 
-.vector-image-for-hero-section_right {
+.vector-image-for-hero-section-right {
     background: var(--hero-vector_right) right top no-repeat;
     background-size: 50rem;
 }
@@ -250,12 +257,13 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 13rem;
 }
 
 .header__nav {
     display: flex;
     color: var(--white);
-    font-size: .75rem;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -298,16 +306,13 @@ li {
     filter: drop-shadow(0 .625rem .375rem var(--shadow));
 }
 
-.header__contact-button {
+._contact-button {
     border: .125rem solid var(--white);
     color: var(--white);
-    width: 9.625rem;
-    height: 3rem;
-    font-weight: 700;
 }
 
 /*Hero-section*/
-.section__title_biggest {
+._section-title-biggest {
     font-size: 2.875rem;
     font-style: normal;
     font-weight: 700;
@@ -326,7 +331,7 @@ li {
     height: 2.8rem;
 }
 
-.hero-section__image_face {
+.hero-section__image-face {
     background: var(--hero-face) no-repeat;
     background-size: 32.75rem 28.44rem;
     width: 32.75rem;
@@ -349,10 +354,6 @@ li {
 
 .hero-section__p {
     max-width: 30rem;
-}
-
-.hero-section__cart {
-    padding-top: 2rem;
 }
 
 .hero-section__address {
@@ -393,7 +394,7 @@ li {
 .hero-section__address-text {
     margin: .563rem 0 0 0;
     color: var(--white);
-    font-size: .875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -410,10 +411,6 @@ li {
     background-size: 32rem 34.8rem;
     width: 311.75rem;
     height: 37.8rem;
-}
-
-.about-section__cart {
-    padding-top: 2rem;
 }
 
 /*Service-section*/
@@ -470,7 +467,7 @@ li {
 .service-section__main-text_smallest {
     color: var(--white);
     font-family: Montserrat, sans-serif;
-    font-size: .75rem;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -621,23 +618,23 @@ li {
 .optin-section__pulls-border::placeholder {
     color: var(--white);
     font-family: Montserrat, sans-serif;
-    font-size: .875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-._small-pull {
+.pulls-border_small-pull {
     width: 30.13rem;
     height: 4.5rem;
 }
 
-._big-pull {
+.pulls-border_big-pull {
     width: 63.125rem;
     height: 4.5rem;
 }
 
-._textarea {
+.pulls-border_textarea {
     width: 66.125rem;
     height: 13.125rem;
     padding-left: 2.62rem;
@@ -653,7 +650,7 @@ li {
 .footer__line {
     color: var(--white);
     font-family: Montserrat, sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -687,8 +684,13 @@ li {
     width: 2rem;
     height: 2rem;
     box-shadow: 0 0 0 0;
-    transform: scale(1);
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+    border-radius: 10rem;
+}
+
+.soc-item:hover {
+    transform: scale(.97);
+    box-shadow: 0 0 .95rem var(--button-hover);
     border-radius: 10rem;
 }
 
@@ -720,12 +722,6 @@ li {
 .soc-item__pinterest {
     background: var(--pinterest) no-repeat;
     background-size: 2rem;
-}
-
-.soc-item:hover {
-    transform: scale(.97);
-    box-shadow: 0 0 .95rem var(--button-hover);
-    border-radius: 10rem;
 }
 
 .soc-wrapper {
@@ -767,7 +763,7 @@ li {
 }
 
 .credits-text {
-    font-size: .875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
