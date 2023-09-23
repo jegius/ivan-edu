@@ -196,7 +196,7 @@ li {
     gap: 1rem;
 }
 
-.arrow-line-wrapper {
+.line-wrapper {
     display: flex;
     gap: 1rem;
 }
@@ -259,7 +259,6 @@ li {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 30.125rem;
 }
 
 .header__nav-item {
@@ -291,9 +290,11 @@ li {
     transform: scale(1);
 }
 
-.header__logo-img {
-    background: var(--logo-icon) left 5.25rem top 3.125rem no-repeat, var(--logo-text) left 12.5625rem top 4.9375rem no-repeat;
+.header__logo {
+    background: var(--logo-icon) center left no-repeat, var(--logo-text) center right no-repeat;
     background-size: 6.375rem 6.4375rem, 4.75rem 2.875rem;
+    width: 11.5rem;
+    height: 6.375rem;
     filter: drop-shadow(0 .625rem .375rem var(--shadow));
 }
 
@@ -303,10 +304,6 @@ li {
     width: 9.625rem;
     height: 3rem;
     font-weight: 700;
-}
-
-.header__join-button {
-    margin-left: 2.38rem;
 }
 
 /*Hero-section*/
