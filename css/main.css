@@ -122,41 +122,6 @@ li {
 
 
 /*Mixы*/
-._section-main-text {
-    color: var(--white);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75rem;
-}
-
-._item-title-small {
-    color: var(--white);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-._section-title-slim {
-    white-space: nowrap;
-    font-size: 36px;
-    font-weight: 300;
-    line-height: normal;
-}
-
-._section-title-regular {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    white-space: nowrap;
-}
-
-._button-light {
-    color: var(--darker-violet);
-    background: var(--button-gradient) no-repeat;
-}
 
 ._margin-top-1rem {
     margin-top: 1rem;
@@ -166,9 +131,37 @@ li {
     padding-top: 2rem;
 }
 
-/*end of mixы*/
+.button_light {
+    color: var(--darker-violet);
+    background: var(--button-gradient) no-repeat;
+}
+
+.section__title_slim {
+    font-weight: 300;
+}
 
 /*Элементы*/
+
+.section__p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.item-title {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.section__title {
+    font-size: 36px;
+    line-height: normal;
+    white-space: nowrap;
+}
 
 .section {
     padding: 0 5.25rem;
@@ -177,7 +170,7 @@ li {
     gap: 5.5rem;
 }
 
-.section-main-content {
+.section__main-content {
     display: flex;
     justify-content: space-between;
 }
@@ -199,7 +192,7 @@ li {
     gap: 1rem;
 }
 
-.arrow_big {
+.arrow-big {
     background: var(--arrow_big) bottom 2.7rem left no-repeat;
     background-size: 14rem 6.25rem;
     width: 20.25rem;
@@ -264,7 +257,6 @@ li {
     display: flex;
     color: var(--white);
     font-size: 12px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
@@ -306,17 +298,14 @@ li {
     filter: drop-shadow(0 .625rem .375rem var(--shadow));
 }
 
-._contact-button {
+.button_contact {
     border: .125rem solid var(--white);
     color: var(--white);
 }
 
 /*Hero-section*/
-._section-title-biggest {
-    font-size: 2.875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.section__title_hero {
+    font-size: 46px;
 }
 
 .hero-section__back-image {
@@ -338,21 +327,21 @@ li {
     height: 28.44rem;
 }
 
-.hero-section__title-span-grad_92deg {
+.hero-section__span {
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section__span_grad-92deg {
     background: var(--hero-span-gradient_92deg);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
 }
 
-.hero-section__title-span-grad_269deg {
+.hero-section__span_grad-269deg {
     background: var(--hero-span-gradient_269deg);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
 }
 
-.hero-section__p {
+.section__p_hero {
     max-width: 30rem;
 }
 
@@ -395,7 +384,6 @@ li {
     margin: .563rem 0 0 0;
     color: var(--white);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
@@ -468,7 +456,6 @@ li {
     color: var(--white);
     font-family: Montserrat, sans-serif;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
@@ -561,7 +548,7 @@ li {
     background-size: 119.5625rem 10.1875rem;
 }
 
-.circle {
+.process-section__circle {
     background: var(--process-circle) no-repeat;
     background-size: 12.375rem;
     width: 12.375rem;
@@ -569,7 +556,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 700;
     color: var(--dark-violet);
 }
@@ -600,7 +587,7 @@ li {
     gap: 1.22rem;
 }
 
-.optin-vector_hr {
+.optin-section__vector-hr {
     background: var(--optin-vector_hr) no-repeat;
     background-size: 25.875rem;
     height: 1rem;
@@ -619,7 +606,7 @@ li {
     color: var(--white);
     font-family: Montserrat, sans-serif;
     font-size: 14px;
-    font-style: normal;
+
     font-weight: 400;
     line-height: normal;
 }
@@ -651,7 +638,7 @@ li {
     color: var(--white);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
-    font-style: normal;
+
     font-weight: 700;
     line-height: normal;
     margin-top: 8.12rem;
@@ -764,7 +751,6 @@ li {
 
 .credits-text {
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: .11375rem;
