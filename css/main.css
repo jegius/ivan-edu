@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-    /*color*/
     --darkest-violet: #211E2E;
     --darker-violet: #302C42FF;
     --dark-violet: #343045;
@@ -25,55 +24,53 @@
     --service-gradient: radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
     --optin-gradient: radial-gradient(50% 50% at 50% 50%, var(--violet) 0%, var(--darkest-violet) 100%);
 
-    /*images*/
-    --logo-icon: url(" /Programming/image/logo.png");
-    --logo-text: url(" /Programming/image/logo-text.png");
-    --arrow_small: url("/Programming/image/arrows/arrow-small-right.png");
-    --arrow_big: url("/Programming/image/arrows/arrow-big-right.png");
-    --process-arrow: url("/Programming/image/arrows/arrow-small-process-block.png");
+    --logo-icon: url("../image/logo.png");
+    --logo-text: url("../image/logo-text.png");
+    --arrow_small: url("../image/arrows/arrow-small-right.png");
+    --arrow_big: url("../image/arrows/arrow-big-right.png");
+    --process-arrow: url("../image/arrows/arrow-small-process-block.png");
 
-    --hero-face: url("/Programming/image/hero-section/1-base-image.png");
-    --hero-vector_right: url("/Programming/image/hero-section/1-vector-right.png");
-    --hero-vector_left: url("/Programming/image/hero-section/1-vector-left.png");
-    --address-location: url("/Programming/image/hero-section/address/Location-Icon.png");
-    --address-phone-call: url("/Programming/image/hero-section/address/phone-call.png");
-    --address-mail: url("/Programming/image/hero-section/address/mail.png");
-    --address-vector: url("/Programming/image/hero-section/address/Vector-5.png");
+    --hero-face: url("../image/hero-section/1-base-image.png");
+    --hero-vector_right: url("../image/hero-section/1-vector-right.png");
+    --hero-vector_left: url("../image/hero-section/1-vector-left.png");
+    --address-location: url("../image/hero-section/address/Location-Icon.png");
+    --address-phone-call: url("../image/hero-section/address/phone-call.png");
+    --address-mail: url("../image/hero-section/address/mail.png");
+    --address-vector: url("../image/hero-section/address/Vector-5.png");
 
-    --about-face: url("/Programming/image/about-section/2-base-image.png");
-    --about-vector: url(" /Programming/image/about-section/2-vector.png");
+    --about-face: url("../image/about-section/2-base-image.png");
+    --about-vector: url("../image/about-section/2-vector.png");
 
-    --service-SIMULATION: url(" /Programming/image/service-section/1-service-image.png");
-    --service-EDUCATION: url(" /Programming/image/service-section/2-service-image.png");
-    --service-SELF-CARE: url(" /Programming/image/service-section/3-service-image.png");
-    --service-OUTDOOR: url(" /Programming/image/service-section/4-service-image.png");
-    --service-vector: url(" /Programming/image/service-section/3-vector.png");
+    --service-SIMULATION: url("../image/service-section/1-service-image.png");
+    --service-EDUCATION: url("../image/service-section/2-service-image.png");
+    --service-SELF-CARE: url("../image/service-section/3-service-image.png");
+    --service-OUTDOOR: url("../image/service-section/4-service-image.png");
+    --service-vector: url("../image/service-section/3-vector.png");
 
-    --tech-base: url(" /Programming/image/tech-section/pexels-rodnae-productions-8097332.png");
-    --tech-button: url(" /Programming/image/tech-section/tech-block-button.png");
-    --tech-unreal-engine: url("/Programming/image/tech-section/line/1-tech-block-line-image.png");
-    --tech-unity: url("/Programming/image/tech-section/line/2-tech-block-line-image.png");
-    --tech-oculus: url("/Programming/image/tech-section/line/3-tech-block-line-image.png");
-    --tech-vive: url("/Programming/image/tech-section/line/4-tech-block-line-image.png");
+    --tech-base: url("../image/tech-section/pexels-rodnae-productions-8097332.png");
+    --tech-button: url("../image/tech-section/tech-block-button.png");
+    --tech-unreal-engine: url("../image/tech-section/line/1-tech-block-line-image.png");
+    --tech-unity: url("../image/tech-section/line/2-tech-block-line-image.png");
+    --tech-oculus: url("../image/tech-section/line/3-tech-block-line-image.png");
+    --tech-vive: url("../image/tech-section/line/4-tech-block-line-image.png");
 
-    --process-vector: url(" /Programming/image/process-section/4-vector.png");
-    --process-circle: url(" /Programming/image/process-section/circle.png");
+    --process-vector: url("../image/process-section/4-vector.png");
+    --process-circle: url("../image/process-section/circle.png");
 
-    --optin-vector1: url(" /Programming/image/optin-section/1-optin-block.png");
-    --optin-vector_hr: url(" /Programming/image/optin-section/vector-16.png");
+    --optin-vector1: url("../image/optin-section/1-optin-block.png");
+    --optin-vector_hr: url("../image/optin-section/vector-16.png");
 
-    --footer-back: url(" /Programming/image/footer/footer-vector-back.png");
-    --footer-vector: url(" /Programming/image/footer/footer-vector-line.png");
-    --footer-hr: url(" /Programming/image/footer/footer-vector-hr.png");
-    --facebook: url(" /Programming/image/footer/social/facebook.png");
-    --twitter: url(" /Programming/image/footer/social/twitter.png");
-    --linkedin: url(" /Programming/image/footer/social/linkedin.png");
-    --youtube: url(" /Programming/image/footer/social/youtube.png");
-    --instagram: url(" /Programming/image/footer/social/instagram.png");
-    --pinterest: url(" /Programming/image/footer/social/pinterest.png");
+    --footer-back: url("../image/footer/footer-vector-back.png");
+    --footer-vector: url("../image/footer/footer-vector-line.png");
+    --footer-hr: url("../image/footer/footer-vector-hr.png");
+    --facebook: url("../image/footer/social/facebook.png");
+    --twitter: url("../image/footer/social/twitter.png");
+    --linkedin: url("../image/footer/social/linkedin.png");
+    --youtube: url("../image/footer/social/youtube.png");
+    --instagram: url("../image/footer/social/instagram.png");
+    --pinterest: url("../image/footer/social/pinterest.png");
 }
 
-/*disables*/
 body {
     margin: 0;
     padding: 0;
@@ -121,8 +118,6 @@ li {
 }
 
 
-/*Mixы*/
-
 ._margin-top-1rem {
     margin-top: 1rem;
 }
@@ -131,7 +126,6 @@ li {
     padding-top: 2rem;
 }
 
-/*End of the mixы*/
 
 .button_light {
     color: var(--darker-violet);
@@ -218,11 +212,11 @@ li {
 }
 
 
-/*main*/
 .main {
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
+    max-width: 120rem;
 }
 
 .main-font {
@@ -239,7 +233,6 @@ li {
     background-size: 50rem;
 }
 
-/*header*/
 .header {
     padding-top: 3.12rem;
     max-width: 100%;
@@ -260,10 +253,10 @@ li {
     font-size: 12px;
     font-weight: 700;
     line-height: normal;
+    gap: 2.75rem;
 }
 
 .header__nav-item {
-    padding: 2.75rem 1.25rem;
     color: var(--white);
     text-decoration: none;
     border-top: .1rem solid var(--nav-item-bordr);
@@ -283,8 +276,7 @@ li {
 }
 
 .header__nav-item_active {
-    padding-top: 1rem;
-    border-top: .1rem solid var(--nav-item-bordr_active);
+    border-bottom: .1rem solid var(--nav-item-bordr_active);
 }
 
 .header__nav-item:hover:after {
@@ -304,7 +296,6 @@ li {
     color: var(--white);
 }
 
-/*Hero-section*/
 .section__title_hero {
     font-size: 46px;
 }
@@ -390,7 +381,6 @@ li {
     font-style: normal;
 }
 
-/*About-section*/
 .about-section__back-image {
     background: var(--about-vector) left top 15.69rem no-repeat;
     background-size: 90rem;
@@ -404,7 +394,6 @@ li {
     min-height: 37.8rem;
 }
 
-/*Service-section*/
 .service-section__back-image {
     background: var(--service-vector) center bottom 29rem no-repeat;
     background-size: 120rem 50rem;
@@ -463,7 +452,6 @@ li {
     line-height: normal;
 }
 
-/*Tech-section*/
 .tech-section {
     display: flex;
     flex-direction: column;
@@ -534,7 +522,6 @@ li {
     background-size: 17.625rem;
 }
 
-/*Process-section*/
 .process-section__arrow {
     background: var(--process-arrow) no-repeat;
     background-size: 4.1875rem;
@@ -547,12 +534,12 @@ li {
 }
 
 .process-section__back-image {
-    background: var(--process-vector) center 14.18rem no-repeat;
+    background: var(--process-vector) center 17.18rem no-repeat;
     background-size: 119.5625rem 10.1875rem;
 }
 
 .process-section__circle {
-    background: var(--process-circle) no-repeat;
+    background: var(--process-circle) no-repeat center;
     background-size: 12.375rem;
     min-width: 12.375rem;
     min-height: 12.375rem;
@@ -566,16 +553,15 @@ li {
 
 .process-section__circle-line {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .process-section__text-line {
-    padding: 0 1.81rem;
     display: flex;
     justify-content: space-between;
 }
 
-/*Optin-section*/
 .optin-section {
     display: flex;
     flex-direction: column;
@@ -635,7 +621,6 @@ li {
     background-size: 90.8125rem 31.1875rem;
 }
 
-/*Footer*/
 .footer__line {
     color: var(--white);
     font-family: Montserrat, sans-serif;
