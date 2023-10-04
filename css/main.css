@@ -237,7 +237,6 @@ li {
     padding-top: 3.12rem;
     max-width: 100%;
     backdrop-filter: blur(.063rem);
-    z-index: 1;
     position: sticky;
     top: .5rem;
     white-space: nowrap;
@@ -702,6 +701,8 @@ li {
 .footer__soc-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
 }
 
 .footer__socialize {
