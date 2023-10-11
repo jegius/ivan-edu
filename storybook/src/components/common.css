@@ -1,0 +1,70 @@
+/*сюда переменные*/
+
+:root {
+    --darkest-violet: #211E2E;
+    --darker-violet: #302C42FF;
+    --dark-violet: #343045;
+    --violet: #403A5F;
+    --light-violet: #433D60;
+    --lighter-violet: #8176AF;
+    --lightest-violet: #C0B7E8;
+    --white: #fff;
+    --nav-item-bordr: rgba(255, 255, 255, 0);
+    --nav-item-bordr_active: rgba(255, 255, 255, 1);
+    --button-hover: rgba(245, 245, 245, .49);
+    --shadow: rgba(0, 0, 0, 0);
+    --address-shadow: rgba(192, 183, 232, .01);
+    --service-hr: rgba(192, 183, 232, .33);
+    --hero-span-gradient_92deg: linear-gradient(92deg, var(--lightest-violet) 0%, var(--lighter-violet) 100%);
+    --hero-span-gradient_269deg: linear-gradient(269deg, var(--lightest-violet) 0%, var(--lighter-violet) 100%);
+    --button-gradient: linear-gradient(90deg, var(--lighter-violet) 0%, var(--lightest-violet) 100%);
+    --address-gradient: radial-gradient(2900.76% 50.13% at 50.00% 53.89%, rgba(58, 52, 86, .95) 0%, var(--darkest-violet) 100%);
+    --service-gradient: radial-gradient(50% 50% at 50% 50%, var(--light-violet) 0%, var(--darkest-violet) 100%);
+    --optin-gradient: radial-gradient(50% 50% at 50% 50%, var(--violet) 0%, var(--darkest-violet) 100%);
+
+    --logo-icon: url("../image/logo.png");
+    --logo-text: url("../image/logo-text.png");
+    --arrow_small: url("../image/arrows/arrow-small-right.png");
+    --arrow_big: url("../image/arrows/arrow-big-right.png");
+    --process-arrow: url("../image/arrows/arrow-small-process-block.png");
+
+    --hero-face: url("../image/hero-section/1-base-image.png");
+    --hero-vector_right: url("../image/hero-section/1-vector-right.png");
+    --hero-vector_left: url("../image/hero-section/1-vector-left.png");
+    --address-location: url("../image/hero-section/address/Location-Icon.png");
+    --address-phone-call: url("../image/hero-section/address/phone-call.png");
+    --address-mail: url("../image/hero-section/address/mail.png");
+    --address-vector: url("../image/hero-section/address/Vector-5.png");
+
+    --about-face: url("../image/about-section/2-base-image.png");
+    --about-vector: url("../image/about-section/2-vector.png");
+
+    --service-SIMULATION: url("../image/service-section/1-service-image.png");
+    --service-EDUCATION: url("../image/service-section/2-service-image.png");
+    --service-SELF-CARE: url("../image/service-section/3-service-image.png");
+    --service-OUTDOOR: url("../image/service-section/4-service-image.png");
+    --service-vector: url("../image/service-section/3-vector.png");
+
+    --tech-base: url("../image/tech-section/pexels-rodnae-productions-8097332.png");
+    --tech-button: url("../image/tech-section/tech-block-button.png");
+    --tech-unreal-engine: url("../image/tech-section/line/1-tech-block-line-image.png");
+    --tech-unity: url("../image/tech-section/line/2-tech-block-line-image.png");
+    --tech-oculus: url("../image/tech-section/line/3-tech-block-line-image.png");
+    --tech-vive: url("../image/tech-section/line/4-tech-block-line-image.png");
+
+    --process-vector: url("../image/process-section/4-vector.png");
+    --process-circle: url("../image/process-section/circle.png");
+
+    --optin-vector1: url("../image/optin-section/1-optin-block.png");
+    --optin-vector_hr: url("../image/optin-section/vector-16.png");
+
+    --footer-back: url("../image/footer/footer-vector-back.png");
+    --footer-vector: url("../image/footer/footer-vector-line.png");
+    --footer-hr: url("../image/footer/footer-vector-hr.png");
+    --facebook: url("../image/footer/social/facebook.png");
+    --twitter: url("../image/footer/social/twitter.png");
+    --linkedin: url("../image/footer/social/linkedin.png");
+    --youtube: url("../image/footer/social/youtube.png");
+    --instagram: url("../image/footer/social/instagram.png");
+    --pinterest: url("../image/footer/social/pinterest.png");
+}
