@@ -1,7 +1,5 @@
 /** @type { import('@storybook/web-components').Preview } */
-import {
-	ButtonComponent,
-} from '../storybook/src/components/button/button-component';
+import {ButtonComponent} from '../src/components/button/button-component';
 
 const preview = {
 	parameters: {
