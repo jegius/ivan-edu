@@ -13,9 +13,8 @@ const preview = {
 	},
 };
 
-export default preview;
-
 
 [
 	ButtonComponent,
 ].map((component) => customElements.define(component.name, component));
+export default preview;

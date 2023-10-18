@@ -1,8 +1,6 @@
-// @import url('../common.css');
-
 export default `
     <style>
-        @import url('common.css');
+        @import url('../common.css');
 
 		  input {
 			  margin: 0;
