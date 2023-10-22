@@ -34,5 +34,16 @@ export default `
 			  transform: scale(.97);
 			  box-shadow: 0 0 .95rem var(--button-hover);
 		  }
+		  
+		  .button_contact {
+    border: .125rem solid var(--white);
+    color: var(--white);
+}
+
+.button_light {
+    color: var(--darker-violet);
+    background: var(--button-gradient) no-repeat;
+}
+
           </style>
 `;

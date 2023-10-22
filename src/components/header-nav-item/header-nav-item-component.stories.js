@@ -1,18 +1,18 @@
 import {html} from 'lit-html';
-import './button-component.js';
-import {ButtonComponent} from './button-component.js';
-import './button-component.template.js';
-import './button-component.styles.js';
+import './header-nav-item-component.js';
+import {HeaderNavItemComponent} from './header-nav-item-component.js';
+import './header-nav-item-component.template.js';
+import './header-nav-item-component.styles.js';
 import '../common.css';
 
 export default {
-	title: 'ButtonComponent',
+	title: 'HeaderNavItemComponent',
 	tags: ['autodocs'],
 };
 
 const Template = () => {
 	return html`
-		<button-component></button-component>
+		<header-nav-item-component></header-nav-item-component>
 	`;
 };
 
