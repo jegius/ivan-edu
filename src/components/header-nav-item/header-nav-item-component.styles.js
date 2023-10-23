@@ -1,5 +1,5 @@
 export default `
-    <style>
+<style>
         @import url('../common.css');
 
 a {
@@ -21,12 +21,14 @@ li {
     color: var(--darkest-violet)
     text-decoration: none;
     border-top: .1rem solid var(--nav-item-bordr);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .header__nav-item:not(.header__nav-item_active)::after {
     position: absolute;
     margin-left: .25rem;
-    bottom: 4.6rem;
     border-radius: 10rem;
     background-color: var(--lightest-violet);
     content: "";
@@ -44,5 +46,5 @@ li {
     transform: scale(1);
 }
 
-          </style>
+</style>
 `;

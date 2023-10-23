@@ -264,7 +264,6 @@ li {
 .header__nav-item:not(.header__nav-item_active)::after {
     position: absolute;
     margin-left: .25rem;
-    bottom: 4.6rem;
     border-radius: 10rem;
     background-color: var(--lightest-violet);
     content: "";
@@ -272,6 +271,7 @@ li {
     width: .5rem;
     transform: scale(0);
     transition: transform .2s ease-in-out;
+    margin-top: -.8rem;
 }
 
 .header__nav-item_active {
