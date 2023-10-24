@@ -9,6 +9,10 @@ import {
 import {
 	HeaderLogoComponent,
 } from '../src/components/header-logo/header-logo-component';
+import {
+	LineWrapperComponent,
+} from '../src/components/line-wrapper/line-wrapper-component';
+import {HeaderComponent} from '../src/components/header/header-component';
 
 const preview = {
 	parameters: {
@@ -23,5 +27,5 @@ const preview = {
 };
 
 
-[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent].map((component) => customElements.define(component.name, component));
+[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderComponent].map((component) => customElements.define(component.name, component));
 export default preview;

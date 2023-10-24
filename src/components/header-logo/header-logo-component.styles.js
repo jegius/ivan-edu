@@ -1,6 +1,6 @@
 export default `
 <style>
-        @import url('../common.css');
+@import url('../common.css');
 
 .header__logo {
     background: var(--logo-icon) center left no-repeat, var(--logo-text) center right no-repeat;
