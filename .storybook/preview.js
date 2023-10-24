@@ -13,6 +13,9 @@ import {
 	LineWrapperComponent,
 } from '../src/components/line-wrapper/line-wrapper-component';
 import {HeaderComponent} from '../src/components/header/header-component';
+import {
+	HeroSectionTitleComponent,
+} from '../src/components/hero-section-title/hero-section-title-component';
 
 const preview = {
 	parameters: {
@@ -27,5 +30,5 @@ const preview = {
 };
 
 
-[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderComponent].map((component) => customElements.define(component.name, component));
+[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderComponent, HeroSectionTitleComponent].map((component) => customElements.define(component.name, component));
 export default preview;
