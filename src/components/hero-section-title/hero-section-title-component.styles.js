@@ -1,6 +1,6 @@
 export default `
-    <style>
-        @import url('../common.css');
+<style>
+@import url('../common.css');
 
 .section__title {
     font-size: 36px;
@@ -27,5 +27,5 @@ export default `
     -webkit-background-clip: text;
 }
 
-          </style>
+</style>
 `;
