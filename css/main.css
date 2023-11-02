@@ -137,14 +137,12 @@ li {
 }
 
 .section__text {
-    color: var(--white);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75rem;
 }
 
 .item-title {
-    color: var(--white);
     font-size: 24px;
     font-weight: 700;
     font-style: normal;
@@ -248,7 +246,6 @@ li {
 
 .header__nav {
     display: flex;
-    color: var(--white);
     font-size: 12px;
     font-weight: 700;
     line-height: normal;
@@ -256,7 +253,6 @@ li {
 }
 
 .header__nav-item {
-    color: var(--white);
     text-decoration: none;
     border-top: .1rem solid var(--nav-item-bordr);
 }
@@ -373,7 +369,6 @@ li {
 
 .hero-section__address-text {
     margin: .563rem 0 0 0;
-    color: var(--white);
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
@@ -445,7 +440,6 @@ li {
 }
 
 .service-section__main-text-smallest {
-    color: var(--white);
     font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -622,7 +616,6 @@ li {
 }
 
 .footer__line {
-    color: var(--white);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -725,7 +718,7 @@ li {
 }
 
 .footer__link {
-    box-shadow: 0 0 0 0;
+    box-shadow: var(--white);
     transition: box-shadow .3s ease-in-out;
 }
 
