@@ -165,13 +165,20 @@ li {
 
 .section__main-content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .section__line {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-line__paragraph {
+    max-width: 40.75rem;
 }
 
 .line-wrapper {
@@ -242,7 +249,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 13rem;
 }
 
 .header__nav {
@@ -385,9 +391,12 @@ li {
 .about-section__image_face {
     background: var(--about-face) no-repeat;
     background-size: 32rem 34.8rem;
-    max-width: 311.75rem;
     min-width: 37.75rem;
     min-height: 37.8rem;
+}
+
+.about-section__paragraph {
+    max-width: 39.37rem;
 }
 
 .service-section__back-image {
@@ -489,7 +498,6 @@ li {
     align-items: center;
     justify-content: space-between;
     min-height: 17rem;
-    flex-wrap: wrap;
 }
 
 .tech-image-unreal-engine {
@@ -599,34 +607,39 @@ li {
 }
 
 .optin-section__pulls-border_small {
-    width: 15%;
-    height: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-right: 20rem;
     max-width: 30.13rem;
     max-height: 4.5rem;
+    flex-grow: 1;
 }
 
 .optin-section__pulls-border_big {
-    width: 90%;
-    height: 100%;
-    min-width: 47rem;
+    min-width: 28rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    max-width: 63.125rem;
     max-height: 4.5rem;
+    flex-grow: 2;
+}
+
+.optin-section__pulls-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 88rem;
+    gap: 1rem;
 }
 
 .optin-section__pulls-border_textarea {
     width: 100%;
     height: 100%;
-    min-width: 48rem;
     min-height: 10rem;
-    max-width: 66.125rem;
     max-height: 13.125rem;
     padding-left: 2.62rem;
     padding-top: 1.69rem;
+    flex-grow: 2;
 }
 
 .optin-section__back-image {
