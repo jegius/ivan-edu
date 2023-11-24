@@ -210,7 +210,7 @@ li {
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
     max-width: 13.375rem;
     max-height: 3rem;
-    box-shadow: 0 0 0 0;
+    box-shadow: 0;
     transform: scale(1);
 }
 
@@ -219,6 +219,10 @@ li {
     box-shadow: 0 0 .95rem var(--button-hover);
 }
 
+.body {
+    display: flex;
+    justify-content: center;
+}
 
 .main {
     display: flex;
@@ -237,7 +241,7 @@ li {
 }
 
 .vector-image-for-hero-section-right {
-    background: var(--hero-vector_right) right top no-repeat;
+    background: var(--hero-vector_right) right 8rem top no-repeat;
     background-size: 50rem;
 }
 
@@ -299,6 +303,7 @@ li {
 
 .section__title_hero {
     font-size: 46px;
+    max-width: 33rem;
 }
 
 .hero-section__back-image {
@@ -308,7 +313,7 @@ li {
 
 .hero-section__arrow {
     background: var(--arrow_small) center no-repeat;
-    background-size: 6.25rem 6.25rem;
+    background-size: 6.25rem;
     min-width: 6.25rem;
     min-height: 2.8rem;
 }
@@ -418,24 +423,26 @@ li {
     border-radius: 2.5rem;
 }
 
+.service-image-background {
+    background-size: 13.6875rem, 100%;
+    background-repeat: no-repeat;
+    background-position: center top 1.5rem, center;
+}
+
 .service-image_SIMULATION {
-    background: var(--service-SIMULATION) center top 1.5rem no-repeat, var(--service-gradient);
-    background-size: 13.6875rem;
+    background-image: var(--service-SIMULATION), var(--service-gradient);
 }
 
 .service-image_EDUCATION {
-    background: var(--service-EDUCATION) center top 1.5rem no-repeat, var(--service-gradient);
-    background-size: 13.6875rem;
+    background-image: var(--service-EDUCATION), var(--service-gradient);
 }
 
 .service-image_SELF-CARE {
-    background: var(--service-SELF-CARE) center top 1.5rem no-repeat, var(--service-gradient);
-    background-size: 13.6875rem;
+    background-image: var(--service-SELF-CARE), var(--service-gradient);
 }
 
 .service-image_OUTDOOR {
-    background: var(--service-OUTDOOR) center top 1.5rem no-repeat, var(--service-gradient);
-    background-size: 13.6875rem;
+    background-image: var(--service-OUTDOOR), var(--service-gradient);
 }
 
 .service-section__hr {
@@ -473,7 +480,7 @@ li {
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
     cursor: pointer;
     margin-top: 1.4rem;
-    box-shadow: 0 0 0 0;
+    box-shadow: 0;
     transform: scale(1);
 }
 
@@ -660,7 +667,7 @@ li {
     width: 2rem;
     height: 2rem;
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
-    box-shadow: 0 0 0 0;
+    box-shadow: 0;
     transform: scale(1);
     border-radius: 10rem;
 }
