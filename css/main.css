@@ -202,12 +202,15 @@ li {
     min-height: 7.25rem;
 }
 
+.transition-for-regular-hover {
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
 .button {
     font-weight: 700;
     border-radius: 2.5rem;
     cursor: pointer;
     padding: 1rem 2.1rem;
-    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
     max-width: 13.375rem;
     max-height: 3rem;
     box-shadow: 0;
@@ -321,6 +324,7 @@ li {
 .line-wrapper__hover {
     gap: 0;
     transition: gap 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .line-wrapper__hover:hover {
@@ -433,9 +437,7 @@ li {
 }
 
 .service-image-background {
-    background-size: 13.6875rem, 100%;
-    background-repeat: no-repeat;
-    background-position: center top 1.5rem, center;
+    background: center top 1.5rem / 13.6875rem no-repeat, center / 100% no-repeat;
 }
 
 .service-image_SIMULATION {
@@ -486,7 +488,6 @@ li {
     max-width: 6.25rem;
     min-height: 6.25rem;
     border-radius: 10rem;
-    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
     cursor: pointer;
     margin-top: 1.4rem;
     box-shadow: 0;
@@ -576,8 +577,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5.62rem;
-    padding-bottom: 5.25rem;
+    padding: 5.62rem 0 5.25rem 0;
     border-radius: 6.25rem;
     background: var(--optin-gradient) no-repeat;
     box-shadow: 0 .25rem .25rem 0 var(--shadow);
@@ -597,8 +597,7 @@ li {
     color: var(--white);
     border-radius: 2.5rem;
     border: .125rem solid var(--white);
-    padding-left: 2.62rem;
-    padding-top: 2rem;
+    padding: 2rem 0 2rem 2.62rem;
 }
 
 .optin-section__pulls-border::placeholder {
@@ -609,7 +608,6 @@ li {
 }
 
 .optin-section__input_small {
-    padding-bottom: 2rem;
     padding-right: 20rem;
     max-width: 30.13rem;
     max-height: 4.5rem;
@@ -618,7 +616,6 @@ li {
 
 .optin-section__input_big {
     min-width: 28rem;
-    padding-bottom: 2rem;
     max-height: 4.5rem;
     flex-grow: 2;
 }
@@ -675,7 +672,6 @@ li {
 .footer__soc-item {
     width: 2rem;
     height: 2rem;
-    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
     box-shadow: 0;
     transform: scale(1);
     border-radius: 10rem;
