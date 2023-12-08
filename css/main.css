@@ -140,7 +140,7 @@ li {
 
 .button_light {
     color: var(--darker-violet);
-    background: var(--button-gradient) no-repeat;
+    background: var(--button-gradient);
 }
 
 .section__title_slim {
@@ -153,6 +153,9 @@ li {
 
 .item-title {
     font-size: 24px;
+}
+
+.font-weight-700 {
     font-weight: 700;
 }
 
@@ -207,7 +210,6 @@ li {
 }
 
 .button {
-    font-weight: 700;
     border-radius: 2.5rem;
     cursor: pointer;
     padding: 1rem 2.1rem;
@@ -261,7 +263,6 @@ li {
 
 .header__nav {
     display: flex;
-    font-weight: 700;
     gap: 2.75rem;
 }
 
@@ -361,7 +362,7 @@ li {
     align-items: center;
     justify-content: center;
     border-radius: 5.625rem;
-    background: var(--address-gradient) no-repeat;
+    background: var(--address-gradient);
     box-shadow: 0 .25rem .25rem 0 var(--address-shadow);
     min-height: 10.438rem;
     gap: 0 2.66rem;
@@ -558,7 +559,6 @@ li {
     justify-content: center;
     align-items: center;
     font-size: 64px;
-    font-weight: 700;
     color: var(--dark-violet);
 }
 
@@ -579,7 +579,7 @@ li {
     align-items: center;
     padding: 5.62rem 0 5.25rem 0;
     border-radius: 6.25rem;
-    background: var(--optin-gradient) no-repeat;
+    background: var(--optin-gradient);
     box-shadow: 0 .25rem .25rem 0 var(--shadow);
     margin: 0 5.25rem;
     gap: 1.22rem;
@@ -642,7 +642,6 @@ li {
 }
 
 .footer__line {
-    font-weight: 700;
     margin-top: 8.12rem;
     display: flex;
     gap: 8.7rem;
