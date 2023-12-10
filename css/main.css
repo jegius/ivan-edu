@@ -506,32 +506,26 @@ li {
     min-height: 17rem;
 }
 
-.tech-image-unreal-engine {
+.tech-image_unreal-engine {
     background: var(--tech-unreal-engine) no-repeat;
-    min-width: 10.875rem;
-    min-height: 10.875rem;
-    background-size: 10.875rem
 }
 
-.tech-image-unity {
+.tech-image_unity {
     background: var(--tech-unity) no-repeat;
-    min-width: 15.75rem;
-    min-height: 15.75rem;
-    background-size: 15.75rem;
 }
 
-.tech-image-oculus {
+.tech-image_oculus {
     background: var(--tech-oculus) no-repeat;
-    min-width: 16.4375rem;
-    min-height: 16.4375rem;
-    background-size: 16.4375rem;
 }
 
-.tech-image-vive {
+.tech-image_vive {
     background: var(--tech-vive) no-repeat;
+}
+
+.tech-image {
     min-width: 17.625rem;
     min-height: 17.625rem;
-    background-size: 17.625rem;
+    background-size: 13rem;
 }
 
 .process-section__arrow {
