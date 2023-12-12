@@ -5,9 +5,9 @@ export default `
     ${styles}
 <div class='section__line'>
 <div>
-<h1 class='section__title'>INTRODUCTION</h1>
+<section-title-component></section-title-component>
 <div class='line-wrapper _gap-1rem'>
-<h2 class='section__title section__title_slim'>TO HYDRA VR</h2>
+<section-title-slim-component></section-title-slim-component>
 <div class='arrow-big'></div>
 </div>
 </div>

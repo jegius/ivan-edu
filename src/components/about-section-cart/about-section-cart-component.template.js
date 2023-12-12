@@ -3,8 +3,8 @@ import styles from './about-section-cart-component.styles.js';
 export default `
     ${styles}
 <div class='section__cart _gap-1rem _padding-top-2rem'>
-<h1 class='section__title'>ABOUT</h1>
-<h2 class='section__title section__title_slim'>HYDRA VR</h2>
+<section-title-component></section-title-component>
+<section-title-slim-component></section-title-slim-component>
 <p class='section__text about-section__paragraph'>
 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
 mattis rhoncus urna neque viverra justo. Vivamus at augue eget
