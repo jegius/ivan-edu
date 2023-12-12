@@ -16,6 +16,9 @@ import {HeaderComponent} from '../src/components/header/header-component';
 import {
 	HeroSectionTitleComponent,
 } from '../src/components/hero-section-title/hero-section-title-component';
+import {
+	HeroSectionImageFaceComponent,
+} from '../src/components/hero-section-image-face/hero-section-image-face-component';
 
 const preview = {
 	parameters: {
@@ -30,5 +33,5 @@ const preview = {
 };
 
 
-[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderComponent, HeroSectionTitleComponent].map((component) => customElements.define(component.name, component));
+[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderComponent, HeroSectionTitleComponent, HeroSectionImageFaceComponent].map((component) => customElements.define(component.name, component));
 export default preview;
