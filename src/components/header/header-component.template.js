@@ -6,6 +6,6 @@ export default `
 <ul class='header'>
 <header-logo-component></header-logo-component>
 <header-nav-component></header-nav-component>
-<line-wrapper-component></line-wrapper-component>
+<header-line-wrapper-component></header-line-wrapper-component>
 </ul>
 `;
