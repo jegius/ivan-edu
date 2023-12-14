@@ -16,7 +16,6 @@
     --button-hover: rgba(245, 245, 245, .49);
     --shadow: rgba(0, 0, 0, 0);
     --address-shadow: rgba(192, 183, 232, .01);
-    --service-hr: rgba(192, 183, 232, .33);
     --hero-span-gradient_92deg: linear-gradient(92deg, var(--lightest-violet) 0%, var(--lighter-violet) 100%);
     --hero-span-gradient_269deg: linear-gradient(269deg, var(--lightest-violet) 0%, var(--lighter-violet) 100%);
     --button-gradient: linear-gradient(90deg, var(--lighter-violet) 0%, var(--lightest-violet) 100%);
@@ -46,6 +45,7 @@
     --service-SELF-CARE: url("../image/service-section/3-service-image.png");
     --service-OUTDOOR: url("../image/service-section/4-service-image.png");
     --service-vector: url("../image/service-section/3-vector.png");
+    --service-vector-hr: url("../image/service-section/vector-hr.png");
 
     --tech-base: url("../image/tech-section/pexels-rodnae-productions-8097332.png");
     --tech-button: url("../image/tech-section/tech-block-button.png");

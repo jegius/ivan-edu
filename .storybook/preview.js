@@ -61,6 +61,12 @@ import {
 import {
 	AboutSectionParagraphComponent,
 } from '../src/components/about-section-paragraph/about-section-paragraph-component';
+import {
+	ServiceSectionItemComponent,
+} from '../src/components/service-section-item/service-section-item-component';
+import {
+	ServiceSectionContentComponent,
+} from '../src/components/service-section-content/service-section-content-component';
 
 const preview = {
 	parameters: {
@@ -75,5 +81,5 @@ const preview = {
 };
 
 
-[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderLineWrapperComponent, HeaderComponent, HeroSectionTitleComponent, HeroSectionImageFaceComponent, HeroSectionParagraphComponent, HeroSectionLineWrapperComponent, HeroSectionAddressComponent, HeroSectionAddressItemComponent, HeroSectionComponent, HeroSectionCartComponent, SectionLineComponent, AboutSectionImageFaceComponent, AboutSectionComponent, AboutSectionCartComponent, SectionTitleComponent, SectionTitleSlimComponent, AboutSectionParagraphComponent].map((component) => customElements.define(component.name, component));
+[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderLineWrapperComponent, HeaderComponent, HeroSectionTitleComponent, HeroSectionImageFaceComponent, HeroSectionParagraphComponent, HeroSectionLineWrapperComponent, HeroSectionAddressComponent, HeroSectionAddressItemComponent, HeroSectionComponent, HeroSectionCartComponent, SectionLineComponent, AboutSectionImageFaceComponent, AboutSectionComponent, AboutSectionCartComponent, SectionTitleComponent, SectionTitleSlimComponent, AboutSectionParagraphComponent, ServiceSectionItemComponent, ServiceSectionContentComponent].map((component) => customElements.define(component.name, component));
 export default preview;
