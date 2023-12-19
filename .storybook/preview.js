@@ -127,6 +127,11 @@ import {
 import {
 	FooterSectionSocializeComponent,
 } from '../src/components/footer-section-socialize/footer-section-socialize-component';
+import {
+	FooterSectionComponent,
+} from '../src/components/footer-section/footer-section-component';
+import {CreditsComponent} from '../src/components/credits/credits-component';
+import {MainComponent} from '../src/components/main/main-component';
 
 const preview = {
 	parameters: {
@@ -141,5 +146,5 @@ const preview = {
 };
 
 
-[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderLineWrapperComponent, HeaderComponent, HeroSectionTitleComponent, HeroSectionImageFaceComponent, HeroSectionParagraphComponent, HeroSectionLineWrapperComponent, HeroSectionAddressComponent, HeroSectionAddressItemComponent, HeroSectionComponent, HeroSectionCartComponent, SectionLineComponent, AboutSectionImageFaceComponent, AboutSectionComponent, AboutSectionCartComponent, SectionTitleComponent, SectionTitleSlimComponent, AboutSectionParagraphComponent, ServiceSectionItemComponent, ServiceSectionContentComponent, TechSectionSpecElemComponent, TechSectionButtonComponent, TechSectionLineComponent, TechSectionLineItemComponent, TechSectionComponent, ServiceSectionComponent, ProcessSectionComponent, ProcessSectionCircleLineComponent, ProcessSectionCircleComponent, ProcessSectionTextLineComponent, OptinSectionInputSmallComponent, OptinSectionInputBigComponent, OptinSectionComponent, OptinSectionInputTextareaComponent, OptinSectionPullsWrapperComponent, FooterSectionLinkComponent, FooterSectionNavUlComponent, FooterSectionSocItemComponent, FooterSectionSocWrapperComponent, FooterSectionSocializeComponent].map((component) => customElements.define(component.name, component));
+[ButtonComponent, HeaderNavItemComponent, HeaderNavComponent, HeaderLogoComponent, LineWrapperComponent, HeaderLineWrapperComponent, HeaderComponent, HeroSectionTitleComponent, HeroSectionImageFaceComponent, HeroSectionParagraphComponent, HeroSectionLineWrapperComponent, HeroSectionAddressComponent, HeroSectionAddressItemComponent, HeroSectionComponent, HeroSectionCartComponent, SectionLineComponent, AboutSectionImageFaceComponent, AboutSectionComponent, AboutSectionCartComponent, SectionTitleComponent, SectionTitleSlimComponent, AboutSectionParagraphComponent, ServiceSectionItemComponent, ServiceSectionContentComponent, TechSectionSpecElemComponent, TechSectionButtonComponent, TechSectionLineComponent, TechSectionLineItemComponent, TechSectionComponent, ServiceSectionComponent, ProcessSectionComponent, ProcessSectionCircleLineComponent, ProcessSectionCircleComponent, ProcessSectionTextLineComponent, OptinSectionInputSmallComponent, OptinSectionInputBigComponent, OptinSectionComponent, OptinSectionInputTextareaComponent, OptinSectionPullsWrapperComponent, FooterSectionLinkComponent, FooterSectionNavUlComponent, FooterSectionSocItemComponent, FooterSectionSocWrapperComponent, FooterSectionSocializeComponent, FooterSectionComponent, CreditsComponent, MainComponent].map((component) => customElements.define(component.name, component));
 export default preview;
