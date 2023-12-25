@@ -1,6 +1,16 @@
 export default `
 <style>
 @import url('../common.css');
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 .tech-section__button {
     background: var(--tech-button) no-repeat;

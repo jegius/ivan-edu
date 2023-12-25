@@ -1,6 +1,10 @@
 export default `
 <style>
 @import url('../common.css');
+h3 {
+    margin: 0;
+    padding: 0;
+}
 
 .credits {
     display: flex;

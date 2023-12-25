@@ -1,6 +1,9 @@
 export default `
 <style>
 @import url('../common.css');
+li {
+    list-style-type: none;
+}
 
 .process-section__circle-line {
     display: flex;

@@ -2,6 +2,18 @@ export default `
 <style>
 @import url('../common.css');
 
+textarea {
+    box-sizing: border-box;
+    height: auto;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+}
+
 .optin-section__input_textarea {
     width: 100%;
     height: 100%;

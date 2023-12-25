@@ -1,6 +1,14 @@
 export default `
 <style>
 @import url('../common.css');
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
 
 .footer__link {
     box-shadow: var(--white);

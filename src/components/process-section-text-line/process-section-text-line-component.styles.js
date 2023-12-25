@@ -1,6 +1,10 @@
 export default `
 <style>
 @import url('../common.css');
+h1 {
+    margin: 0;
+    padding: 0;
+}
 
 .process-section__text-line {
     display: flex;
