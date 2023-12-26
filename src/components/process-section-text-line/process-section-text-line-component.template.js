@@ -4,6 +4,6 @@ export default `
     ${styles}
 <div class='process-section__text-line'>
 <div class='process-section__arrow'></div>
-<h1 class='process-section__text'>Process Section Text Line</h1>
+<h1 class='process-section__text'>ProcessSectTxtLine</h1>
 </div>
 `;

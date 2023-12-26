@@ -132,6 +132,9 @@ import {
 } from '../src/components/footer-section/footer-section-component';
 import {CreditsComponent} from '../src/components/credits/credits-component';
 import {MainComponent} from '../src/components/main/main-component';
+import {
+	HeroSectionAddressItemImageComponent,
+} from '../src/components/hero-section-address-item-image/hero-section-address-item-image-component';
 
 const preview = {
 	parameters: {
@@ -160,6 +163,7 @@ const preview = {
 	HeroSectionLineWrapperComponent,
 	HeroSectionAddressComponent,
 	HeroSectionAddressItemComponent,
+	HeroSectionAddressItemImageComponent,
 	HeroSectionComponent,
 	HeroSectionCartComponent,
 	SectionLineComponent,

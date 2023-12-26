@@ -6,7 +6,7 @@ export default `
   <div class='section__main-content'>
   <hero-section-cart-component></hero-section-cart-component>
   <hero-section-image-face-component></hero-section-image-face-component>
-  <hero-section-address-component></hero-section-address-component>
   </div>
+  <hero-section-address-component></hero-section-address-component>
 </section>
 `;
