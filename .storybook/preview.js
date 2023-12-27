@@ -1,8 +1,6 @@
 /** @type { import('@storybook/web-components').Preview } */
 import {ButtonComponent} from '../src/components/button/button-component';
-import {
-	HeaderNavItemComponent,
-} from '../src/components/header-nav-item/header-nav-item-component';
+import {LinkComponent} from '../src/components/link/link-component';
 import {
 	HeaderNavComponent,
 } from '../src/components/header-nav/header-nav-component';
@@ -151,7 +149,7 @@ const preview = {
 
 [
 	ButtonComponent,
-	HeaderNavItemComponent,
+	LinkComponent,
 	HeaderNavComponent,
 	HeaderLogoComponent,
 	LineWrapperComponent,

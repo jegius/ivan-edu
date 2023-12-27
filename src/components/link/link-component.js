@@ -1,13 +1,13 @@
-import template from './header-nav-item-component.template.js';
+import template from './link-component.template.js';
 
-export class HeaderNavItemComponent extends HTMLElement {
+export class LinkComponent extends HTMLElement {
 	constructor() {
 		super();
 		this.attachShadow({mode: 'open'});
 	}
 
 	static get name() {
-		return 'header-nav-item-component';
+		return 'link-component';
 	}
 
 	connectedCallback() {
