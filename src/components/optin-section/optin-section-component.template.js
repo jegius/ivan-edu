@@ -8,6 +8,9 @@ export default `
         <div class='optin-section__vector-hr'></div>
         <section-title-slim-component></section-title-slim-component>
         <optin-section-pulls-wrapper-component></optin-section-pulls-wrapper-component>
+        <optin-section-pulls-wrapper-component></optin-section-pulls-wrapper-component>
+        <optin-section-input-big-component></optin-section-input-big-component>
+        <optin-section-input-textarea-component></optin-section-input-textarea-component>
         <button-component></button-component>
         </div>
     </section>
