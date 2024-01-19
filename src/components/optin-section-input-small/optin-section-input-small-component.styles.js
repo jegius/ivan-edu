@@ -17,7 +17,7 @@ export default `
 			 color: var(--white);
 			 border-radius: 2.5rem;
 			 border: .125rem solid var(--white);
-			 padding: 2rem 0 2rem 2.62rem;
+			 padding: 2rem 2.62rem;
 		}
 		
 		.optin-section__pulls-border::placeholder {
@@ -27,9 +27,10 @@ export default `
 		}
 		
 		.optin-section__input_small {
-			 padding-right: 20rem;
-			 max-width: 30.13rem;
+			 width: 100%;	
 			 max-height: 4.5rem;
+			 margin: 0 auto;
+			 box-sizing: border-box;
 			 flex-grow: 1;
 		}	
 	</style>
