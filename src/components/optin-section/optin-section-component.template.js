@@ -15,10 +15,10 @@ export default `
             <optin-section-input-small-component style='display: flex;flex-grow: 1;'></optin-section-input-small-component>
             <optin-section-input-small-component style='display: flex;flex-grow: 1;'></optin-section-input-small-component>
         </div>
-        <optin-section-input-small-component></optin-section-input-small-component>
-        <optin-section-input-small-component></optin-section-input-small-component>
-        <optin-section-input-small-component></optin-section-input-small-component>
-        <optin-section-input-small-component></optin-section-input-small-component>
+        <optin-section-input-small-component style='width: 100%'></optin-section-input-small-component>
+        <optin-section-input-small-component style='width: 100%'></optin-section-input-small-component>
+        <optin-section-input-small-component style='width: 100%'></optin-section-input-small-component>
+        <optin-section-input-small-component style='width: 100%'></optin-section-input-small-component>
         <button-component></button-component>
         </div>
     </section>

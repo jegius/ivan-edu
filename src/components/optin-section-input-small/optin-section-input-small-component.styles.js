@@ -32,6 +32,7 @@ export default `
 			 margin: 0 auto;
 			 box-sizing: border-box;
 			 flex-grow: 1;
+			 max-width: 77rem;
 		}	
 	</style>
 `;

@@ -8,6 +8,7 @@ export default `
 			 justify-content: center;
 			 flex-direction: row;
 			 max-width: 88rem;
+			 width: 100%;
 		}
 		
 		._gap-1rem {

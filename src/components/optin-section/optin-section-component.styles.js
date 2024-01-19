@@ -5,7 +5,6 @@ export default `
 		.optin-section {
 			 display: flex;
 			 flex-direction: column;
-			 align-items: center;
 			 padding: 5.62rem 0 5.25rem 0;
 			 border-radius: 6.25rem;
 			 background: var(--optin-gradient);
@@ -14,6 +13,8 @@ export default `
 			 gap: 1.22rem;
 			 max-width: 88rem;
 			 text-align: center;
+			 align-items: center;
+			 width: 100%;
 		}
 		
 		.optin-section__vector-hr {
@@ -35,6 +36,8 @@ export default `
 		.optin-section__pulls-wrapper {
 			 display: flex;
 			 flex-wrap: wrap;
+			 width: 100%;
+			 max-width: 77rem;
 		}
 </style>
 `;
