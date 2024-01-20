@@ -96,20 +96,8 @@ import {
 	ProcessSectionTextLineComponent,
 } from '../src/components/process-section-text-line/process-section-text-line-component';
 import {
-	OptinSectionInputSmallComponent,
-} from '../src/components/optin-section-input-small/optin-section-input-small-component';
-import {
-	OptinSectionInputBigComponent,
-} from '../src/components/optin-section-input-big/optin-section-input-big-component';
-import {
 	OptinSectionComponent,
 } from '../src/components/optin-section/optin-section-component';
-import {
-	OptinSectionInputTextareaComponent,
-} from '../src/components/optin-section-input-textarea/optin-section-input-textarea-component';
-import {
-	OptinSectionPullsWrapperComponent,
-} from '../src/components/optin-section-pulls-wrapper/optin-section-pulls-wrapper-component';
 import {
 	FooterSectionLinkComponent,
 } from '../src/components/footer-section-link/footer-section-link-component';
@@ -133,6 +121,9 @@ import {MainComponent} from '../src/components/main/main-component';
 import {
 	HeroSectionAddressItemImageComponent,
 } from '../src/components/hero-section-address-item-image/hero-section-address-item-image-component';
+import {
+	OptinSectionInputComponent,
+} from '../src/components/optin-section-input/optin-section-input-component';
 
 const preview = {
 	parameters: {
@@ -183,11 +174,8 @@ const preview = {
 	ProcessSectionCircleLineComponent,
 	ProcessSectionCircleComponent,
 	ProcessSectionTextLineComponent,
-	OptinSectionInputSmallComponent,
-	OptinSectionInputBigComponent,
+	OptinSectionInputComponent,
 	OptinSectionComponent,
-	OptinSectionInputTextareaComponent,
-	OptinSectionPullsWrapperComponent,
 	FooterSectionLinkComponent,
 	FooterSectionNavUlComponent,
 	FooterSectionSocItemComponent,

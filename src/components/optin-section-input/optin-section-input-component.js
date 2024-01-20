@@ -1,13 +1,13 @@
-import template from './optin-section-input-big-component.template.js';
+import template from './optin-section-input-component.template.js';
 
-export class OptinSectionInputBigComponent extends HTMLElement {
+export class OptinSectionInputComponent extends HTMLElement {
 	constructor() {
 		super();
 		this.attachShadow({mode: 'open'});
 	}
 
 	static get name() {
-		return 'optin-section-input-big-component';
+		return 'optin-section-input-component';
 	}
 
 	connectedCallback() {
