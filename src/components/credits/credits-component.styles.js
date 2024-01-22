@@ -9,7 +9,7 @@ export default `
 		
 		.credits {
 			display: flex;
-			align-self: center;
+			justify-content: center;
 			padding-bottom: 3rem;
 		}
 		

@@ -9,7 +9,7 @@ export default `
 			 border-radius: 6.25rem;
 			 background: var(--optin-gradient);
 			 box-shadow: 0 .25rem .25rem 0 var(--shadow);
-			 margin: 0 5.25rem;
+			 margin: 0 auto;
 			 gap: 1.22rem;
 			 max-width: 88rem;
 			 text-align: center;

@@ -4,8 +4,9 @@ export default `
 		
 		.service-section {
 			 display: flex;
-			 justify-content: space-between;
+			 justify-content: center;
 			 flex-wrap: wrap;
+			 gap: 6rem;
 		}
 	
 	</style>

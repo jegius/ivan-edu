@@ -22,6 +22,7 @@ export default `
 		}
 		
 		.footer__line {
+			justify-content: center;
 			margin-top: 8.12rem;
 			display: flex;
 			gap: 8.7rem;
