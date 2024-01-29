@@ -116,7 +116,6 @@ import {
 import {
 	FooterSectionComponent,
 } from '../src/components/footer-section/footer-section-component';
-import {CreditsComponent} from '../src/components/credits/credits-component';
 import {MainComponent} from '../src/components/main/main-component';
 import {
 	HeroSectionAddressItemImageComponent,
@@ -182,7 +181,6 @@ const preview = {
 	FooterSectionSocWrapperComponent,
 	FooterSectionSocializeComponent,
 	FooterSectionComponent,
-	CreditsComponent,
 	MainComponent,
 ].map((component) => customElements.define(component.name, component));
 export default preview;

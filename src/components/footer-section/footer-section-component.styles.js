@@ -5,7 +5,7 @@ export default `
 		.footer__hr {
 			background: var(--footer-hr) no-repeat;
 			background-size: 100%;
-			min-width: 79.3125rem;
+			min-width: auto;
 			min-height: 1rem;
 		}
 		

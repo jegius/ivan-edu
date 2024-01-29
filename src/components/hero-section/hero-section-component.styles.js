@@ -13,6 +13,7 @@ export default `
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-around;
+			row-gap: 4rem;
 		}
 		
 		.hero-section__back-image {
