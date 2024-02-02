@@ -11,7 +11,7 @@ export default `
 		
 		.footer__line-vector-border {
 			background: var(--footer-vector) no-repeat;
-			background-size: .5rem 12.25rem;
+			background-size: .5rem 16.25rem;
 			min-height: 12.25rem;
 			min-width: .5rem;
 		}
