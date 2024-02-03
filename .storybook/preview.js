@@ -127,6 +127,19 @@ import {
 const preview = {
 	parameters: {
 		actions: {argTypesRegex: '^on[A-Z].*'},
+		backgrounds: {
+			default: 'site',
+			values: [
+				{
+					name: 'site',
+					value: '#302C42FF',
+				},
+				{
+					name: 'gray',
+					value: '#808080',
+				},
+			],
+		},
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,
