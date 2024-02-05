@@ -17,8 +17,6 @@ export default `
         </div>
         <optin-section-input-component style='width: 100%'></optin-section-input-component>
         <optin-section-input-component style='width: 100%'></optin-section-input-component>
-        <optin-section-input-component style='width: 100%'></optin-section-input-component>
-        <optin-section-input-component style='width: 100%'></optin-section-input-component>
         <button-component></button-component>
         </div>
     </section>
