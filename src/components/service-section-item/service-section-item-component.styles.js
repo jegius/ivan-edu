@@ -9,9 +9,11 @@ export default `
 			 gap: 1rem 0;
 			 align-items: center;
 			 flex-direction: column;
-			 max-width: 16.375rem;
 			 min-height: 27.93rem;
 			 border-radius: 2.5rem;
+			 box-sizing: border-box;
+			 width: 19.375rem;
+			 height: 31.9375rem;
 		}
 		
 		.service-image-background {

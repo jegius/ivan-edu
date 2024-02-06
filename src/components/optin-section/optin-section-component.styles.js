@@ -36,7 +36,7 @@ export default `
 		.optin-section__pulls-wrapper {
 			 display: flex;
 			 flex-wrap: wrap;
-			 width: 100%;
+			 width: 97%;
 			 max-width: 77rem;
 		}
 </style>

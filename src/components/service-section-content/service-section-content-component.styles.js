@@ -6,8 +6,7 @@ export default `
 			 display: flex;
 			 justify-content: center;
 			 flex-wrap: wrap;
-			 gap: 6rem;
-		}
-	
+			 gap: 1rem;
+		}	
 	</style>
 `;

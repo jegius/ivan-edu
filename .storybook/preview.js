@@ -42,9 +42,6 @@ import {
 	SectionLineComponent,
 } from '../src/components/section-line/section-line-component';
 import {
-	AboutSectionImageFaceComponent,
-} from '../src/components/about-section-image-face/about-section-image-face-component';
-import {
 	AboutSectionComponent,
 } from '../src/components/about-section/about-section-component';
 import {
@@ -168,7 +165,7 @@ const preview = {
 	HeroSectionComponent,
 	HeroSectionCartComponent,
 	SectionLineComponent,
-	AboutSectionImageFaceComponent,
+	// AboutSectionImageFaceComponent,
 	AboutSectionComponent,
 	AboutSectionCartComponent,
 	SectionTitleComponent,
