@@ -165,7 +165,6 @@ const preview = {
 	HeroSectionComponent,
 	HeroSectionCartComponent,
 	SectionLineComponent,
-	// AboutSectionImageFaceComponent,
 	AboutSectionComponent,
 	AboutSectionCartComponent,
 	SectionTitleComponent,

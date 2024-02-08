@@ -19,5 +19,14 @@ export default `
 		.footer__link:hover {
 			box-shadow: 0 0 .95rem var(--darkest-violet);
 		}
+		
+		.main-font {
+			font-family: Montserrat, sans-serif;
+			color: var(--white);
+		}
+		
+		.font-weight-700 {
+			font-weight: 700;
+		}
 	</style>
 `;

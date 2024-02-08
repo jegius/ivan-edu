@@ -12,5 +12,10 @@ export default `
 			 line-height: normal;
 			 white-space: nowrap;
 		}
+		
+		.main-font {
+    		font-family: Montserrat, sans-serif;
+    		color: var(--white);
+		}
 	</style>
 `;

@@ -39,5 +39,10 @@ export default `
 			 width: 97%;
 			 max-width: 77rem;
 		}
+		
+		.main-font {
+    		font-family: Montserrat, sans-serif;
+    		color: var(--white);
+		}
 </style>
 `;

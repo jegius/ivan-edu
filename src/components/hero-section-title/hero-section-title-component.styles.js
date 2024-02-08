@@ -25,5 +25,10 @@
 				 background: var(--hero-span-gradient_269deg);
 				 -webkit-background-clip: text;
 			}		
+
+			.main-font {
+				font-family: Montserrat, sans-serif;
+				color: var(--white);
+			}
 		</style>
 	`;

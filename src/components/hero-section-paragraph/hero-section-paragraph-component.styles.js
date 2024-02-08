@@ -18,5 +18,10 @@
 		._margin-top-1rem {
 			 margin-top: 1rem;
 		}
+		
+		.main-font {
+    		font-family: Montserrat, sans-serif;
+    		color: var(--white);
+		}
 	</style>
 `;

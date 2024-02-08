@@ -8,5 +8,10 @@ export default `
 			flex-direction: column;
 			gap: 3rem 0;
 		}	
+		
+		.main-font {
+			font-family: Montserrat, sans-serif;
+			color: var(--white);
+		}
 	</style>
 `;

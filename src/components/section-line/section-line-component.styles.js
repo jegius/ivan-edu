@@ -35,5 +35,10 @@ export default `
 			 min-width: 20.25rem;
 			 min-height: 7.25rem;
 		}
+		
+		.main-font {
+			font-family: Montserrat, sans-serif;
+			color: var(--white);
+		}
 	</style>
 `;

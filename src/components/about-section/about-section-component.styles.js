@@ -18,6 +18,6 @@ export default `
 		.about-section__back-image {
 			background: var(--about-vector) left top 15.69rem no-repeat;
 			background-size: 90rem;
-		}
+		}		
 	</style>
 `;

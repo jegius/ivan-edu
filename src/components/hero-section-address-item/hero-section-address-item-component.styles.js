@@ -24,5 +24,10 @@ export default `
 		._font-size-14px {
 			font-size: 14px;
 		}
+		
+		.main-font {
+    		font-family: Montserrat, sans-serif;
+    		color: var(--white);
+		}
 	</style>
 `;

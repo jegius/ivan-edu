@@ -2,5 +2,5 @@ import styles from './link-component.styles.js';
 
 export default `
     ${styles}
-    <a href='#'>Item</a>
+    <a class='main-font' href='#'>Item</a>
 `;

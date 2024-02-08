@@ -11,5 +11,10 @@ export default `
 			margin: 0;
 			padding: 0;
 		}
+		
+		.main-font {
+			font-family: Montserrat, sans-serif;
+			color: var(--white);
+		}
 	</style>
 `;

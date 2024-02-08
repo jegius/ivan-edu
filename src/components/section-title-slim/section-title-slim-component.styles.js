@@ -16,5 +16,10 @@ export default `
 		.section__title_slim {
 			 font-weight: 300;
 		}
+		
+		.main-font {
+    		font-family: Montserrat, sans-serif;
+    		color: var(--white);
+		}
 	</style>
 `;

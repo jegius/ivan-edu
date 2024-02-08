@@ -21,5 +21,10 @@ export default `
 		.process-section__text {
 			 padding-top: 1rem;
 		}
+		
+		.main-font {
+    		font-family: Montserrat, sans-serif;
+    		color: var(--white);
+		}
 	</style>
 `;

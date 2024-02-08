@@ -19,5 +19,10 @@ export default `
 		.about-section__paragraph {
 			max-width: 39.37rem;
 		}
+		
+		.main-font {
+			font-family: Montserrat, sans-serif;
+			color: var(--white);
+		}
 	</style>
 `;
