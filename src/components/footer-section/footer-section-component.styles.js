@@ -25,7 +25,7 @@ export default `
 			justify-content: center;
 			margin-top: 8.12rem;
 			display: flex;
-			gap: 8.7rem;
+			gap: 4rem;
 			flex-wrap: wrap;
 		}
 		

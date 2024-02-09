@@ -4,6 +4,6 @@ export default `
     ${styles}
     <div class='process-section__text-line main-font'>
         <div class='process-section__arrow'></div>
-        <h1 class='process-section__text'>ProcessSectTxtLine</h1>
+        <h1 class='process-section__text'>ProcTxtLine</h1>
     </div>
 `;

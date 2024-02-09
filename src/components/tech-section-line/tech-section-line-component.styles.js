@@ -12,7 +12,6 @@ export default `
 		.tech-section__line {
 			 align-items: center;
 			 justify-content: center;
-			 gap: 8.4rem;
 			 min-height: 17rem;
 		}	
 	</style>
