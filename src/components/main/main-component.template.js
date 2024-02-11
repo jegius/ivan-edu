@@ -11,8 +11,8 @@ export default `
         <optin-section-component></optin-section-component>
         <footer-section-component></footer-section-component>
         <div class='credits _font-size-14px'>
-      <h3 class='credits__text'>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI
-      - ALL RIGHTS RESERVED</h3>
+        <h3 class='credits__text'>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI
+        - ALL RIGHTS RESERVED</h3>
    </div>
     </main>
 `;

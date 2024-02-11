@@ -19,5 +19,5 @@ const Template = () => {
 export const Default = Template.bind({});
 Default.args = {
 	variant: 'primary',
-// 	чтоб работали вариации - надо менять темплейст скорее всего
+
 };

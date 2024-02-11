@@ -4,7 +4,6 @@ export default `
     ${styles}
     <div class='section footer__back-image'>
         <div class='footer__line font-weight-700 '>
-<!--            <div class='footer__line-logo-img'></div>-->
             <header-logo-component></header-logo-component>
             <div class='footer__line-vector-border'></div>
             <footer-section-nav-ul-component></footer-section-nav-ul-component>
