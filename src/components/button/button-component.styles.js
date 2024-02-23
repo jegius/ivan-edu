@@ -18,35 +18,39 @@ export default `
 		}
 		
 		.button {
-			border-radius: 2.5rem;
 			cursor: pointer;
-			padding: 1rem 2.1rem;
+			border-radius: 2.5rem;
 			transition: transform 
 			.2s ease-in-out, box-shadow .2s ease-in-out;
 			max-height: 3rem;
-			box-shadow: 0 0 0 0;
+			box-shadow: 0 0 .1rem .1rem;
 			transform: scale(1);
 		}
 		
-		.button:hover {
+		.button._active:hover {
 			transform: scale(.97);
 			box-shadow: 0 0 .95rem var(--button-hover);
 		}
-				  
-		.button_contact {
-			border: .125rem solid var(--white);
-			color: var(--white);
-		}
 		
-		.button_light {
+		._active._light {
 			color: var(--darker-violet);
 			background: var(--button-gradient) no-repeat;
-		}
+        }
+
+
+      ._active._transparent {
+			border: .125rem solid var(--white);
+			color: var(--white);
+        }
 		
 		._small {
             padding: .7rem 1.2rem;
             font-weight: 400;
         }
+        
+      ._small._transparent{
+			border-width: .1rem;      	
+      }
        
       ._medium {
 				max-width: 13.375rem;
@@ -62,6 +66,10 @@ export default `
             font-weight: 900;
 				max-height: 6rem;            
         }
+        
+      ._large._transparent{
+			border-width: .25rem;      	
+      }
 
 	</style>
 `;

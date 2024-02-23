@@ -84,7 +84,7 @@ export const ActiveTransparent = Template.bind({});
 ActiveTransparent.args = {
 	...TransparentColor.args,
 	isActive: 'true',
-	buttonText: 'active red',
+	buttonText: 'active transparent',
 };
 
 export const ActiveLight = Template.bind({});
@@ -92,5 +92,5 @@ export const ActiveLight = Template.bind({});
 ActiveLight.args = {
 	...LightColor.args,
 	isActive: 'true',
-	buttonText: 'active orange',
+	buttonText: 'active light',
 };
