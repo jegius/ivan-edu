@@ -11,7 +11,7 @@ export default {
 	argTypes: {
 		buttonText: {control: 'text'},
 		isActive: {
-			control: {type: 'select'},
+			control: {type: 'boolean'},
 			options: ['true', 'false'],
 		},
 		buttonSize: {
@@ -20,7 +20,7 @@ export default {
 		},
 		buttonColor: {
 			control: {type: 'select'},
-			options: ['red', 'orange'],
+			options: ['light', 'transparent'],
 		},
 	},
 };
@@ -35,9 +35,9 @@ const Template = (args) => {
 export const Default = Template.bind({});
 
 Default.args = {
-	isActive: 'false',
-	buttonText: 'button',
-	buttonSize: 'small',
+	isActive: 'true',
+	buttonText: 'Button Component',
+	buttonSize: 'medium',
 	buttonColor: 'light',
 };
 
