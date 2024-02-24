@@ -3,13 +3,16 @@ import './link-component.js';
 import './link-component.template.js';
 import './link-component.styles.js';
 import '../common.css';
+import events from '../api/events.js';
+import {action} from '@storybook/addon-actions';
+import {LinkComponent} from './link-component.js';
 
 export default {
 	title: 'LinkComponent',
 	tags: ['autodocs'],
 	argTypes: {
 		onClick: {action: 'clicked'},
-		Text: {control: 'text'},
+		linkText: {control: 'text'},
 		href: {control: 'text'},
 	},
 };
@@ -23,6 +26,6 @@ const Template = (args) => {
 
 export const Default = Template.bind({});
 Default.args = {
-	linkText: 'item text',
+	linkText: 'Link text',
 	href: '#',
 };

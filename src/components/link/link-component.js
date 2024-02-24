@@ -1,20 +1,23 @@
 import template from './link-component.template.js';
+import events from '../api/events.js';
+import {addListeners, removeListeners, select} from '../api/helpers.js';
+
 
 const linkAttributes = {
 	LINK_TEXT: 'text',
+	IS_ACTIVE: 'is-active', //возможно конфликтует со стилями в нав
 	HREF: 'href',
 };
 
 export class LinkComponent extends HTMLElement {
 	#href;
 	#link;
-
 	#listeners = [
 		[select.bind(this, '.link'), 'click', this.#addEventListeners.bind(this)],
 	];
-
 	#ATTRIBUTES_MAPPING = new Map([
 		[linkAttributes.LINK_TEXT, LinkComponent.#setText],
+		[linkAttributes.IS_ACTIVE, LinkComponent.#setActive],
 		[linkAttributes.HREF, LinkComponent.#setHref],
 	]);
 
@@ -42,6 +45,15 @@ export class LinkComponent extends HTMLElement {
 		}
 	}
 
+	static #setActive(element, newAttr) {
+		const isActive = newAttr === 'true';
+		if (isActive) {
+			element.classList.add('_active');
+		} else {
+			element.classList.remove('_active');
+		}
+	}
+
 	connectedCallback() {
 		this.#render();
 		this.#listeners.forEach(addListeners.bind(this));
@@ -52,15 +64,6 @@ export class LinkComponent extends HTMLElement {
 				this.attributeChangedCallback(attrName, null, attrValue);
 			}
 		}
-	}
-
-	#addEventListeners(event) {
-		const element = this.#href !== '#' ? document.querySelector(this.#href) : null;
-
-		if (element) {
-			event.preventDefault();
-		}
-
 	}
 
 	disconnectedCallback() {
@@ -78,6 +81,20 @@ export class LinkComponent extends HTMLElement {
 		if (this.#link) {
 			callback.call(this, this.#link, value);
 		}
+	}
+
+	#addEventListeners(event) {
+		const element = this.#href !== '#' ? document.querySelector(this.#href) : null;
+
+		if (element) {
+			event.preventDefault();
+			element.scrollIntoView({behavior: 'smooth'});
+		}
+
+
+		this.dispatchEvent(
+			new CustomEvent(events.LINK_CLICKED, {bubbles: true, detail: this}),
+		);
 	}
 
 	#render() {
