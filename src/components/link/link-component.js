@@ -5,7 +5,7 @@ import {addListeners, removeListeners, select} from '../api/helpers.js';
 
 const linkAttributes = {
 	LINK_TEXT: 'text',
-	IS_ACTIVE: 'is-active', //возможно конфликтует со стилями в нав
+	IS_ACTIVE: 'is-active',
 	HREF: 'href',
 };
 
