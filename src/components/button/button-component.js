@@ -39,21 +39,21 @@ export class ButtonComponent extends HTMLElement {
 	static #setSize(element, newSize) {
 		for (let sizeName of buttonSize) {
 			if (element.classList.contains(sizeName)) {
-				element.classList.replace(sizeName, '_' + newSize);
+				element.classList.replace(sizeName, `_${newSize}`);
 				break;
 			}
 		}
-		element.classList.add('_' + newSize);
+		element.classList.add(`_${newSize}`);
 	}
 
 	static #setColor(element, newColor) {
 		for (let colorName of buttonColor) {
 			if (element.classList.contains(colorName)) {
-				element.classList.replace(colorName, '_' + newColor);
+				element.classList.replace(colorName, `_${newColor}`);
 				break;
 			}
 		}
-		element.classList.add('_' + newColor);
+		element.classList.add(`_${newColor}`);
 	}
 
 	static #setActive(element, newAttr) {
