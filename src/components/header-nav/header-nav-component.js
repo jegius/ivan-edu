@@ -5,6 +5,7 @@ import {
 	debounce,
 	doOverlap,
 	mapToLinkElement,
+	removeListeners,
 	select,
 } from '../api/helpers';
 import events from '../api/events';
@@ -143,7 +144,7 @@ export class HeaderNavComponent extends HTMLElement {
 			}, listNode);
 		}
 
-		function carriedClearSlot() {
+		function carriedClearSlot() { //тут чтот нето
 			return (providedListNode) => {
 				return providedListNode;
 			};
@@ -158,16 +159,27 @@ export class HeaderNavComponent extends HTMLElement {
 		const nodeFilter = (node) => node.nodeType === Node.ELEMENT_NODE;
 		const assignedNodes = target.assignedNodes().filter(nodeFilter);
 
-		if (assignedNodes.length != 0) { //161
-
+		if (assignedNodes.length != 0) {
+			compose(createListContainer,
+				createList,
+				clearSlot,
+				appendList,
+			)(assignedNodes);
 		}
+
+		if (!this.#linksToSections) {
+			this.#linksToSections = this.#detectSection();
+		}
+
 	}
 
+	disconnectedCallback() {
+		this.#listeners.forEach(removeListeners);
+	}
 
 	#render() {
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
-
 
 		this.shadowRoot.append(templateElem.content.cloneNode(true));
 		this.#slot = this.shadowRoot.querySelector('slot');
