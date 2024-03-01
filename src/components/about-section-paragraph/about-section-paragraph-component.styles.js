@@ -13,6 +13,7 @@ export default `
 		
 		.about-section__paragraph {
 			max-width: 39.37rem;
+			color: var(--white);
 		}
 	</style>
 `;
