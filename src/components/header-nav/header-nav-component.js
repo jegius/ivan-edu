@@ -14,6 +14,8 @@ import {LinkComponent} from '../link/link-component';
 export class HeaderNavComponent extends HTMLElement {
 	#slot;
 	#list;
+	#subscribeOneLinkClick;
+	#linksToSections;
 	#listeners = [
 		[
 			select.bind(this),
