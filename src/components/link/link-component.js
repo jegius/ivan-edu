@@ -46,11 +46,14 @@ export class LinkComponent extends HTMLElement {
 	}
 
 	static #setActive(element, newAttr) {
+		console.log(element.text);
 		const isActive = newAttr === 'true';
 		if (isActive) {
 			element.classList.add('_active');
+			console.log('act added');
 		} else {
 			element.classList.remove('_active');
+			console.log('act removed');
 		}
 	}
 
@@ -85,12 +88,10 @@ export class LinkComponent extends HTMLElement {
 
 	#addEventListeners(event) {
 		const element = this.#href !== '#' ? document.querySelector(this.#href) : null;
-
 		if (element) {
 			event.preventDefault();
 			element.scrollIntoView({behavior: 'smooth'});
 		}
-
 
 		this.dispatchEvent(
 			new CustomEvent(events.LINK_CLICKED, {bubbles: true, detail: this}),

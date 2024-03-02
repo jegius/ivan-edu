@@ -14,6 +14,10 @@ export default {
 		onClick: {action: 'clicked'},
 		linkText: {control: 'text'},
 		href: {control: 'text'},
+		isActive: {
+			control: {type: 'boolean'},
+			options: ['true', 'false'],
+		},
 	},
 };
 
@@ -26,6 +30,7 @@ const Template = (args) => {
 
 export const Default = Template.bind({});
 Default.args = {
+	isActive: 'false',
 	linkText: 'Link text',
 	href: '#',
 };

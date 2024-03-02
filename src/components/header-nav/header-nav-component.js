@@ -14,7 +14,6 @@ import {LinkComponent} from '../link/link-component';
 export class HeaderNavComponent extends HTMLElement {
 	#slot;
 	#list;
-	#subscribeOneLinkClick;
 	#linksToSections;
 	#listeners = [
 		[
@@ -111,7 +110,7 @@ export class HeaderNavComponent extends HTMLElement {
 
 	}
 
-	#subscribeOnLinkClick(event) {
+	#subscribeOneLinkClick(event) {
 		event.stopImmediatePropagation();
 		const {target} = event;
 

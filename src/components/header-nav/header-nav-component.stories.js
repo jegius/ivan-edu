@@ -12,11 +12,13 @@ export default {
 const Template = () => {
 	return html`
 		<header-nav-component>
-			<link-component is-active='true' text='Hero' href='#' styles='nav'></link-component>
-			<link-component is-active='false' text='Aboute' href='#' styles='nav'></link-component>
-			<link-component is-active='false' text='third' href='#' styles='nav'></link-component>
-			<link-component is-active='false' text='fourth' href='#' styles='nav'></link-component>
-			<link-component is-active='false' text='fifth' href='#' styles='nav'></link-component>
+			<link-component is-active='true' text='Hero' href='#Hero'></link-component>
+			<link-component is-active='false' text='About' href='#About'></link-component>
+			<link-component is-active='false' text='Service' href='#Service'></link-component>
+			<link-component is-active='false' text='Tech' href='#Tech'></link-component>
+			<link-component is-active='false' text='Process' href='#Process'></link-component>
+			<link-component is-active='false' text='Optin' href='#Optin'></link-component>
+			<link-component is-active='false' text='Footer' href='#Footer'></link-component>
 		</header-nav-component>
 	`;
 };
@@ -39,20 +41,22 @@ const TemplateWithScrollDetection = () => {
 				justify-content: center;
 				font-size: 144px;
 				font-weight: 700;
-				color: red;
-				height: 30rem;
-				border: .125rem dashed white;
+				color: var(--darker-violet);
+				background: var(--button-gradient);
+				height: 40rem;
+				border: .125rem solid white;
+				border-radius: 2.5rem;
 				margin-top: 1rem;
 			}
 
 			.section:nth-child(odd) {
-				background-color: var(--block-color);
-				color: orange;
+				background: var(--service-gradient);
+				color: white;
 			}
 
 			.wrapper {
 				position: relative;
-				height: 20rem;
+				height: 40rem;
 				padding: 0 2rem;
 				overflow-y: scroll;
 			}
@@ -60,11 +64,14 @@ const TemplateWithScrollDetection = () => {
 		<div class='wrapper _scrollable'>
 			<div class='header'>
 				<navigation-component>
-					<link-component is-active='true' text='first' styles='nav' href='#first'></link-component>
-					<link-component is-active='false' text='second' styles='nav' href='#second'></link-component>
-					<link-component is-active='false' text='third' styles='nav' href='#third'></link-component>
-					<link-component is-active='false' text='fourth' styles='nav' href='#fourth'></link-component>
-					<link-component is-active='false' text='fifth' styles='nav' href='#fifth'></link-component>
+					<link-component is-active='true' text='01' styles='nav' href='#first'></link-component>
+					<link-component is-active='false' text='02' styles='nav' href='#second'></link-component>
+					<link-component is-active='false' text='03' styles='nav' href='#third'></link-component>
+					<link-component is-active='false' text='04' styles='nav' href='#fourth'></link-component>
+					<link-component is-active='false' text='05' styles='nav' href='#fifth'></link-component>
+					<link-component is-active='false' text='06' styles='nav' href='#sixth'></link-component>
+					<link-component is-active='false' text='07' styles='nav' href='#seventh'></link-component>
+					<link-component is-active='false' text='08' styles='nav' href='#eighth'></link-component>
 				</navigation-component>
 			</div>
 			<div class='section' id='first'>
@@ -81,6 +88,15 @@ const TemplateWithScrollDetection = () => {
 			</div>
 			<div class='section' id='fifth'>
 				<span>fifth</span>
+			</div>
+			<div class='section' id='sixth'>
+				<span>sixth</span>
+			</div>
+			<div class='section' id='seventh'>
+				<span>seventh</span>
+			</div>
+			<div class='section' id='eighth'>
+				<span>eighth</span>
 			</div>
 	`;
 };
