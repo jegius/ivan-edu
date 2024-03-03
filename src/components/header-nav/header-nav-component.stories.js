@@ -11,15 +11,12 @@ export default {
 
 const Template = () => {
 	return html`
-		<header-nav-component>
-			<link-component is-active='true' text='Hero' href='#Hero'></link-component>
-			<link-component is-active='false' text='About' href='#About'></link-component>
-			<link-component is-active='false' text='Service' href='#Service'></link-component>
-			<link-component is-active='false' text='Tech' href='#Tech'></link-component>
-			<link-component is-active='false' text='Process' href='#Process'></link-component>
-			<link-component is-active='false' text='Optin' href='#Optin'></link-component>
-			<link-component is-active='false' text='Footer' href='#Footer'></link-component>
-		</header-nav-component>
+		<navigation-component>
+			<link-component is-active='true' text='ABOUT' styles='nav' href='#ABOUT'></link-component>
+			<link-component is-active='false' text='SERVICES' styles='nav' href='#SERVICES'></link-component>
+			<link-component is-active='false' text='TECHNOLOGIES' styles='nav' href='#TECHNOLOGIES'></link-component>
+			<link-component is-active='false' text='HOW TO' styles='nav' href='#HOW-TO'></link-component>
+		</navigation-component>
 	`;
 };
 
@@ -56,7 +53,7 @@ const TemplateWithScrollDetection = () => {
 
 			.wrapper {
 				position: relative;
-				height: 40rem;
+				height: 50rem;
 				padding: 0 2rem;
 				overflow-y: scroll;
 			}

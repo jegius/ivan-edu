@@ -46,7 +46,7 @@ export class LinkComponent extends HTMLElement {
 	}
 
 	static #setActive(element, newAttr) {
-		console.log(element.text);
+		// console.log(element.text);
 		const isActive = newAttr === 'true';
 		if (isActive) {
 			element.classList.add('_active');
@@ -58,6 +58,7 @@ export class LinkComponent extends HTMLElement {
 	}
 
 	connectedCallback() {
+		console.log('connectedCallback is working!!!');
 		this.#render();
 		this.#listeners.forEach(addListeners.bind(this));
 
@@ -65,6 +66,7 @@ export class LinkComponent extends HTMLElement {
 			if (this.hasAttribute(attrName)) {
 				const attrValue = this.getAttribute(attrName);
 				this.attributeChangedCallback(attrName, null, attrValue);
+				console.log('attributeChangedCallback used to be done!!!');
 			}
 		}
 	}
@@ -74,9 +76,12 @@ export class LinkComponent extends HTMLElement {
 	}
 
 	attributeChangedCallback(name, oldValue, newValue) {
+
 		if (newValue !== oldValue) {
 			const callback = this.#ATTRIBUTES_MAPPING.get(name);
+			// console.log('callback----', callback);
 			this.#selectAndCallIfExist(callback, newValue);
+			console.log('AttributeCanged');
 		}
 	}
 

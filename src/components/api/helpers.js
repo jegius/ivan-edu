@@ -1,6 +1,7 @@
 import {LinkComponent} from '../link/link-component';
 
 export function addListeners([node, event, listener]) {
+	// console.log(event, listener);
 	node()?.addEventListener(event, listener);
 }
 

@@ -8,8 +8,8 @@ import {
 	removeListeners,
 	select,
 } from '../api/helpers';
-import events from '../api/events';
 import {LinkComponent} from '../link/link-component';
+import events from '../api/events';
 
 export class HeaderNavComponent extends HTMLElement {
 	#slot;
@@ -44,6 +44,7 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	connectedCallback() { //когда браунзер видит нав компонент
+		console.log('NAV-----connectedCallback');
 		this.#render();
 		this.#listeners.forEach(addListeners);
 	}
@@ -52,7 +53,7 @@ export class HeaderNavComponent extends HTMLElement {
 		const BUTTON_PADDING = 10;
 		const mapToRect = ([key, section]) => [
 			key,
-			section?.getBoudingClientRect(),
+			section?.getBoundingClientRect(),
 		];
 		const findOverlap = ([, rect]) => doOverlap(rect, rootRect, BUTTON_PADDING);
 
@@ -111,6 +112,7 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#subscribeOneLinkClick(event) {
+		console.log('subscribeOneLinkClick');
 		event.stopImmediatePropagation();
 		const {target} = event;
 
@@ -151,17 +153,18 @@ export class HeaderNavComponent extends HTMLElement {
 			};
 		}
 
-		function cerriedAppendList(root) {
+		function carriedAppendList(root) {
 			return (providedListNode) => root.append(providedListNode);
 		}
 
 		const clearSlot = carriedClearSlot(this.#slot);
-		const appendList = cerriedAppendList(this.#list);
+		const appendList = carriedAppendList(this.#list);
 		const nodeFilter = (node) => node.nodeType === Node.ELEMENT_NODE;
 		const assignedNodes = target.assignedNodes().filter(nodeFilter);
 
-		if (assignedNodes.length != 0) {
-			compose(createListContainer,
+		if (assignedNodes.length !== 0) {
+			compose(
+				createListContainer,
 				createList,
 				clearSlot,
 				appendList,
