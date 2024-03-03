@@ -44,9 +44,8 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	connectedCallback() { //когда браунзер видит нав компонент
-		console.log('NAV-----connectedCallback');
 		this.#render();
-		this.#listeners.forEach(addListeners);
+		// this.#listeners.forEach(addListeners);
 	}
 
 	#compareSectionPosition() {
@@ -112,7 +111,6 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#subscribeOneLinkClick(event) {
-		console.log('subscribeOneLinkClick');
 		event.stopImmediatePropagation();
 		const {target} = event;
 
@@ -182,6 +180,8 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#render() {
+		this.#listeners.forEach(addListeners);
+
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
 

@@ -60,7 +60,7 @@ export class LinkComponent extends HTMLElement {
 	connectedCallback() {
 		console.log('connectedCallback is working!!!');
 		this.#render();
-		this.#listeners.forEach(addListeners.bind(this));
+		// this.#listeners.forEach(addListeners.bind(this));
 
 		for (let attrName of this.constructor.observedAttributes) {
 			if (this.hasAttribute(attrName)) {
@@ -104,6 +104,8 @@ export class LinkComponent extends HTMLElement {
 	}
 
 	#render() {
+		this.#listeners.forEach(addListeners.bind(this));
+		
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
 		this.shadowRoot.appendChild(templateElem.content.cloneNode(true));
