@@ -118,6 +118,11 @@ const TemplateWithScrollDetection = () => {
 				padding: 0 2rem;
 				overflow-y: scroll;
 			}
+
+			.header__nav {
+				display: flex;
+				gap: 2.75rem;
+			}
 		</style>
 		<div class='wrapper _scrollable'>
 			<div class='header'>
