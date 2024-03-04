@@ -11,11 +11,68 @@ export default {
 
 const Template = () => {
 	return html`
+		<style>
+			@import url(../common.css);
+
+			li {
+				list-style-type: none;
+			}
+
+			.header__nav {
+				display: flex;
+				gap: 2.75rem;
+			}
+
+			.header__nav-item {
+				text-decoration: none;
+				border-top: .1rem solid var(--nav-item-bordr);
+			}
+
+			.header__nav-item:not(.header__nav-item_active)::after {
+				position: absolute;
+				margin-left: .25rem;
+				bottom: 4.6rem;
+				border-radius: 10rem;
+				background-color: var(--lightest-violet);
+				content: "";
+				height: .5rem;
+				width: .5rem;
+				transform: scale(0);
+				transition: transform .2s ease-in-out;
+			}
+
+			.header__nav-item_active {
+				border-bottom: .1rem solid var(--nav-item-bordr_active);
+			}
+
+			.header__nav-item:hover:after {
+				transform: scale(1);
+			}
+
+			.font-weight-700 {
+				font-weight: 700;
+			}
+
+			._font-size-12px {
+				font-size: 12px;
+			}
+
+		</style>
 		<header-nav-component>
-			<link-component is-active='true' text='ABOUT' styles='nav' href='#ABOUT'></link-component>
-			<link-component is-active='false' text='SERVICES' styles='nav' href='#SERVICES'></link-component>
-			<link-component is-active='false' text='TECHNOLOGIES' styles='nav' href='#TECHNOLOGIES'></link-component>
-			<link-component is-active='false' text='HOW TO' styles='nav' href='#HOW-TO'></link-component>
+			<ul class='header__nav font-weight-700 _font-size-12px'>
+				<li class='header__nav-item'>
+					<link-component is-active='true' text='ABOUT' styles='nav' href='#ABOUT'></link-component>
+				</li>
+				<li class='header__nav-item'>
+					<link-component is-active='false' text='SERVICES' styles='nav' href='#SERVICES'></link-component>
+				</li>
+				<li class='header__nav-item'>
+					<link-component is-active='false' text='TECHNOLOGIES' styles='nav' href='#TECHNOLOGIES'></link-component>
+				</li>
+				<li class='header__nav-item'>
+					<link-component is-active='false' text='HOW TO' styles='nav' href='#HOW-TO'></link-component>
+				</li>
+			</ul>
 		</header-nav-component>
 	`;
 };
@@ -24,6 +81,10 @@ const TemplateWithScrollDetection = () => {
 	return html`
 		<style>
 			@import url(../common.css);
+
+			li {
+				list-style-type: none;
+			}
 
 			.header {
 				width: 100%;
@@ -65,16 +126,27 @@ const TemplateWithScrollDetection = () => {
 						<li>
 							<link-component is-active='true' text='01' styles='nav' href='#first'></link-component>
 						</li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<link-component is-active='false' text='02' styles='nav' href='#second'></link-component>
-						<link-component is-active='false' text='03' styles='nav' href='#third'></link-component>
-						<link-component is-active='false' text='04' styles='nav' href='#fourth'></link-component>
-						<link-component is-active='false' text='05' styles='nav' href='#fifth'></link-component>
-						<link-component is-active='false' text='06' styles='nav' href='#sixth'></link-component>
-						<link-component is-active='false' text='07' styles='nav' href='#seventh'></link-component>
-						<link-component is-active='false' text='08' styles='nav' href='#eighth'></link-component>
+						<li>
+							<link-component is-active='false' text='02' styles='nav' href='#second'></link-component>
+						</li>
+						<li>
+							<link-component is-active='false' text='03' styles='nav' href='#third'></link-component>
+						</li>
+						<li>
+							<link-component is-active='false' text='04' styles='nav' href='#fourth'></link-component>
+						</li>
+						<li>
+							<link-component is-active='false' text='05' styles='nav' href='#fifth'></link-component>
+						</li>
+						<li>
+							<link-component is-active='false' text='06' styles='nav' href='#sixth'></link-component>
+						</li>
+						<li>
+							<link-component is-active='false' text='07' styles='nav' href='#seventh'></link-component>
+						</li>
+						<li>
+							<link-component is-active='false' text='08' styles='nav' href='#eighth'></link-component>
+						</li>
 					</ul>
 				</header-nav-component>
 			</div>

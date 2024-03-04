@@ -46,27 +46,22 @@ export class LinkComponent extends HTMLElement {
 	}
 
 	static #setActive(element, newAttr) {
-		// console.log(element.text);
 		const isActive = newAttr === 'true';
 		if (isActive) {
 			element.classList.add('_active');
-			console.log('act added');
 		} else {
 			element.classList.remove('_active');
-			console.log('act removed');
 		}
 	}
 
 	connectedCallback() {
-		console.log('connectedCallback is working!!!');
 		this.#render();
-		// this.#listeners.forEach(addListeners.bind(this));
+		this.#listeners.forEach(addListeners.bind(this));
 
 		for (let attrName of this.constructor.observedAttributes) {
 			if (this.hasAttribute(attrName)) {
 				const attrValue = this.getAttribute(attrName);
 				this.attributeChangedCallback(attrName, null, attrValue);
-				console.log('attributeChangedCallback used to be done!!!');
 			}
 		}
 	}
@@ -79,9 +74,7 @@ export class LinkComponent extends HTMLElement {
 
 		if (newValue !== oldValue) {
 			const callback = this.#ATTRIBUTES_MAPPING.get(name);
-			// console.log('callback----', callback);
 			this.#selectAndCallIfExist(callback, newValue);
-			console.log('AttributeCanged');
 		}
 	}
 
@@ -105,7 +98,7 @@ export class LinkComponent extends HTMLElement {
 
 	#render() {
 		this.#listeners.forEach(addListeners.bind(this));
-		
+
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
 		this.shadowRoot.appendChild(templateElem.content.cloneNode(true));

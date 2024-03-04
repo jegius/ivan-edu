@@ -1,6 +1,5 @@
 import template from './header-nav-component.template.js';
 import {
-	addListeners,
 	compose,
 	debounce,
 	doOverlap,
@@ -180,7 +179,7 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#render() {
-		this.#listeners.forEach(addListeners);
+		// this.#listeners.forEach(addListeners);
 
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
