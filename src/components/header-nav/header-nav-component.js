@@ -1,14 +1,15 @@
 import template from './header-nav-component.template.js';
 import {
+	addListeners,
 	compose,
 	debounce,
 	doOverlap,
 	mapToLinkElement,
 	removeListeners,
 	select,
-} from '../api/helpers';
-import {LinkComponent} from '../link/link-component';
-import events from '../api/events';
+} from '../api/helpers.js';
+import {LinkComponent} from '../link/link-component.js';
+import events from '../api/events.js';
 
 export class HeaderNavComponent extends HTMLElement {
 	#slot;
@@ -48,6 +49,7 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#compareSectionPosition() {
+		console.log('Работает compareSectionPosition');
 		const BUTTON_PADDING = 10;
 		const mapToRect = ([key, section]) => [
 			key,
@@ -57,8 +59,11 @@ export class HeaderNavComponent extends HTMLElement {
 
 		const root = document.querySelector('._scrollable') ?? window;
 		const rootRect = root.getBoundingClientRect();
+		console.log(rootRect);
 		const rects = [...this.#linksToSelections.entries()].map(mapToRect).filter(Boolean);
 		const [id] = rects?.find(findOverlap) ?? [];
+
+		console.log('ID', rects?.find(findOverlap));
 
 		if (id) {
 			const convertToLink = (element) =>
@@ -68,6 +73,7 @@ export class HeaderNavComponent extends HTMLElement {
 			const nodes = this.shadowRoot.querySelectorAll('li');
 			const activeLink = [...nodes].map(convertToLink).find(findActive);
 			const linkId = activeLink.closest('li').getAttribute('index');
+			console.log('ID: ', linkId);
 			activeLink.setAttribute('is-active', 'true');
 
 			this.#makeAllLinksInActiveExcludeIndex(linkId);
@@ -123,7 +129,7 @@ export class HeaderNavComponent extends HTMLElement {
 		const allNodes = this.shadowRoot.querySelectorAll('li');
 		const nodeFilter = (node) => node.getAttribute('index') !== index;
 		const setActive = (node) => node.setAttribute('is-active', 'false');
-
+		console.log(index);
 		[...allNodes].filter(nodeFilter).map(mapToLinkElement).forEach(setActive);
 	}
 
@@ -179,13 +185,13 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#render() {
-		// this.#listeners.forEach(addListeners);
+		this.#listeners.forEach(addListeners);
 
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
 
 		this.shadowRoot.append(templateElem.content.cloneNode(true));
 		this.#slot = this.shadowRoot.querySelector('slot');
-		this.#list = this.shadowRoot.querySelector('navigation');
+		this.#list = this.shadowRoot.querySelector('nav');
 	}
 }
