@@ -28,7 +28,7 @@ const Template = () => {
 				border-top: .1rem solid var(--nav-item-bordr);
 			}
 
-			.header__nav-item:not(.header__nav-item_active)::after {
+			.header__nav-item:not(._active)::after {
 				position: absolute;
 				margin-left: .25rem;
 				bottom: 4.6rem;
@@ -41,7 +41,7 @@ const Template = () => {
 				transition: transform .2s ease-in-out;
 			}
 
-			.header__nav-item_active {
+			._active {
 				border-bottom: .1rem solid var(--nav-item-bordr_active);
 			}
 
@@ -59,20 +59,10 @@ const Template = () => {
 
 		</style>
 		<header-nav-component>
-			<ul class='header__nav font-weight-700 _font-size-12px'>
-				<li class='header__nav-item'>
-					<link-component is-active='true' text='ABOUT' styles='nav' href='#ABOUT'></link-component>
-				</li>
-				<li class='header__nav-item'>
-					<link-component is-active='false' text='SERVICES' styles='nav' href='#SERVICES'></link-component>
-				</li>
-				<li class='header__nav-item'>
-					<link-component is-active='false' text='TECHNOLOGIES' styles='nav' href='#TECHNOLOGIES'></link-component>
-				</li>
-				<li class='header__nav-item'>
-					<link-component is-active='false' text='HOW TO' styles='nav' href='#HOW-TO'></link-component>
-				</li>
-			</ul>
+			<link-component class='header__nav-item' is-active='true' text='ABOUT' styles='nav' href='#ABOUT'></link-component>
+			<link-component class='header__nav-item' is-active='false' text='SERVICES' styles='nav' href='#SERVICES'></link-component>
+			<link-component class='header__nav-item' is-active='false' text='TECHNOLOGIES' styles='nav' href='#TECHNOLOGIES'></link-component>
+			<link-component class='header__nav-item' is-active='false' text='HOW TO' styles='nav' href='#HOW-TO'></link-component>
 		</header-nav-component>
 	`;
 };
@@ -123,36 +113,35 @@ const TemplateWithScrollDetection = () => {
 				display: flex;
 				gap: 2.75rem;
 			}
+
+			.header__nav-item:not(._active)::after {
+				position: absolute;
+				margin-left: .25rem;
+				bottom: 4.6rem;
+				border-radius: 10rem;
+				background-color: var(--lightest-violet);
+				content: "";
+				height: .5rem;
+				width: .5rem;
+				transform: scale(0);
+				transition: transform .2s ease-in-out;
+			}
+
+			._active {
+				border-bottom: .1rem solid var(--nav-item-bordr_active);
+			}
 		</style>
 		<div class='wrapper _scrollable'>
 			<div class='header'>
 				<header-nav-component>
-					<ul class='header__nav'>
-						<li>
-							<link-component is-active='true' text='01' styles='nav' href='#first'></link-component>
-						</li>
-						<li>
-							<link-component is-active='false' text='02' styles='nav' href='#second'></link-component>
-						</li>
-						<li>
-							<link-component is-active='false' text='03' styles='nav' href='#third'></link-component>
-						</li>
-						<li>
-							<link-component is-active='false' text='04' styles='nav' href='#fourth'></link-component>
-						</li>
-						<li>
-							<link-component is-active='false' text='05' styles='nav' href='#fifth'></link-component>
-						</li>
-						<li>
-							<link-component is-active='false' text='06' styles='nav' href='#sixth'></link-component>
-						</li>
-						<li>
-							<link-component is-active='false' text='07' styles='nav' href='#seventh'></link-component>
-						</li>
-						<li>
-							<link-component is-active='false' text='08' styles='nav' href='#eighth'></link-component>
-						</li>
-					</ul>
+					<link-component class='header__nav-item _active' is-active='true' text='01' styles='nav' href='#first'></link-component>
+					<link-component class='header__nav-item' is-active='false' text='02' styles='nav' href='#second'></link-component>
+					<link-component class='header__nav-item' is-active='false' text='03' styles='nav' href='#third'></link-component>
+					<link-component class='header__nav-item' is-active='false' text='04' styles='nav' href='#fourth'></link-component>
+					<link-component class='header__nav-item' is-active='false' text='05' styles='nav' href='#fifth'></link-component>
+					<link-component class='header__nav-item' is-active='false' text='06' styles='nav' href='#sixth'></link-component>
+					<link-component class='header__nav-item' is-active='false' text='07' styles='nav' href='#seventh'></link-component>
+					<link-component class='header__nav-item' is-active='false' text='08' styles='nav' href='#eighth'></link-component>
 				</header-nav-component>
 			</div>
 			<div class='section' id='first'>

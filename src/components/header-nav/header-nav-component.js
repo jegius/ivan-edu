@@ -32,7 +32,8 @@ export class HeaderNavComponent extends HTMLElement {
 			debounce(this.#compareSectionPosition.bind(this)),
 		],
 	];
-	#linksToSelections;
+
+	// #linksToSelections;
 
 	constructor() {
 		super();
@@ -49,7 +50,6 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#compareSectionPosition() {
-		console.log('Работает compareSectionPosition');
 		const BUTTON_PADDING = 10;
 		const mapToRect = ([key, section]) => [
 			key,
@@ -59,11 +59,9 @@ export class HeaderNavComponent extends HTMLElement {
 
 		const root = document.querySelector('._scrollable') ?? window;
 		const rootRect = root.getBoundingClientRect();
-		console.log(rootRect);
-		const rects = [...this.#linksToSelections.entries()].map(mapToRect).filter(Boolean);
+		const rects = [...this.#linksToSections.entries()].map(mapToRect).filter(Boolean);
 		const [id] = rects?.find(findOverlap) ?? [];
 
-		console.log('ID', rects?.find(findOverlap));
 
 		if (id) {
 			const convertToLink = (element) =>
@@ -73,7 +71,6 @@ export class HeaderNavComponent extends HTMLElement {
 			const nodes = this.shadowRoot.querySelectorAll('li');
 			const activeLink = [...nodes].map(convertToLink).find(findActive);
 			const linkId = activeLink.closest('li').getAttribute('index');
-			console.log('ID: ', linkId);
 			activeLink.setAttribute('is-active', 'true');
 
 			this.#makeAllLinksInActiveExcludeIndex(linkId);
@@ -85,8 +82,7 @@ export class HeaderNavComponent extends HTMLElement {
 
 		function findTargetAnchrIdes(nodes) {
 			const FIND_ID_REGEXP = /#[a-zA-Z]+/i;
-			return nodes
-			.map((node) => node.querySelector(LinkComponent.name))
+			return nodes.map((node) => node.querySelector(LinkComponent.name))
 			.filter(Boolean)
 			.map((node) => node.getAttribute('href'))
 			.filter(Boolean)
@@ -129,16 +125,16 @@ export class HeaderNavComponent extends HTMLElement {
 		const allNodes = this.shadowRoot.querySelectorAll('li');
 		const nodeFilter = (node) => node.getAttribute('index') !== index;
 		const setActive = (node) => node.setAttribute('is-active', 'false');
-		console.log(index);
 		[...allNodes].filter(nodeFilter).map(mapToLinkElement).forEach(setActive);
 	}
 
 	#onSlotChange({target}) {
 		function createListContainer(providedNodes) {
 			const listNode = document.createElement('ul');
-			listNode.classList.add('navigation__list');
+			listNode.classList.add('header__nav');
 			return {providedNodes, listNode};
 		}
+
 
 		function createList({providedNodes, listNode}) {
 			return providedNodes.reduce((list, node, index) => {
