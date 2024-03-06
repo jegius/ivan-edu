@@ -29,7 +29,7 @@ export class HeaderNavComponent extends HTMLElement {
 		[
 			select.bind(this, '_scrollable', window.document),
 			events.SCROLL,
-			debounce(this.#compareSectionPosition.bind(this)),
+			debounce(this.#compareSectionPosition.bind(this), 100),
 		],
 	];
 
@@ -50,13 +50,13 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#compareSectionPosition() {
-		const BUTTON_PADDING = 10;
+		console.log('WORKS');
+		const BUTTON_PADDING = 0;
 		const mapToRect = ([key, section]) => [
 			key,
 			section?.getBoundingClientRect(),
 		];
 		const findOverlap = ([, rect]) => doOverlap(rect, rootRect, BUTTON_PADDING);
-
 		const root = document.querySelector('._scrollable') ?? window;
 		const rootRect = root.getBoundingClientRect();
 		const rects = [...this.#linksToSections.entries()].map(mapToRect).filter(Boolean);
@@ -64,6 +64,7 @@ export class HeaderNavComponent extends HTMLElement {
 
 
 		if (id) {
+			console.log(id);
 			const convertToLink = (element) =>
 				element.querySelector(LinkComponent.name);
 			const findActive = (element) => element.getAttribute('href') === `#${id}`;
@@ -82,6 +83,8 @@ export class HeaderNavComponent extends HTMLElement {
 
 		function findTargetAnchrIdes(nodes) {
 			const FIND_ID_REGEXP = /#[a-zA-Z]+/i;
+
+
 			return nodes.map((node) => node.querySelector(LinkComponent.name))
 			.filter(Boolean)
 			.map((node) => node.getAttribute('href'))
@@ -90,6 +93,8 @@ export class HeaderNavComponent extends HTMLElement {
 		}
 
 		function findSections(hrefs) {
+
+
 			return hrefs.map((id) => document.querySelector(id)).filter(Boolean);
 		}
 
@@ -108,7 +113,6 @@ export class HeaderNavComponent extends HTMLElement {
 			findSections,
 			convertToMap,
 		)([...nodes]);
-
 	}
 
 	#subscribeOneLinkClick(event) {
@@ -131,10 +135,9 @@ export class HeaderNavComponent extends HTMLElement {
 	#onSlotChange({target}) {
 		function createListContainer(providedNodes) {
 			const listNode = document.createElement('ul');
-			listNode.classList.add('header__nav');
+			listNode.classList.add('nav__list');
 			return {providedNodes, listNode};
 		}
-
 
 		function createList({providedNodes, listNode}) {
 			return providedNodes.reduce((list, node, index) => {

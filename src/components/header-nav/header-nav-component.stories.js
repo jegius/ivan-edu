@@ -134,7 +134,7 @@ const TemplateWithScrollDetection = () => {
 		<div class='wrapper _scrollable'>
 			<div class='header'>
 				<header-nav-component>
-					<link-component class='header__nav-item _active' is-active='true' text='01' styles='nav' href='#first'></link-component>
+					<link-component class='header__nav-item' is-active='true' text='01' styles='nav' href='#first'></link-component>
 					<link-component class='header__nav-item' is-active='false' text='02' styles='nav' href='#second'></link-component>
 					<link-component class='header__nav-item' is-active='false' text='03' styles='nav' href='#third'></link-component>
 					<link-component class='header__nav-item' is-active='false' text='04' styles='nav' href='#fourth'></link-component>

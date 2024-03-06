@@ -2,7 +2,7 @@ export default `
 	<style>
 		@import url('../common.css');
 		
-		.header__nav {
+		.nav__list {
 			display: flex;
 			gap: 2.75rem;
 		}
