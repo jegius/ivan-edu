@@ -27,13 +27,11 @@ export class HeaderNavComponent extends HTMLElement {
 			this.#onSlotChange.bind(this),
 		],
 		[
-			select.bind(this, '_scrollable', window.document),
+			select.bind(this, '._scrollable', window.document),
 			events.SCROLL,
 			debounce(this.#compareSectionPosition.bind(this), 100),
 		],
 	];
-
-	// #linksToSelections;
 
 	constructor() {
 		super();
@@ -44,13 +42,11 @@ export class HeaderNavComponent extends HTMLElement {
 		return 'header-nav-component';
 	}
 
-	connectedCallback() { //когда браунзер видит нав компонент
+	connectedCallback() {
 		this.#render();
-		// this.#listeners.forEach(addListeners);
 	}
 
 	#compareSectionPosition() {
-		console.log('WORKS');
 		const BUTTON_PADDING = 0;
 		const mapToRect = ([key, section]) => [
 			key,
@@ -62,9 +58,7 @@ export class HeaderNavComponent extends HTMLElement {
 		const rects = [...this.#linksToSections.entries()].map(mapToRect).filter(Boolean);
 		const [id] = rects?.find(findOverlap) ?? [];
 
-
 		if (id) {
-			console.log(id);
 			const convertToLink = (element) =>
 				element.querySelector(LinkComponent.name);
 			const findActive = (element) => element.getAttribute('href') === `#${id}`;
@@ -149,7 +143,7 @@ export class HeaderNavComponent extends HTMLElement {
 			}, listNode);
 		}
 
-		function carriedClearSlot() { //тут чтот нето
+		function carriedClearSlot() {
 			return (providedListNode) => {
 				return providedListNode;
 			};
