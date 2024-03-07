@@ -78,7 +78,6 @@ export class HeaderNavComponent extends HTMLElement {
 		function findTargetAnchrIdes(nodes) {
 			const FIND_ID_REGEXP = /#[a-zA-Z]+/i;
 
-
 			return nodes.map((node) => node.querySelector(LinkComponent.name))
 			.filter(Boolean)
 			.map((node) => node.getAttribute('href'))
@@ -87,8 +86,6 @@ export class HeaderNavComponent extends HTMLElement {
 		}
 
 		function findSections(hrefs) {
-
-
 			return hrefs.map((id) => document.querySelector(id)).filter(Boolean);
 		}
 
@@ -166,7 +163,6 @@ export class HeaderNavComponent extends HTMLElement {
 				appendList,
 			)(assignedNodes);
 		}
-
 		if (!this.#linksToSections) {
 			this.#linksToSections = this.#detectSection();
 		}
