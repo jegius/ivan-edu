@@ -47,7 +47,7 @@ export class HeaderNavComponent extends HTMLElement {
 	}
 
 	#compareSectionPosition() {
-		const BUTTON_PADDING = 0;
+		const BUTTON_PADDING = 30;
 		const mapToRect = ([key, section]) => [
 			key,
 			section?.getBoundingClientRect(),

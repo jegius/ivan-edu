@@ -7,15 +7,34 @@ import '../common.css';
 export default {
 	title: 'HeaderLogoComponent',
 	tags: ['autodocs'],
+	argTypes: {
+		logoSize: {
+			control: {type: 'select'},
+			options: ['small', 'medium', 'large'],
+		},
+		withText: {
+			control: {type: 'boolean'},
+			options: ['true', 'false'],
+		},
+	},
 };
 
-const Template = () => {
+const Template = (args) => {
 	return html`
-		<header-logo-component></header-logo-component>
+		<header-logo-component with-text='${args.withText}' size='${args.logoSize}'></header-logo-component>
 	`;
 };
 
 export const Default = Template.bind({});
+
 Default.args = {
-	variant: 'primary',
+	logoSize: 'medium',
+	withText: 'true',
+};
+
+export const withoutText = Template.bind({});
+
+withoutText.args = {
+	...Default.args,
+	withText: 'false',
 };
