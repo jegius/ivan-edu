@@ -12,6 +12,7 @@ export default {
 			control: {type: 'select'},
 			options: ['small', 'medium', 'large'],
 		},
+		href: {control: 'text'},
 		withText: {
 			control: {type: 'boolean'},
 			options: ['true', 'false'],
@@ -21,7 +22,7 @@ export default {
 
 const Template = (args) => {
 	return html`
-		<header-logo-component with-text='${args.withText}' size='${args.logoSize}'></header-logo-component>
+		<header-logo-component with-text='${args.withText}' size='${args.logoSize}' href='${args.href}'></header-logo-component>
 	`;
 };
 
@@ -30,6 +31,7 @@ export const Default = Template.bind({});
 Default.args = {
 	logoSize: 'medium',
 	withText: 'true',
+	href: '#',
 };
 
 export const withoutText = Template.bind({});

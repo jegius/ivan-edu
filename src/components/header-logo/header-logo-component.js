@@ -1,17 +1,25 @@
 import template from './header-logo-component.template.js';
+import {addListeners, select} from '../api/helpers';
+import events from '../api/events';
 
 const logoAttributes = {
 	LOGO_SIZE: 'size',
 	WITH_TEXT: 'with-text',
+	HREF: 'href',
 };
 
 const logoSize = ['_small', '_medium', '_large'];
 
 export class HeaderLogoComponent extends HTMLElement {
-	#logo;
+	#href;
+	#link;
+	#listeners = [
+		[select.bind(this, '.header__logo'), 'click', this.#addEventListeners.bind(this)],
+	];
 	#ATTRIBUTE_MAPPING = new Map([
 		[logoAttributes.LOGO_SIZE, HeaderLogoComponent.#setSize],
 		[logoAttributes.WITH_TEXT, HeaderLogoComponent.#setWithText],
+		[logoAttributes.HREF, HeaderLogoComponent.#setHref],
 	]);
 
 	constructor() {
@@ -36,6 +44,13 @@ export class HeaderLogoComponent extends HTMLElement {
 		}
 	}
 
+	static #setHref(element, newHref) {
+		this.#href = newHref;
+		if (element) {
+			element.setAttribute('href', newHref);
+		}
+	}
+
 	static #setSize(element, newSize) {
 		for (let sizeName of logoSize) {
 			if (element.classList.contains(sizeName)) {
@@ -48,6 +63,7 @@ export class HeaderLogoComponent extends HTMLElement {
 
 	connectedCallback() {
 		this.#render();
+		this.#listeners.forEach(addListeners.bind(this));
 
 		for (let attrName of this.constructor.observedAttributes) {
 			if (this.hasAttribute(attrName)) {
@@ -60,16 +76,35 @@ export class HeaderLogoComponent extends HTMLElement {
 	attributeChangedCallback(name, oldValue, newValue) {
 		if (newValue !== oldValue) {
 			const callback = this.#ATTRIBUTE_MAPPING.get(name);
-			if (this.#logo) {
-				callback(this.#logo, newValue);
-			}
+			this.#selectAndCallIfExist(callback, newValue);
 		}
 	}
 
+
+	#selectAndCallIfExist(callback, value) {
+		if (this.#link) {
+			callback.call(this, this.#link, value);
+		}
+	}
+
+	#addEventListeners(event) {
+		const element = this.#href !== '#' ? document.querySelector(this.#href) : null;
+		if (element) {
+			event.preventDefault();
+			element.scrollIntoView({behavior: 'smooth'});
+		}
+
+		this.dispatchEvent(
+			new CustomEvent(events.LINK_CLICKED, {bubbles: true, detail: this}),
+		);
+	}
+
 	#render() {
+		this.#listeners.forEach(addListeners.bind(this));
+
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
 		this.shadowRoot.appendChild(templateElem.content.cloneNode(true));
-		this.#logo = this.shadowRoot.querySelector('.header__logo');
+		this.#link = this.shadowRoot.querySelector('.header__logo');
 	}
 }

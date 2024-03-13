@@ -6,6 +6,12 @@ export default `
 			display: inline-block;
 			background: var(--logo-icon) center left no-repeat;
 			filter: drop-shadow(0 .625rem .375rem var(--shadow));
+			cursor: pointer;
+			transition: filter 300ms ease-in-out;
+		}
+		
+		.header__logo:hover{
+			  filter: drop-shadow(0.3rem 0.4rem 0.125rem rgba(0,0,0,0.35));
 		}
 		
 		._with-text{
