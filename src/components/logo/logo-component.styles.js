@@ -2,15 +2,26 @@ export default `
 	<style>
 		@import url('../common.css');
 		
-		.header__logo {
+		._no-text {
+			 /*background: var(--logo-icon) no-repeat;*/
+			 background-size: 11.5625rem;
+			 /*filter: drop-shadow(0 .625rem .375rem var(--shadow));*/
+			 min-width: 11.5625rem;
+			 min-height: 11.6875rem;
+		}
+		
+		.logo {
+			/*min-width: min-content;*/
+  			/*min-height: min-content;*/
 			display: inline-block;
 			background: var(--logo-icon) center left no-repeat;
 			filter: drop-shadow(0 .625rem .375rem var(--shadow));
 			cursor: pointer;
 			transition: filter 300ms ease-in-out;
+			box-sizing: border-box;
 		}
 		
-		.header__logo:hover{
+		.logo:hover{
 			  filter: drop-shadow(0.3rem 0.4rem 0.125rem rgba(0,0,0,0.35));
 		}
 		

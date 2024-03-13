@@ -14,7 +14,7 @@ export class LogoComponent extends HTMLElement {
 	#href;
 	#link;
 	#listeners = [
-		[select.bind(this, '.header__logo'), 'click', this.#addEventListeners.bind(this)],
+		[select.bind(this, '.logo'), 'click', this.#addEventListeners.bind(this)],
 	];
 	#ATTRIBUTE_MAPPING = new Map([
 		[logoAttributes.LOGO_SIZE, LogoComponent.#setSize],
@@ -39,8 +39,10 @@ export class LogoComponent extends HTMLElement {
 		const withText = newAttr === 'true';
 		if (withText) {
 			element.classList.add('_with-text');
+			element.classList.remove('_no-text');
 		} else {
 			element.classList.remove('_with-text');
+			element.classList.add('_no-text');
 		}
 	}
 
@@ -105,6 +107,6 @@ export class LogoComponent extends HTMLElement {
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
 		this.shadowRoot.appendChild(templateElem.content.cloneNode(true));
-		this.#link = this.shadowRoot.querySelector('.header__logo');
+		this.#link = this.shadowRoot.querySelector('.logo');
 	}
 }
