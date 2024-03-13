@@ -1,11 +1,11 @@
 import {html} from 'lit-html';
-import './header-logo-component.js';
-import './header-logo-component.template.js';
-import './header-logo-component.styles.js';
+import './logo-component.js';
+import './logo-component.template.js';
+import './logo-component.styles.js';
 import '../common.css';
 
 export default {
-	title: 'HeaderLogoComponent',
+	title: 'LogoComponent',
 	tags: ['autodocs'],
 	argTypes: {
 		logoSize: {
@@ -22,7 +22,7 @@ export default {
 
 const Template = (args) => {
 	return html`
-		<header-logo-component with-text='${args.withText}' size='${args.logoSize}' href='${args.href}'></header-logo-component>
+		<logo-component with-text='${args.withText}' size='${args.logoSize}' href='${args.href}'></logo-component>
 	`;
 };
 

@@ -1,4 +1,4 @@
-import template from './header-logo-component.template.js';
+import template from './logo-component.template.js';
 import {addListeners, select} from '../api/helpers';
 import events from '../api/events';
 
@@ -10,16 +10,16 @@ const logoAttributes = {
 
 const logoSize = ['_small', '_medium', '_large'];
 
-export class HeaderLogoComponent extends HTMLElement {
+export class LogoComponent extends HTMLElement {
 	#href;
 	#link;
 	#listeners = [
 		[select.bind(this, '.header__logo'), 'click', this.#addEventListeners.bind(this)],
 	];
 	#ATTRIBUTE_MAPPING = new Map([
-		[logoAttributes.LOGO_SIZE, HeaderLogoComponent.#setSize],
-		[logoAttributes.WITH_TEXT, HeaderLogoComponent.#setWithText],
-		[logoAttributes.HREF, HeaderLogoComponent.#setHref],
+		[logoAttributes.LOGO_SIZE, LogoComponent.#setSize],
+		[logoAttributes.WITH_TEXT, LogoComponent.#setWithText],
+		[logoAttributes.HREF, LogoComponent.#setHref],
 	]);
 
 	constructor() {
@@ -32,7 +32,7 @@ export class HeaderLogoComponent extends HTMLElement {
 	}
 
 	static get name() {
-		return 'header-logo-component';
+		return 'logo-component';
 	}
 
 	static #setWithText(element, newAttr) {

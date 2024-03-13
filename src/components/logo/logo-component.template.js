@@ -1,4 +1,4 @@
-import styles from './header-logo-component.styles.js';
+import styles from './logo-component.styles.js';
 
 export default `
    ${styles}
