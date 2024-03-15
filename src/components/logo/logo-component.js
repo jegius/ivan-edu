@@ -8,7 +8,7 @@ const logoAttributes = {
 	HREF: 'href',
 };
 
-const logoSize = ['_small', '_medium', '_large'];
+const logoSize = ['_small', '_small_no-text', '_medium', '_medium_no-text', '_large_no-text', '_large'];
 
 export class LogoComponent extends HTMLElement {
 	#href;

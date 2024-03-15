@@ -3,11 +3,11 @@ export default `
 		@import url('../common.css');
 		
 		._no-text {
-			 /*background: var(--logo-icon) no-repeat;*/
-			 background-size: 11.5625rem;
-			 /*filter: drop-shadow(0 .625rem .375rem var(--shadow));*/
-			 min-width: 11.5625rem;
-			 min-height: 11.6875rem;
+   		 background: var(--logo-icon) no-repeat;
+   		 background-size: 11.5625rem;
+    	  	filter: drop-shadow(0 .625rem .375rem var(--shadow));
+    		 min-width: 11.5625rem;
+   		 min-height: 11.6875rem;
 		}
 		
 		.logo {
@@ -15,10 +15,15 @@ export default `
   			/*min-height: min-content;*/
 			display: inline-block;
 			background: var(--logo-icon) center left no-repeat;
-			filter: drop-shadow(0 .625rem .375rem var(--shadow));
-			cursor: pointer;
+			/*background-color: greenyellow;*/
+			/*filter: drop-shadow(0 .625rem .375rem var(--shadow));*/
+			/*cursor: pointer;*/
+			
 			transition: filter 300ms ease-in-out;
 			box-sizing: border-box;
+			background-size: 11.5625rem;
+			min-width: 11.5625rem;
+  		   min-height: 11.6875rem;
 		}
 		
 		.logo:hover{
@@ -27,7 +32,10 @@ export default `
 		
 		._with-text{
 			background: var(--logo-icon) center left no-repeat, var(--logo-text) center right no-repeat;
+			/*background-color: rgba(232,11,103,0.74);*/
 			background-size: 6.375rem 6.4375rem, 4.75rem 2.875rem;
+			display: inline-block;
+			
 		}
 		
 		._small {
@@ -47,5 +55,7 @@ export default `
 				min-width: 15.5rem;
 				min-height: 8.375rem;       
         }
+        
+
 	</style>
 `;
