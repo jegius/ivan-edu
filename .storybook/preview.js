@@ -4,9 +4,7 @@ import {LinkComponent} from '../src/components/link/link-component';
 import {
 	HeaderNavComponent,
 } from '../src/components/header-nav/header-nav-component';
-import {
-	HeaderLogoComponent,
-} from '../src/components/header-logo/header-logo-component';
+import {LogoComponent} from '../src/components/logo/logo-component';
 import {
 	HeaderLineWrapperComponent,
 } from '../src/components/header-line-wrapper/header-line-wrapper-component';
@@ -151,7 +149,7 @@ const preview = {
 	ButtonComponent,
 	LinkComponent,
 	HeaderNavComponent,
-	HeaderLogoComponent,
+	LogoComponent,
 	LineWrapperComponent,
 	HeaderLineWrapperComponent,
 	HeaderComponent,

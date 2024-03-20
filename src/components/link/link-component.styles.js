@@ -7,6 +7,10 @@ export default `
 			color: inherit;
 		}
 		
+		._active {
+    		border-bottom: .1rem solid var(--nav-item-bordr_active);
+		}
+		
 		h1, h2, h3, p {
 			margin: 0;
 			padding: 0;

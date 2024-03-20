@@ -1,24 +1,25 @@
-import template from './link-component.template.js';
-import events from '../api/events.js';
-import {addListeners, removeListeners, select} from '../api/helpers.js';
+import template from './logo-component.template.js';
+import {addListeners, select} from '../api/helpers';
+import events from '../api/events';
 
-
-const linkAttributes = {
-	LINK_TEXT: 'text',
-	IS_ACTIVE: 'is-active',
+const logoAttributes = {
+	LOGO_SIZE: 'size',
+	WITH_TEXT: 'with-text',
 	HREF: 'href',
 };
 
-export class LinkComponent extends HTMLElement {
+const logoSize = ['_small', '_small_no-text', '_medium', '_medium_no-text', '_large_no-text', '_large'];
+
+export class LogoComponent extends HTMLElement {
 	#href;
 	#link;
 	#listeners = [
-		[select.bind(this, '.link'), 'click', this.#addEventListeners.bind(this)],
+		[select.bind(this, '.logo'), 'click', this.#addEventListeners.bind(this)],
 	];
-	#ATTRIBUTES_MAPPING = new Map([
-		[linkAttributes.LINK_TEXT, LinkComponent.#setText],
-		[linkAttributes.IS_ACTIVE, LinkComponent.#setActive],
-		[linkAttributes.HREF, LinkComponent.#setHref],
+	#ATTRIBUTE_MAPPING = new Map([
+		[logoAttributes.LOGO_SIZE, LogoComponent.#setSize],
+		[logoAttributes.WITH_TEXT, LogoComponent.#setWithText],
+		[logoAttributes.HREF, LogoComponent.#setHref],
 	]);
 
 	constructor() {
@@ -26,16 +27,23 @@ export class LinkComponent extends HTMLElement {
 		this.attachShadow({mode: 'open'});
 	}
 
-	static get name() {
-		return 'link-component';
-	}
-
 	static get observedAttributes() {
-		return Object.values(linkAttributes);
+		return Object.values(logoAttributes);
 	}
 
-	static #setText(element, newText) {
-		element.innerHTML = newText;
+	static get name() {
+		return 'logo-component';
+	}
+
+	static #setWithText(element, newAttr) {
+		const withText = newAttr === 'true';
+		if (withText) {
+			element.classList.add('_with-text');
+			element.classList.remove('_no-text');
+		} else {
+			element.classList.remove('_with-text');
+			element.classList.add('_no-text');
+		}
 	}
 
 	static #setHref(element, newHref) {
@@ -45,13 +53,14 @@ export class LinkComponent extends HTMLElement {
 		}
 	}
 
-	static #setActive(element, newAttr) {
-		const isActive = newAttr === 'true';
-		if (isActive) {
-			element.classList.add('_active');
-		} else {
-			element.classList.remove('_active');
+	static #setSize(element, newSize) {
+		for (let sizeName of logoSize) {
+			if (element.classList.contains(sizeName)) {
+				element.classList.replace(sizeName, '_' + newSize);
+				break;
+			}
 		}
+		element.classList.add('_' + newSize);
 	}
 
 	connectedCallback() {
@@ -66,17 +75,13 @@ export class LinkComponent extends HTMLElement {
 		}
 	}
 
-	disconnectedCallback() {
-		this.#listeners.forEach(removeListeners);
-	}
-
 	attributeChangedCallback(name, oldValue, newValue) {
-
 		if (newValue !== oldValue) {
-			const callback = this.#ATTRIBUTES_MAPPING.get(name);
+			const callback = this.#ATTRIBUTE_MAPPING.get(name);
 			this.#selectAndCallIfExist(callback, newValue);
 		}
 	}
+
 
 	#selectAndCallIfExist(callback, value) {
 		if (this.#link) {
@@ -102,6 +107,6 @@ export class LinkComponent extends HTMLElement {
 		const templateElem = document.createElement('template');
 		templateElem.innerHTML = template;
 		this.shadowRoot.appendChild(templateElem.content.cloneNode(true));
-		this.#link = this.shadowRoot.querySelector('.link');
+		this.#link = this.shadowRoot.querySelector('.logo');
 	}
 }
