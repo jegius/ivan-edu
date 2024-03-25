@@ -123,7 +123,25 @@ export class HeaderNavComponent extends HTMLElement {
 		[...allNodes].filter(nodeFilter).map(mapToLinkElement).forEach(setActive);
 	}
 
+	// function carriedClearSlot(slot) {
+	// 	while (slot.nextElementSibling) {
+	// 		slot.parentNode.removeChild(slot.nextElementSibling);
+	// 	}
+	// 	while (slot.previousElementSibling) {
+	// 		slot.parentNode.removeChild(slot.previousElementSibling);
+	// 	}
+	// }
+
 	#onSlotChange({target}) {
+		const carriedClearSlot = () => {
+			while (this.#slot.nextElementSibling) {
+				this.#slot.parentNode.removeChild(this.#slot.nextElementSibling);
+			}
+			while (this.#slot.previousElementSibling) {
+				this.#slot.parentNode.removeChild(this.#slot.previousElementSibling);
+			}
+		};
+
 		function createListContainer(providedNodes) {
 			const listNode = document.createElement('ul');
 			listNode.classList.add('nav__list');
@@ -140,26 +158,33 @@ export class HeaderNavComponent extends HTMLElement {
 			}, listNode);
 		}
 
-		function carriedClearSlot() {
-			return (providedListNode) => {
-				return providedListNode;
-			};
-		}
+		// function carriedClearSlot(slot) {
+		// 	if (slot) {
+		// 		while (slot.nextElementSibling) {
+		// 			slot.parentNode.removeChild(slot.nextElementSibling);
+		// 		}
+		// 		while (slot.previousElementSibling) {
+		// 			slot.parentNode.removeChild(slot.previousElementSibling);
+		// 		}
+		// 	}
+		//
+		// }
 
 		function carriedAppendList(root) {
 			return (providedListNode) => root.append(providedListNode);
 		}
 
-		const clearSlot = carriedClearSlot(this.#slot);
 		const appendList = carriedAppendList(this.#list);
 		const nodeFilter = (node) => node.nodeType === Node.ELEMENT_NODE;
 		const assignedNodes = target.assignedNodes().filter(nodeFilter);
 
 		if (assignedNodes.length !== 0) {
+			carriedClearSlot();
+			// const clearSlot = carriedClearSlot(this.#slot);
 			compose(
+				// carriedClearSlot,
 				createListContainer,
 				createList,
-				clearSlot,
 				appendList,
 			)(assignedNodes);
 		}

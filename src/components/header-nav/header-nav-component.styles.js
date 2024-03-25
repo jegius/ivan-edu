@@ -39,5 +39,9 @@ export default `
 		.header__nav-item:hover:after {
 			transform: scale(1);
 		}
+		
+		._active {
+			border-bottom: .1rem solid var(--nav-item-bordr_active);
+		}
 	</style>
 `;

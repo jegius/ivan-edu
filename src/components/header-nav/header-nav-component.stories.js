@@ -11,53 +11,6 @@ export default {
 
 const Template = () => {
 	return html`
-		<style>
-			@import url(../common.css);
-
-			li {
-				list-style-type: none;
-			}
-
-			.header__nav {
-				display: flex;
-				gap: 2.75rem;
-			}
-
-			.header__nav-item {
-				text-decoration: none;
-				border-top: .1rem solid var(--nav-item-bordr);
-			}
-
-			.header__nav-item:not(._active)::after {
-				position: absolute;
-				margin-left: .25rem;
-				bottom: 4.6rem;
-				border-radius: 10rem;
-				background-color: var(--lightest-violet);
-				content: "";
-				height: .5rem;
-				width: .5rem;
-				transform: scale(0);
-				transition: transform .2s ease-in-out;
-			}
-
-			._active {
-				border-bottom: .1rem solid var(--nav-item-bordr_active);
-			}
-
-			.header__nav-item:hover:after {
-				transform: scale(1);
-			}
-
-			.font-weight-700 {
-				font-weight: 700;
-			}
-
-			._font-size-12px {
-				font-size: 12px;
-			}
-
-		</style>
 		<header-nav-component>
 			<link-component class='header__nav-item' is-active='true' text='ABOUT' styles='nav' href='#ABOUT'></link-component>
 			<link-component class='header__nav-item' is-active='false' text='SERVICES' styles='nav' href='#SERVICES'></link-component>
@@ -70,12 +23,6 @@ const Template = () => {
 const TemplateWithScrollDetection = () => {
 	return html`
 		<style>
-			@import url(../common.css);
-
-			li {
-				list-style-type: none;
-			}
-
 			.header {
 				width: 100%;
 				position: sticky;
@@ -109,27 +56,6 @@ const TemplateWithScrollDetection = () => {
 				overflow-y: scroll;
 			}
 
-			.header__nav {
-				display: flex;
-				gap: 2.75rem;
-			}
-
-			.header__nav-item:not(._active)::after {
-				position: absolute;
-				margin-left: .25rem;
-				bottom: 4.6rem;
-				border-radius: 10rem;
-				background-color: var(--lightest-violet);
-				content: "";
-				height: .5rem;
-				width: .5rem;
-				transform: scale(0);
-				transition: transform .2s ease-in-out;
-			}
-
-			._active {
-				border-bottom: .1rem solid var(--nav-item-bordr_active);
-			}
 		</style>
 		<div class='wrapper _scrollable'>
 			<div class='header'>
