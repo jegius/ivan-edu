@@ -271,7 +271,7 @@ li {
     border-top: .1rem solid var(--nav-item-bordr);
 }
 
-.header__nav-item:not(.header__nav-item_active)::after {
+.header__nav-item:not(._active)::after {
     position: absolute;
     margin-left: .25rem;
     bottom: 4.6rem;
@@ -284,7 +284,7 @@ li {
     transition: transform .2s ease-in-out;
 }
 
-.header__nav-item_active {
+._active {
     border-bottom: .1rem solid var(--nav-item-bordr_active);
 }
 
